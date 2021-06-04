@@ -7,7 +7,7 @@ import net.minecraft.block.material.Material;
 public class BlockBluestoneOre extends Block {
 
     public BlockBluestoneOre() {
-        super(Properties.of(Material.METAL).strength(4.9f, 30f).sound(SoundType.STONE));
+        super(Properties.create(Material.IRON).hardnessAndResistance(4.9f, 30f).sound(SoundType.STONE));
         setRegistryName("bluestone_ore");
         // TODO Auto-generated constructor stub
     }

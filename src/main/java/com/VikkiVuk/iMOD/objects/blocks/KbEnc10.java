@@ -13,13 +13,17 @@ import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
 
 public class KbEnc10 extends Block {
+
     public KbEnc10() {
-        super(Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2.1f));
+        super(Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2.1f));
         setRegistryName("knoEnc");
     }
 
+
     @Override
-    public BlockRenderType getRenderShape(BlockState p_149645_1_) {
+    public BlockRenderType getRenderType(BlockState p_149645_1_) {
         return BlockRenderType.MODEL;
     }
+
+
 }

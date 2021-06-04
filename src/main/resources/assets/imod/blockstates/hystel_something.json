@@ -1,6 +1,9 @@
 {
   "variants":
   {
-    "": { "model": "imod:block/hystel_something" }
+    "facing=north": { "model": "imod:block/hystel_something" },
+    "facing=south": { "model": "imod:block/hystel_something", "y": 180 },
+    "facing=west": { "model": "imod:block/hystel_something", "y": 270 },
+    "facing=east": { "model": "imod:block/hystel_something", "y": 90}
   }
 }

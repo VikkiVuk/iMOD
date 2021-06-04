@@ -13,13 +13,15 @@ import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
 
 public class SharEnc10 extends Block {
+
     public SharEnc10() {
-        super(Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2.1f));
+        super(Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2.1f));
         setRegistryName("sharEnc");
     }
 
+
     @Override
-    public BlockRenderType getRenderShape(BlockState p_149645_1_) {
+    public BlockRenderType getRenderType(BlockState p_149645_1_) {
         return BlockRenderType.MODEL;
     }
 }

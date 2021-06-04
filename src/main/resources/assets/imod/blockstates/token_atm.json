@@ -1,6 +1,9 @@
 {
   "variants":
   {
-    "": { "model": "imod:block/token_atm" }
+    "facing=west": { "model": "imod:block/token_atm" },
+    "facing=east": { "model": "imod:block/token_atm", "y": 180 },
+    "facing=north": { "model": "imod:block/token_atm", "y": 270 },
+    "facing=south": { "model": "imod:block/token_atm", "y": 90}
   }
 }

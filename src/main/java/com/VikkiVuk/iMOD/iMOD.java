@@ -1,85 +1,66 @@
 package com.VikkiVuk.iMOD;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.Item;
+
+import com.VikkiVuk.iMOD.init.ItemInit;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.util.NonNullList;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.stream.Collectors;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod("imod")
+@Mod.EventBusSubscriber(modid = iMOD.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class iMOD
 {
-    // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
     public static final String MOD_ID = "imod";
     public static iMOD instance;
-    public static final ItemGroup iTAB = new iTAB("itab");
 
     public iMOD() {
-        // Register the setup method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        // Register the doClientStuff method for modloading
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+        instance = this;
 
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event)
+
+    public static class HystelTab extends ItemGroup
     {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-    }
+        public static final HystelTab instance = new HystelTab(ItemGroup.GROUPS.length, "hysteltab");
 
-    private void doClientStuff(final FMLClientSetupEvent event) {
-        // do something that can only be done on the client
-        LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
-    }
-
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
-    @SubscribeEvent
-    public void onServerStarting(FMLServerStartingEvent event) {
-        // do something when the server starts
-        LOGGER.info("HELLO from server starting");
-    }
-
-    // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
-    // Event bus for receiving Registry Events)
-    public static class iTAB extends ItemGroup
-    {
-        public iTAB(String label) {
-            super(label);
-        }
-
-        @Override
-        public ItemStack makeIcon()
+        private HystelTab(int index, String label)
         {
-            return Items.DIAMOND.getDefaultInstance();
+            super(index,label);
+            this.setBackgroundImageName("hysteltab.png");
         }
 
         @Override
-        public void fillItemList(NonNullList<ItemStack> items) {
-            items.add(Items.GOLDEN_APPLE.getDefaultInstance());
-            super.fillItemList(items);
+        public ItemStack createIcon()
+        {
+            return new ItemStack(ItemInit.bluestone_ingot);
+        }
+
+        @Override
+        public boolean hasScrollbar() {
+            return true;
+        }
+
+        @Override
+        public boolean hasSearchBar() {
+            return true;
         }
     }
+
+
+
 }

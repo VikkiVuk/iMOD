@@ -9,12 +9,14 @@ import net.minecraft.block.material.Material;
 public class IllusionBlock extends Block {
 
     public IllusionBlock() {
-        super(Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2.1f));
+        super(Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2.1f));
         setRegistryName("custom_block");
     }
 
+
     @Override
-    public BlockRenderType getRenderShape(BlockState p_149645_1_) {
+    public BlockRenderType getRenderType(BlockState p_149645_1_) {
         return BlockRenderType.MODEL;
     }
+
 }

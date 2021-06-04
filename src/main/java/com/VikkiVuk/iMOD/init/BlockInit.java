@@ -32,8 +32,9 @@ public class BlockInit
     public static final BlockSH santa_hat = null;
     public static final Block customized_bobble = null;
     public static final IllusionBlock custom_block = null;
-    //public static final WifiRouter wifi_router = null;
+    public static final WifiRouter wifi_router = null;
     public static final BlockTV tv = null;
+
     //Ores
     public static final Block bluestone_ore = null;
     public static final Block ruby_ore = null;
@@ -44,18 +45,18 @@ public class BlockInit
     @SubscribeEvent
     public static void registerBlocks(final RegistryEvent.Register<Block> event)
     {
-        event.getRegistry().register(new Block(Block.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("bluestone_block"));
-        event.getRegistry().register(new Block(Block.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1.5F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("ruby_block"));
-        event.getRegistry().register(new Block(Block.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("copper_block"));
-        event.getRegistry().register(new Block(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("bluestone_ore"));
-        event.getRegistry().register(new Block(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("ruby_ore"));
-        event.getRegistry().register(new Block(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("copper_ore"));
-        event.getRegistry().register(new Block(Block.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("rainbow_ore"));
+        event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("bluestone_block"));
+        event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1.5F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("ruby_block"));
+        event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("copper_block"));
+        event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("bluestone_ore"));
+        event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("ruby_ore"));
+        event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("copper_ore"));
+        event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("rainbow_ore"));
         event.getRegistry().register(new TokenAtm());
         event.getRegistry().register(new Chairsy());
         event.getRegistry().register(new BlockResta());
         event.getRegistry().register(new BlockCGM());
-        event.getRegistry().register(new BlockHS());
+       // event.getRegistry().register(new BlockHS()); // Deprecated since the team is not called Hystel Studios anymore. And the mod is not called HystelMC
         event.getRegistry().register(new BlockBC());
         event.getRegistry().register(new BlockSH());
         event.getRegistry().register(new BlockCB());
@@ -63,21 +64,21 @@ public class BlockInit
         event.getRegistry().register(new IllusionBlock());
         event.getRegistry().register(new CoffaTable());
         event.getRegistry().register(new BlockTV());
-       // event.getRegistry().register(new WifiRouter());
+        event.getRegistry().register(new WifiRouter());
     }
 
     @SubscribeEvent
     public static void registerBlockItems(final RegistryEvent.Register<Item> event)
 
     {
-        Item.Properties properties = new Item.Properties().tab(iMOD.iTAB);
-        event.getRegistry().register(new BlockItem(bluestone_block, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("bluestone_block"));
-        event.getRegistry().register(new BlockItem(ruby_block, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("ruby_block"));
-        event.getRegistry().register(new BlockItem(copper_block, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("copper_block"));
-        event.getRegistry().register(new BlockItem(bluestone_ore, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("bluestone_ore"));
-        event.getRegistry().register(new BlockItem(ruby_ore, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("ruby_ore"));
-        event.getRegistry().register(new BlockItem(copper_ore, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("copper_ore"));
-        event.getRegistry().register(new BlockItem(rainbow_ore, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("rainbow_ore"));
+        Item.Properties properties = new Item.Properties().group(iMOD.HystelTab.instance);
+        event.getRegistry().register(new BlockItem(bluestone_block, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_block"));
+        event.getRegistry().register(new BlockItem(ruby_block, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_block"));
+        event.getRegistry().register(new BlockItem(copper_block, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_block"));
+        event.getRegistry().register(new BlockItem(bluestone_ore, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_ore"));
+        event.getRegistry().register(new BlockItem(ruby_ore, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_ore"));
+        event.getRegistry().register(new BlockItem(copper_ore, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_ore"));
+        event.getRegistry().register(new BlockItem(rainbow_ore, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_ore"));
         event.getRegistry().register(new BlockItem(token_atm, properties).setRegistryName("token_atm"));
         event.getRegistry().register(new BlockItem(chairsy, properties).setRegistryName("chairsy"));
         event.getRegistry().register(new BlockItem(custom_resta, properties).setRegistryName("custom_resta"));
@@ -90,7 +91,7 @@ public class BlockInit
         event.getRegistry().register(new BlockItem(custom_block, properties).setRegistryName("custom_block"));
         event.getRegistry().register(new BlockItem(coffee_table, properties).setRegistryName("coffee_table"));
         event.getRegistry().register(new BlockItem(tv, properties).setRegistryName("tv"));
-        //event.getRegistry().register(new BlockItem(wifi_router, properties).setRegistryName("wifi_router"));
+        event.getRegistry().register(new BlockItem(wifi_router, properties).setRegistryName("wifi_router"));
 
     }
 }

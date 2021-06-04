@@ -17,7 +17,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ObjectHolder;
 
 import java.util.function.Supplier;
-import java.util.stream.Stream;
 
 import static com.VikkiVuk.iMOD.iMOD.MOD_ID;
 
@@ -112,104 +111,104 @@ public class ItemInit
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event)
     {
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB)).setRegistryName("bluestone_ingot"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB)).setRegistryName("ruby"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB)).setRegistryName("copper_ingot"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB)).setRegistryName("rainbow_gem"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB)).setRegistryName("cracked_netherite_ingot"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB)).setRegistryName("firey_netherite_ingot"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(6).saturationMod(6.2F).meat().build())).setRegistryName("cheesseburger"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(3).saturationMod(6.2F).meat().build())).setRegistryName("bacon"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(4).saturationMod(6.2F).meat().build())).setRegistryName("beefburger"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(3).saturationMod(6.2F).meat().build())).setRegistryName("beefpatty"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(1).saturationMod(6.2F).build())).setRegistryName("butter"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(2).saturationMod(6.2F).build())).setRegistryName("cheesse"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(4).saturationMod(6.2F).build())).setRegistryName("cheesse_and_cracker"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(2).saturationMod(6.2F).build())).setRegistryName("cracker"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(2).saturationMod(6.2F).build())).setRegistryName("fries"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(5).saturationMod(6.2F).build())).setRegistryName("pizza"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(4).saturationMod(6.2F).build())).setRegistryName("grated_cheesse"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(3).saturationMod(6.2F).build())).setRegistryName("rice"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(4).saturationMod(6.2F).build())).setRegistryName("rice_bowl"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(3).saturationMod(6.2F).build())).setRegistryName("tomato"));
-        event.getRegistry().register(new Item(new Item.Properties().tab(iMOD.iTAB).food(new Food.Builder().nutrition(3).saturationMod(6.2F).build())).setRegistryName("sausage"));
-        event.getRegistry().register(new DinkyWinky(new Item.Properties().tab(iMOD.iTAB)).setRegistryName("dinky_winky"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_ingot"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_ingot"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_gem"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("cracked_netherite_ingot"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("firey_netherite_ingot"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(6).saturation(6.2F).meat().build())).setRegistryName("cheesseburger"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(3).saturation(6.2F).meat().build())).setRegistryName("bacon"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(4).saturation(6.2F).meat().build())).setRegistryName("beefburger"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(3).saturation(6.2F).meat().build())).setRegistryName("beefpatty"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(1).saturation(6.2F).build())).setRegistryName("butter"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(2).saturation(6.2F).build())).setRegistryName("cheesse"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(4).saturation(6.2F).build())).setRegistryName("cheesse_and_cracker"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(2).saturation(6.2F).build())).setRegistryName("cracker"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(2).saturation(6.2F).build())).setRegistryName("fries"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(5).saturation(6.2F).build())).setRegistryName("pizza"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(4).saturation(6.2F).build())).setRegistryName("grated_cheesse"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(3).saturation(6.2F).build())).setRegistryName("rice"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(4).saturation(6.2F).build())).setRegistryName("rice_bowl"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(3).saturation(6.2F).build())).setRegistryName("tomato"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(3).saturation(6.2F).build())).setRegistryName("sausage"));
+        event.getRegistry().register(new DinkyWinky(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("dinky_winky"));
 
 
         //Tools
         //Bluestone
-        event.getRegistry().register(new SwordItem(ModItemTier.BLUESTONE, 5, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("bluestone_sword"));
-        event.getRegistry().register(new PickaxeItem(ModItemTier.BLUESTONE, 5, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("bluestone_pickaxe"));
-        event.getRegistry().register(new AxeItem(ModItemTier.BLUESTONE, 5, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("bluestone_axe"));
-        event.getRegistry().register(new ShovelItem(ModItemTier.BLUESTONE, 5, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("bluestone_shovel"));
-        event.getRegistry().register(new HoeItem(ModItemTier.BLUESTONE, 5,4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("bluestone_hoe"));
+        event.getRegistry().register(new SwordItem(ModItemTier.BLUESTONE, 5, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_sword"));
+        event.getRegistry().register(new PickaxeItem(ModItemTier.BLUESTONE, 5, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_pickaxe"));
+        event.getRegistry().register(new AxeItem(ModItemTier.BLUESTONE, 5, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_axe"));
+        event.getRegistry().register(new ShovelItem(ModItemTier.BLUESTONE, 5, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_shovel"));
+        event.getRegistry().register(new HoeItem(ModItemTier.BLUESTONE, 5,4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_hoe"));
         //Ruby
-        event.getRegistry().register(new SwordItem(ModItemTier.RUBY, 4, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("ruby_sword"));
-        event.getRegistry().register(new PickaxeItem(ModItemTier.RUBY, 4, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("ruby_pickaxe"));
-        event.getRegistry().register(new AxeItem(ModItemTier.RUBY, 4, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("ruby_axe"));
-        event.getRegistry().register(new ShovelItem(ModItemTier.RUBY, 4, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("ruby_shovel"));
-        event.getRegistry().register(new HoeItem(ModItemTier.RUBY, 4, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("ruby_hoe"));
+        event.getRegistry().register(new SwordItem(ModItemTier.RUBY, 4, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_sword"));
+        event.getRegistry().register(new PickaxeItem(ModItemTier.RUBY, 4, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_pickaxe"));
+        event.getRegistry().register(new AxeItem(ModItemTier.RUBY, 4, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_axe"));
+        event.getRegistry().register(new ShovelItem(ModItemTier.RUBY, 4, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_shovel"));
+        event.getRegistry().register(new HoeItem(ModItemTier.RUBY, 4, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_hoe"));
         //Copper
-        event.getRegistry().register(new SwordItem(ModItemTier.COPPER, 3, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("copper_sword"));
-        event.getRegistry().register(new PickaxeItem(ModItemTier.COPPER, 3, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("copper_pickaxe"));
-        event.getRegistry().register(new AxeItem(ModItemTier.COPPER, 3, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("copper_axe"));
-        event.getRegistry().register(new ShovelItem(ModItemTier.COPPER, 3, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("copper_shovel"));
-        event.getRegistry().register(new HoeItem(ModItemTier.COPPER, 3, 4.2F,new Item.Properties().tab(iMOD.iTAB)).setRegistryName("copper_hoe"));
+        event.getRegistry().register(new SwordItem(ModItemTier.COPPER, 3, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_sword"));
+        event.getRegistry().register(new PickaxeItem(ModItemTier.COPPER, 3, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_pickaxe"));
+        event.getRegistry().register(new AxeItem(ModItemTier.COPPER, 3, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_axe"));
+        event.getRegistry().register(new ShovelItem(ModItemTier.COPPER, 3, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_shovel"));
+        event.getRegistry().register(new HoeItem(ModItemTier.COPPER, 3, 4.2F,new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_hoe"));
         //Rainbow
-        event.getRegistry().register(new SwordItem(ModItemTier.RAINBOW, 6, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("rainbow_sword"));
-        event.getRegistry().register(new PickaxeItem(ModItemTier.RAINBOW, 6, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("rainbow_pickaxe"));
-        event.getRegistry().register(new AxeItem(ModItemTier.RAINBOW, 6, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("rainbow_axe"));
-        event.getRegistry().register(new ShovelItem(ModItemTier.RAINBOW, 6, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("rainbow_shovel"));
-        event.getRegistry().register(new HoeItem(ModItemTier.RAINBOW, 6, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("rainbow_hoe"));
+        event.getRegistry().register(new SwordItem(ModItemTier.RAINBOW, 6, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_sword"));
+        event.getRegistry().register(new PickaxeItem(ModItemTier.RAINBOW, 6, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_pickaxe"));
+        event.getRegistry().register(new AxeItem(ModItemTier.RAINBOW, 6, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_axe"));
+        event.getRegistry().register(new ShovelItem(ModItemTier.RAINBOW, 6, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_shovel"));
+        event.getRegistry().register(new HoeItem(ModItemTier.RAINBOW, 6, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_hoe"));
         //Cracked Netherite
-        event.getRegistry().register(new SwordItem(ModItemTier.CRACKED_NETHERITE, 8, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("cracked_netherite_sword"));
-        event.getRegistry().register(new PickaxeItem(ModItemTier.CRACKED_NETHERITE, 8, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("cracked_netherite_pickaxe"));
-        event.getRegistry().register(new AxeItem(ModItemTier.CRACKED_NETHERITE, 8, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("cracked_netherite_axe"));
-        event.getRegistry().register(new ShovelItem(ModItemTier.CRACKED_NETHERITE, 8, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("cracked_netherite_shovel"));
-        event.getRegistry().register(new HoeItem(ModItemTier.CRACKED_NETHERITE, 8, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("cracked_netherite_hoe"));
+        event.getRegistry().register(new SwordItem(ModItemTier.CRACKED_NETHERITE, 8, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("cracked_netherite_sword"));
+        event.getRegistry().register(new PickaxeItem(ModItemTier.CRACKED_NETHERITE, 8, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("cracked_netherite_pickaxe"));
+        event.getRegistry().register(new AxeItem(ModItemTier.CRACKED_NETHERITE, 8, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("cracked_netherite_axe"));
+        event.getRegistry().register(new ShovelItem(ModItemTier.CRACKED_NETHERITE, 8, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("cracked_netherite_shovel"));
+        event.getRegistry().register(new HoeItem(ModItemTier.CRACKED_NETHERITE, 8, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("cracked_netherite_hoe"));
         //Firey Netherite
-        event.getRegistry().register(new SwordItem(ModItemTier.RAINBOW, 7, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("firey_netherite_sword"));
-        event.getRegistry().register(new PickaxeItem(ModItemTier.RAINBOW, 7, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("firey_netherite_pickaxe"));
-        event.getRegistry().register(new AxeItem(ModItemTier.RAINBOW, 7, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("firey_netherite_axe"));
-        event.getRegistry().register(new ShovelItem(ModItemTier.RAINBOW, 7, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("firey_netherite_shovel"));
-        event.getRegistry().register(new HoeItem(ModItemTier.RAINBOW, 7, 4.2F, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("firey_netherite_hoe"));
+        event.getRegistry().register(new SwordItem(ModItemTier.RAINBOW, 7, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("firey_netherite_sword"));
+        event.getRegistry().register(new PickaxeItem(ModItemTier.RAINBOW, 7, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("firey_netherite_pickaxe"));
+        event.getRegistry().register(new AxeItem(ModItemTier.RAINBOW, 7, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("firey_netherite_axe"));
+        event.getRegistry().register(new ShovelItem(ModItemTier.RAINBOW, 7, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("firey_netherite_shovel"));
+        event.getRegistry().register(new HoeItem(ModItemTier.RAINBOW, 7, 4.2F, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("firey_netherite_hoe"));
         event.getRegistry().registerAll
                 (
                         //Bluestone
-                        new ArmorItem(ModArmorTier.bluestone, EquipmentSlotType.HEAD, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("bluestone_helmet"),
-                        new ArmorItem(ModArmorTier.bluestone, EquipmentSlotType.CHEST, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("bluestone_chestplate"),
-                        new ArmorItem(ModArmorTier.bluestone, EquipmentSlotType.LEGS, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("bluestone_leggings"),
-                        new ArmorItem(ModArmorTier.bluestone, EquipmentSlotType.FEET, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("bluestone_boots"),
+                        new ArmorItem(ModArmorTier.bluestone, EquipmentSlotType.HEAD, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_helmet"),
+                        new ArmorItem(ModArmorTier.bluestone, EquipmentSlotType.CHEST, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_chestplate"),
+                        new ArmorItem(ModArmorTier.bluestone, EquipmentSlotType.LEGS, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_leggings"),
+                        new ArmorItem(ModArmorTier.bluestone, EquipmentSlotType.FEET, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_boots"),
 
                         //Ruby
-                        new ArmorItem(ModArmorTier.ruby, EquipmentSlotType.HEAD, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("ruby_helmet"),
-                        new ArmorItem(ModArmorTier.ruby, EquipmentSlotType.CHEST, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("ruby_chestplate"),
-                        new ArmorItem(ModArmorTier.ruby, EquipmentSlotType.LEGS, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("ruby_leggings"),
-                        new ArmorItem(ModArmorTier.ruby, EquipmentSlotType.FEET, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("ruby_boots"),
+                        new ArmorItem(ModArmorTier.ruby, EquipmentSlotType.HEAD, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_helmet"),
+                        new ArmorItem(ModArmorTier.ruby, EquipmentSlotType.CHEST, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_chestplate"),
+                        new ArmorItem(ModArmorTier.ruby, EquipmentSlotType.LEGS, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_leggings"),
+                        new ArmorItem(ModArmorTier.ruby, EquipmentSlotType.FEET, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_boots"),
 
                         //Copper
-                        new ArmorItem(ModArmorTier.copper, EquipmentSlotType.HEAD, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("copper_helmet"),
-                        new ArmorItem(ModArmorTier.copper, EquipmentSlotType.CHEST, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("copper_chestplate"),
-                        new ArmorItem(ModArmorTier.copper, EquipmentSlotType.LEGS, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("copper_leggings"),
-                        new ArmorItem(ModArmorTier.copper, EquipmentSlotType.FEET, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("copper_boots"),
+                        new ArmorItem(ModArmorTier.copper, EquipmentSlotType.HEAD, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_helmet"),
+                        new ArmorItem(ModArmorTier.copper, EquipmentSlotType.CHEST, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_chestplate"),
+                        new ArmorItem(ModArmorTier.copper, EquipmentSlotType.LEGS, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_leggings"),
+                        new ArmorItem(ModArmorTier.copper, EquipmentSlotType.FEET, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_boots"),
 
                         //Rainbow
-                        new ArmorItem(ModArmorTier.rainbow, EquipmentSlotType.HEAD, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("rainbow_helmet"),
-                        new ArmorItem(ModArmorTier.rainbow, EquipmentSlotType.CHEST, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("rainbow_chestplate"),
-                        new ArmorItem(ModArmorTier.rainbow, EquipmentSlotType.LEGS, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("rainbow_leggings"),
-                        new ArmorItem(ModArmorTier.rainbow, EquipmentSlotType.FEET, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("rainbow_boots"),
+                        new ArmorItem(ModArmorTier.rainbow, EquipmentSlotType.HEAD, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_helmet"),
+                        new ArmorItem(ModArmorTier.rainbow, EquipmentSlotType.CHEST, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_chestplate"),
+                        new ArmorItem(ModArmorTier.rainbow, EquipmentSlotType.LEGS, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_leggings"),
+                        new ArmorItem(ModArmorTier.rainbow, EquipmentSlotType.FEET, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_boots"),
 
                         //Cracked Netherite
-                        new ArmorItem(ModArmorTier.cracked_netherite, EquipmentSlotType.HEAD, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("cracked_netherite_helmet"),
-                        new ArmorItem(ModArmorTier.cracked_netherite, EquipmentSlotType.CHEST, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("cracked_netherite_chestplate"),
-                        new ArmorItem(ModArmorTier.cracked_netherite, EquipmentSlotType.LEGS, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("cracked_netherite_leggings"),
-                        new ArmorItem(ModArmorTier.cracked_netherite, EquipmentSlotType.FEET, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("cracked_netherite_boots"),
+                        new ArmorItem(ModArmorTier.cracked_netherite, EquipmentSlotType.HEAD, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("cracked_netherite_helmet"),
+                        new ArmorItem(ModArmorTier.cracked_netherite, EquipmentSlotType.CHEST, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("cracked_netherite_chestplate"),
+                        new ArmorItem(ModArmorTier.cracked_netherite, EquipmentSlotType.LEGS, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("cracked_netherite_leggings"),
+                        new ArmorItem(ModArmorTier.cracked_netherite, EquipmentSlotType.FEET, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("cracked_netherite_boots"),
 
                         //Firey Netherite
-                        new ArmorItem(ModArmorTier.firey_netherite, EquipmentSlotType.HEAD, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("firey_netherite_helmet"),
-                        new ArmorItem(ModArmorTier.firey_netherite, EquipmentSlotType.CHEST, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("firey_netherite_chestplate"),
-                        new ArmorItem(ModArmorTier.firey_netherite, EquipmentSlotType.LEGS, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("firey_netherite_leggings"),
-                        new ArmorItem(ModArmorTier.firey_netherite, EquipmentSlotType.FEET, new Item.Properties().tab(iMOD.iTAB)).setRegistryName("firey_netherite_boots")
+                        new ArmorItem(ModArmorTier.firey_netherite, EquipmentSlotType.HEAD, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("firey_netherite_helmet"),
+                        new ArmorItem(ModArmorTier.firey_netherite, EquipmentSlotType.CHEST, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("firey_netherite_chestplate"),
+                        new ArmorItem(ModArmorTier.firey_netherite, EquipmentSlotType.LEGS, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("firey_netherite_leggings"),
+                        new ArmorItem(ModArmorTier.firey_netherite, EquipmentSlotType.FEET, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("firey_netherite_boots")
 
                 );
 
@@ -218,12 +217,12 @@ public class ItemInit
 
     public enum ModItemTier implements IItemTier
     {
-        BLUESTONE(6, 2600, 10.9F, 9.0F, 30, () -> { return Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) ItemInit.bluestone_ingot); }),
-        RUBY(5, 2000, 9.5F, 8.0F, 30, () -> { return Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) ItemInit.bluestone_ingot); }),
-        CRACKED_NETHERITE(9, 3000, 16.9F, 11.2F, 30, () -> { return Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) ItemInit.cracked_netherite_ingot); }),
-        FIREY_NETHERITE(8, 2900, 16F, 10.9F, 30, () -> { return Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) ItemInit.firey_netherite_ingot); }),
-        COPPER(4, 1600, 7.9F, 7.0F, 30, () -> { return Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) ItemInit.bluestone_ingot); }),
-        RAINBOW(7, 2600, 15.9F, 10.0F, 30, () -> { return Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) ItemInit.bluestone_ingot); });
+        BLUESTONE(6, 2600, 10.9F, 9.0F, 30, () -> { return Ingredient.fromItems(ItemInit.bluestone_ingot); }),
+        RUBY(5, 2000, 9.5F, 8.0F, 30, () -> { return Ingredient.fromItems(ItemInit.bluestone_ingot); }),
+        CRACKED_NETHERITE(9, 3000, 16.9F, 11.2F, 30, () -> { return Ingredient.fromItems(ItemInit.cracked_netherite_ingot); }),
+        FIREY_NETHERITE(8, 2900, 16F, 10.9F, 30, () -> { return Ingredient.fromItems(ItemInit.firey_netherite_ingot); }),
+        COPPER(4, 1600, 7.9F, 7.0F, 30, () -> { return Ingredient.fromItems(ItemInit.bluestone_ingot); }),
+        RAINBOW(7, 2600, 15.9F, 10.0F, 30, () -> { return Ingredient.fromItems(ItemInit.bluestone_ingot); });
 
         private final int harvestLevel;
         private final int maxUses;
@@ -243,46 +242,47 @@ public class ItemInit
            this.harvestLevel = harvestLevel;
        }
 
+
         @Override
-        public int getUses() {
-            return 0;
+        public int getMaxUses() {
+            return this.maxUses;
         }
 
         @Override
-        public float getSpeed() {
-            return 0;
+        public float getEfficiency() {
+            return this.efficiency;
         }
 
         @Override
-        public float getAttackDamageBonus() {
-            return 0;
+        public float getAttackDamage() {
+            return this.attackDamage;
         }
 
         @Override
-        public int getLevel() {
-            return 0;
+        public int getHarvestLevel() {
+            return this.harvestLevel;
         }
 
         @Override
-        public int getEnchantmentValue() {
-            return 0;
+        public int getEnchantability() {
+            return this.enchantability;
         }
 
         @Override
-        public Ingredient getRepairIngredient() {
-            return null;
+        public Ingredient getRepairMaterial() {
+            return this.repairMaterial.getValue();
         }
     }
 
     public enum ModArmorTier implements IArmorMaterial
     {
 
-        bluestone(MOD_ID + ":bluestone", 579, new int[]{7, 6, 8, 5}, 25, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, () -> {return Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) ItemInit.bluestone_ingot); }),
-        ruby(MOD_ID + ":ruby", 500, new int[]{6, 5, 7, 4}, 12, SoundEvents.ARMOR_EQUIP_IRON, 2.0F, () -> {return Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) ItemInit.ruby); }),
-        cracked_netherite(MOD_ID + ":cracked_netherite", 596, new int[]{11, 11, 11, 11}, 20, SoundEvents.ARMOR_EQUIP_NETHERITE, 2.0F, () -> {return Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) Items.NETHERITE_INGOT); }),
-        firey_netherite(MOD_ID + ":firey_netherite", 595, new int[]{10, 10, 10, 10}, 20, SoundEvents.ARMOR_EQUIP_NETHERITE, 2.0F, () -> {return Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) Items.NETHERITE_INGOT); }),
-        copper(MOD_ID + ":copper", 472, new int[]{4, 5, 6, 3}, 11, SoundEvents.ARMOR_EQUIP_IRON, 2.0F, () -> {return Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) ItemInit.copper_ingot); }),
-        rainbow(MOD_ID + ":rainbow", 589, new int[]{9, 9, 9, 9}, 11, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0F, () -> {return Ingredient.fromValues((Stream<? extends Ingredient.IItemList>) ItemInit.rainbow_gem); });
+        bluestone(MOD_ID + ":bluestone", 579, new int[]{7, 6, 8, 5}, 25, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {return Ingredient.fromItems(ItemInit.bluestone_ingot); }),
+        ruby(MOD_ID + ":ruby", 500, new int[]{6, 5, 7, 4}, 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.0F, () -> {return Ingredient.fromItems(ItemInit.ruby); }),
+        cracked_netherite(MOD_ID + ":cracked_netherite", 596, new int[]{11, 11, 11, 11}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.0F, () -> {return Ingredient.fromItems(Items.NETHERITE_INGOT); }),
+        firey_netherite(MOD_ID + ":firey_netherite", 595, new int[]{10, 10, 10, 10}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.0F, () -> {return Ingredient.fromItems(Items.NETHERITE_INGOT); }),
+        copper(MOD_ID + ":copper", 472, new int[]{4, 5, 6, 3}, 11, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.0F, () -> {return Ingredient.fromItems(ItemInit.copper_ingot); }),
+        rainbow(MOD_ID + ":rainbow", 589, new int[]{9, 9, 9, 9}, 11, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {return Ingredient.fromItems(ItemInit.rainbow_gem); });
 
         private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
         private final String name;
@@ -304,48 +304,23 @@ public class ItemInit
         }
 
         public int getDurability(EquipmentSlotType slotIn) {
-            return 0;
+            return MAX_DAMAGE_ARRAY[slotIn.getIndex()] * this.maxDamageFactor;
         }
 
         public int getDamageReductionAmount(EquipmentSlotType slotIn) {
-            return 0;
+            return this.damageReductionAmountArray[slotIn.getIndex()];
         }
 
         public int getEnchantability() {
-            return 0;
+            return this.enchantability;
         }
 
         public SoundEvent getSoundEvent() {
-            return null;
+            return this.soundEvent;
         }
 
         public Ingredient getRepairMaterial() {
-            return null;
-        }
-
-        @Override
-        public int getDurabilityForSlot(EquipmentSlotType p_200896_1_) {
-            return 0;
-        }
-
-        @Override
-        public int getDefenseForSlot(EquipmentSlotType p_200902_1_) {
-            return 0;
-        }
-
-        @Override
-        public int getEnchantmentValue() {
-            return 0;
-        }
-
-        @Override
-        public SoundEvent getEquipSound() {
-            return null;
-        }
-
-        @Override
-        public Ingredient getRepairIngredient() {
-            return null;
+            return this.repairMaterial.getValue();
         }
 
         @OnlyIn(Dist.CLIENT)
