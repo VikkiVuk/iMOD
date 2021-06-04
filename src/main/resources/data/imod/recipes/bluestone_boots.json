@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "I I",
+    "I I"
+  ],
+
+  "key":
+  {
+    "I": { "item": "imod:bluestone_ingot" }
+  },
+
+  "result": { "item": "imod:bluestone_boots" }
+}
