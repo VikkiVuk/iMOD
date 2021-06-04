@@ -25,28 +25,23 @@ public class WifiRouter extends Block {
 
     public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 
-
-
-    /* Methods */
     private static final VoxelShape SHAPE_N = Stream.of(
-            Block.makeCuboidShape(0.188, 0, 0.312, 0.812, 0.062, 0.625), // BOTTOM
-            Block.makeCuboidShape(0.062, 0.062, 0.375, 0.938, 0.75, 0.562), // BASE
-            Block.makeCuboidShape(0.812, 0.625, 0.312, 0.875, 0.688, 0.375), // POWER_LED
-            Block.makeCuboidShape(0.75, 0.625, 0.312, 0.812, 0.688, 0.375), // DSL_LED
-            Block.makeCuboidShape(0.688, 0.625, 0.312, 0.75, 0.688, 0.375), // INTERNET_LED
-            Block.makeCuboidShape(0.562, 0.625, 0.312, 0.625, 0.688, 0.375), // LAN1_LED
-            Block.makeCuboidShape(0.312, 0.625, 0.312, 0.375, 0.688, 0.375), // WLAN_LED
-            Block.makeCuboidShape(0, 0.25, 0.438, 0.062, 0.312, 0.5), // WPS_BUTTON
-            Block.makeCuboidShape(0, 0.375, 0.438, 0.062, 0.438, 0.5), // WLAN_BUTTON
-            Block.makeCuboidShape(0.125, 0.125, 0.562, 0.188, 0.188, 0.625), // POWERCABLE_HOLE
-            Block.makeCuboidShape(0.188, 0.125, 0.562, 0.25, 0.188, 0.625), // LAN1
-            Block.makeCuboidShape(0.25, 0.125, 0.562, 0.312, 0.188, 0.625), // LAN2
-            Block.makeCuboidShape(0.312, 0.125, 0.562, 0.375, 0.188, 0.625), // LAN3
-            Block.makeCuboidShape(0.375, 0.125, 0.562, 0.438, 0.188, 0.625), // LAN4
-            Block.makeCuboidShape(0.5, 0.125, 0.562, 0.562, 0.188, 0.625) // DSL_HOLE
-    ).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
-
-
+            Block.makeCuboidShape(8, 2, 9, 9, 3, 10),
+            Block.makeCuboidShape(3, 0, 5, 13, 1, 10),
+            Block.makeCuboidShape(1, 1, 6, 15, 12, 9),
+            Block.makeCuboidShape(13, 10, 5, 14, 11, 6),
+            Block.makeCuboidShape(12, 10, 5, 13, 11, 6),
+            Block.makeCuboidShape(11, 10, 5, 12, 11, 6),
+            Block.makeCuboidShape(9, 10, 5, 10, 11, 6),
+            Block.makeCuboidShape(5, 10, 5, 6, 11, 6),
+            Block.makeCuboidShape(0, 4, 7, 1, 5, 8),
+            Block.makeCuboidShape(0, 6, 7, 1, 7, 8),
+            Block.makeCuboidShape(2, 2, 9, 3, 3, 10),
+            Block.makeCuboidShape(3, 2, 9, 4, 3, 10),
+            Block.makeCuboidShape(4, 2, 9, 5, 3, 10),
+            Block.makeCuboidShape(5, 2, 9, 6, 3, 10),
+            Block.makeCuboidShape(6, 2, 9, 7, 3, 10)
+    ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR)).get();
 
 
     public WifiRouter() {
@@ -58,6 +53,7 @@ public class WifiRouter extends Block {
 
         );
         setRegistryName("wifi_router");
+        this.setDefaultState(this.getStateContainer().getBaseState().with(FACING, Direction.NORTH));
 
     }
 
@@ -79,6 +75,7 @@ public class WifiRouter extends Block {
         }
     }
 
+
     @Override
     public BlockState getStateForPlacement(BlockItemUseContext context) {
         return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
@@ -97,4 +94,5 @@ public class WifiRouter extends Block {
     @Override
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
         builder.add(FACING);
-    } }
+    }
+}

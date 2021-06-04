@@ -1,9 +1,9 @@
 {
   "variants":
   {
-    "facing=west": { "model": "imod:block/tv" },
-    "facing=east": { "model": "imod:block/tv", "y": 180 },
-    "facing=north": { "model": "imod:block/tv", "y": 270 },
-    "facing=south": { "model": "imod:block/tv", "y": 90}
+    "facing=north": { "model": "imod:block/tv" },
+    "facing=south": { "model": "imod:block/tv", "y": 180 },
+    "facing=east": { "model": "imod:block/tv", "y": 270 },
+    "facing=west": { "model": "imod:block/tv", "y": 90}
   }
 }

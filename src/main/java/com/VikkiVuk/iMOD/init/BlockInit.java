@@ -28,7 +28,7 @@ public class BlockInit
     public static final BlockSpeaker speaker = null;
     public static final BlockResta custom_resta = null;
     public static final CoffaTable coffee_table = null;
-    public static final BlockHS hystel_something = null;
+    //public static final BlockHS hystel_something = null;
     public static final BlockSH santa_hat = null;
     public static final Block customized_bobble = null;
     public static final IllusionBlock custom_block = null;
@@ -83,7 +83,7 @@ public class BlockInit
         event.getRegistry().register(new BlockItem(chairsy, properties).setRegistryName("chairsy"));
         event.getRegistry().register(new BlockItem(custom_resta, properties).setRegistryName("custom_resta"));
         event.getRegistry().register(new BlockItem(custom_glassy_mobble, properties).setRegistryName("custom_glassy_mobble"));
-        event.getRegistry().register(new BlockItem(hystel_something, properties).setRegistryName("hystel_something"));
+       // event.getRegistry().register(new BlockItem(hystel_something, properties).setRegistryName("hystel_something"));
         event.getRegistry().register(new BlockItem(better_cauldron, properties).setRegistryName("better_cauldron"));
         event.getRegistry().register(new BlockItem(santa_hat, properties).setRegistryName("santa_hat"));
         event.getRegistry().register(new BlockItem(customized_bobble, properties).setRegistryName("customized_bobble"));
