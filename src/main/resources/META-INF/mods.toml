@@ -32,3 +32,10 @@ mandatory=true
 versionRange="[1.16.5]"
 ordering="NONE"
 side="BOTH"
+
+[[dependencies.imod]]
+modId="iCore"
+mandatory=true
+versionRange="[1.16.5]"
+ordering="NONE"
+side="BOTH"

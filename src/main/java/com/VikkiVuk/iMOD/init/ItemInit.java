@@ -48,6 +48,12 @@ public class ItemInit
     public static final Item copper_stick = null;
     public static final Item rainbow_stick = null;
 
+    //Tokens for the Token ATM
+    public static final Item bluestone_token = null;
+    public static final Item ruby_token = null;
+    public static final Item copper_token = null;
+    public static final Item rainbow_token = null;
+
     //Food
     public static final Item cheesseburger = null;
     public static final Item bacon = null;
@@ -167,6 +173,14 @@ public class ItemInit
         event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("diamond_ingot"));
         event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("flour_bag"));
         event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("wheat_flour"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_token"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_token"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_token"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_token"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_stick"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_stick"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_stick"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_stick"));
 
         //Tools
         //Bluestone

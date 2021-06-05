@@ -44,6 +44,16 @@
   "block.imod.white_slime": "White Slime",
   "block.imod.yellow_slime": "Yellow Slime",
 
+  "item.imod.bluestone_stick": "Bluestone Stick",
+  "item.imod.ruby_stick": "Ruby Stick",
+  "item.imod.copper_stick": "Copper Stick",
+  "item.imod.rainbow_stick": "Rainbow Stick",
+
+  "block.imod.bluestone_planks": "Bluestone Planks",
+  "block.imod.ruby_planks": "Ruby Planks",
+  "block.imod.copper_planks": "Copper Planks",
+  "block.imod.rainbow_planks": "Rainbow Planks",
+
   "item.imod.cheesseburger": "Cheeseburger",
   "item.imod.bacon": "Bacon",
   "item.imod.beefburger": "Beef Burger",
@@ -139,10 +149,10 @@
   "item.imod.diamond_ingot": "Diamond Ingot",
 
   "item.imod.iron_token": "Iron Token",
-  "item.imod.gold_token": "Gold Token",
+  "item.imod.copper_token": "Gold Token",
   "item.imod.ruby_token": "Redstone Token",
   "item.imod.bluestone_token": "Diamond Token",
   "item.imod.rainbow_token": "Mystery Token",
 
-  "itemGroup.hysteltab": "iTAB"
+  "itemGroup.hysteltab": "iMOD"
 }

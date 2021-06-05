@@ -52,6 +52,11 @@ public class BlockInit
     public static final SlimeBlock white_slime = null;
     public static final SlimeBlock yellow_slime = null;
 
+    //Planks
+    public static final Block bluestone_planks = null;
+    public static final Block ruby_planks = null;
+    public static final Block copper_planks = null;
+
     //Ores
     public static final Block bluestone_ore = null;
     public static final Block ruby_ore = null;
@@ -82,6 +87,9 @@ public class BlockInit
         event.getRegistry().register(new CoffaTable());
         event.getRegistry().register(new BlockTV());
         event.getRegistry().register(new WifiRouter());
+        event.getRegistry().register(new Block(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.AXE).harvestLevel(2)).setRegistryName("bluestone_planks"));
+        event.getRegistry().register(new Block(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.AXE).harvestLevel(2)).setRegistryName("ruby_planks"));
+        event.getRegistry().register(new Block(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.AXE).harvestLevel(2)).setRegistryName("copper_planks"));
 
         // Slime blocks use one class, the reason is because they only change colors nothing else.
         event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("blue_slime"));
@@ -140,5 +148,9 @@ public class BlockInit
         event.getRegistry().register(new BlockItem(purple_slime, properties).setRegistryName("purple_slime"));
         event.getRegistry().register(new BlockItem(white_slime, properties).setRegistryName("white_slime"));
         event.getRegistry().register(new BlockItem(yellow_slime, properties).setRegistryName("yellow_slime"));
+        //Continue without slimes
+        event.getRegistry().register(new BlockItem(bluestone_planks, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_planks"));
+        event.getRegistry().register(new BlockItem(ruby_planks, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_planks"));
+        event.getRegistry().register(new BlockItem(copper_planks, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_planks"));
     }
 }
