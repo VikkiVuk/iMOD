@@ -22,9 +22,6 @@ import net.minecraftforge.common.ToolType;
 import java.util.stream.Stream;
 
 public class WifiRouter extends Block {
-
-    public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
-
     private static final VoxelShape SHAPE_N = Stream.of(
             Block.makeCuboidShape(8, 2, 9, 9, 3, 10),
             Block.makeCuboidShape(3, 0, 5, 13, 1, 10),
@@ -53,27 +50,10 @@ public class WifiRouter extends Block {
 
         );
         setRegistryName("wifi_router");
-        this.setDefaultState(this.getStateContainer().getBaseState().with(FACING, Direction.NORTH));
-
     }
 
     @Override
-    public BlockState getStateForPlacement(BlockItemUseContext context) {
-        return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
-    }
-
-    @Override
-    public BlockState rotate(BlockState state, Rotation rot) {
-        return state.with(FACING, rot.rotate(state.get(FACING)));
-    }
-
-    @Override
-    public BlockState mirror(BlockState state, Mirror mirrorIn) {
-        return state.rotate(mirrorIn.toRotation(state.get(FACING)));
-    }
-
-    @Override
-    protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
+    public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
+        return SHAPE_N;
     }
 }

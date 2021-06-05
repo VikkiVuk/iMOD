@@ -1,18 +1,14 @@
 package com.VikkiVuk.iMOD;
 
 
-import com.VikkiVuk.iMOD.init.ItemInit;
+import com.VikkiVuk.iMOD.world.OreGeneration;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
-import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -28,11 +24,12 @@ public class iMOD
     public static iMOD instance;
 
     public iMOD() {
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         instance = this;
 
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGeneration::generateOres);
     }
-
 
     public static class HystelTab extends ItemGroup
     {
@@ -47,7 +44,7 @@ public class iMOD
         @Override
         public ItemStack createIcon()
         {
-            return new ItemStack(ItemInit.bluestone_ingot);
+            return new ItemStack(Blocks.SLIME_BLOCK);
         }
 
         @Override
@@ -60,7 +57,4 @@ public class iMOD
             return true;
         }
     }
-
-
-
 }

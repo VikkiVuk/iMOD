@@ -3,6 +3,8 @@ package com.VikkiVuk.iMOD.init;
 import com.VikkiVuk.iMOD.iMOD;
 import com.VikkiVuk.iMOD.objects.items.DinkyWinky;
 import com.VikkiVuk.iMOD.objects.items.compressed_iron;
+import com.VikkiVuk.iMOD.objects.items.dollar;
+import com.VikkiVuk.iMOD.objects.items.microphone;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.Ingredient;
@@ -26,13 +28,26 @@ import static com.VikkiVuk.iMOD.iMOD.MOD_ID;
 @ObjectHolder(MOD_ID)
 public class ItemInit
 {
-
+    // Ingots and gems
     public static final Item bluestone_ingot = null;
     public static final Item ruby = null;
     public static final Item copper_ingot = null;
     public static final Item rainbow_gem = null;
+
     //Miscellaneous
     public static final Item dinky_winky = null;
+    public static final Item microphone = null;
+    public static final Item dollar = null;
+    public static final Item diamond_ingot = null;
+    public static final Item flour_bag = null;
+    public static final Item wheat_flour = null;
+
+    //Sticks
+    public static final Item bluestone_stick = null;
+    public static final Item ruby_stick = null;
+    public static final Item copper_stick = null;
+    public static final Item rainbow_stick = null;
+
     //Food
     public static final Item cheesseburger = null;
     public static final Item bacon = null;
@@ -57,18 +72,21 @@ public class ItemInit
     public static final Item bluestone_axe = null;
     public static final Item bluestone_shovel = null;
     public static final Item bluestone_hoe = null;
+
     //Ruby
     public static final Item ruby_sword = null;
     public static final Item ruby_pickaxe = null;
     public static final Item ruby_axe = null;
     public static final Item ruby_shovel = null;
     public static final Item ruby_hoe = null;
+
     //Copper
     public static final Item copper_sword = null;
     public static final Item copper_pickaxe = null;
     public static final Item copper_axe = null;
     public static final Item copper_shovel = null;
     public static final Item copper_hoe = null;
+
     //Rainbow
     public static final Item rainbow_sword = null;
     public static final Item rainbow_pickaxe = null;
@@ -82,33 +100,39 @@ public class ItemInit
     public static final Item bluestone_chestplate = null;
     public static final Item bluestone_leggings = null;
     public static final Item bluestone_boots = null;
+
     //Ruby
     public static final Item ruby_helmet = null;
     public static final Item ruby_chestplate = null;
     public static final Item ruby_leggings = null;
     public static final Item ruby_boots = null;
+
     //Copper
     public static final Item copper_helmet = null;
     public static final Item copper_chestplate = null;
     public static final Item copper_leggings = null;
     public static final Item copper_boots = null;
+
     //Rainbow
     public static final Item rainbow_helmet = null;
     public static final Item rainbow_chestplate = null;
     public static final Item rainbow_leggings = null;
     public static final Item rainbow_boots = null;
+
     //Cracked Netherite
     public static final Item cracked_netherite_helmet = null;
     public static final Item cracked_netherite_chestplate = null;
     public static final Item cracked_netherite_leggings = null;
     public static final Item cracked_netherite_boots = null;
     public static final Item cracked_netherite_ingot = null;
+
     //Firey Netherite
     public static final Item firey_netherite_helmet = null;
     public static final Item firey_netherite_chestplate = null;
     public static final Item firey_netherite_leggings = null;
     public static final Item firey_netherite_boots = null;
     public static final Item firey_netherite_ingot = null;
+
     //Compressed Iron
     public static final Item compressed_iron = null;
 
@@ -138,6 +162,11 @@ public class ItemInit
         event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(3).saturation(6.2F).build())).setRegistryName("sausage"));
         event.getRegistry().register(new DinkyWinky(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("dinky_winky"));
         event.getRegistry().register(new compressed_iron(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("compressed_iron"));
+        event.getRegistry().register(new dollar(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("dollar"));
+        event.getRegistry().register(new microphone(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("microphone"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("diamond_ingot"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("flour_bag"));
+        event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("wheat_flour"));
 
         //Tools
         //Bluestone

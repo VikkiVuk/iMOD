@@ -5,7 +5,8 @@
         "lime_concrete": "minecraft:block/lime_concrete",
         "gray_concrete": "minecraft:block/gray_concrete",
         "black_concrete": "minecraft:block/black_concrete",
-        "white_concrete": "minecraft:block/white_concrete"
+        "white_concrete": "minecraft:block/white_concrete",
+        "particle": "block/white_concrete"
     },
     "display": {
         "gui": {

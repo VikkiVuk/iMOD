@@ -5,9 +5,9 @@ issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/imod/issues"
 
 [[mods]]
 modId="imod"
-version="1.4.0"
+version="1.4.1"
 displayName="iMOD"
-updateJSONURL="https://gist.githubusercontent.com/VikkiVuk/91b9c1960ec92b4e7ead408cc6582556/raw/87b049bc97d639c6dab5c6ce69a9e429dd558c41/imod_updates.json"
+updateJSONURL="https://gist.githubusercontent.com/VikkiVuk/91b9c1960ec92b4e7ead408cc6582556/raw"
 displayURL="https://www.youtube.com/VikkiVuk"
 logoFile="logo.png"
 credits="All credits for this mod go to me"
