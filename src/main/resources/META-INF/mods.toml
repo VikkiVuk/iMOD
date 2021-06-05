@@ -34,7 +34,7 @@ ordering="NONE"
 side="BOTH"
 
 [[dependencies.imod]]
-modId="iCore"
+modId="icore"
 mandatory=true
 versionRange="[1.16.5]"
 ordering="NONE"
