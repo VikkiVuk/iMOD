@@ -2,9 +2,11 @@ package com.VikkiVuk.iMOD.init;
 
 import com.VikkiVuk.iMOD.iMOD;
 import com.VikkiVuk.iMOD.objects.items.DinkyWinky;
+import com.VikkiVuk.iMOD.objects.items.compressed_iron;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.nbt.CompressedStreamTools;
 import net.minecraft.util.LazyValue;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
@@ -107,6 +109,8 @@ public class ItemInit
     public static final Item firey_netherite_leggings = null;
     public static final Item firey_netherite_boots = null;
     public static final Item firey_netherite_ingot = null;
+    //Compressed Iron
+    public static final Item compressed_iron = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event)
@@ -133,7 +137,7 @@ public class ItemInit
         event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(3).saturation(6.2F).build())).setRegistryName("tomato"));
         event.getRegistry().register(new Item(new Item.Properties().group(iMOD.HystelTab.instance).food(new Food.Builder().hunger(3).saturation(6.2F).build())).setRegistryName("sausage"));
         event.getRegistry().register(new DinkyWinky(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("dinky_winky"));
-
+        event.getRegistry().register(new compressed_iron(new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("compressed_iron"));
 
         //Tools
         //Bluestone

@@ -58,25 +58,6 @@ public class WifiRouter extends Block {
     }
 
     @Override
-    public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
-        switch(state.get(FACING))
-        {
-            case NORTH:
-                return SHAPE_N;
-            case SOUTH:
-                return SHAPE_N;
-            case EAST:
-                return SHAPE_N;
-            case WEST:
-                return SHAPE_N;
-            default:
-                return SHAPE_N;
-
-        }
-    }
-
-
-    @Override
     public BlockState getStateForPlacement(BlockItemUseContext context) {
         return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
     }
