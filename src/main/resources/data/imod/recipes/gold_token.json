@@ -9,9 +9,9 @@
 
   "key":
   {
-    "I": { "item": "imod:iron_token" },
+    "I": { "item": "imod:ruby_ingot" },
     "A": { "item": "minecraft:gold_ingot" }
   },
 
-  "result": { "item": "imod:gold_token" }
+  "result": { "item": "imod:copper_token" }
 }

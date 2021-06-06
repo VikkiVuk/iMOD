@@ -3,15 +3,14 @@
 
   "pattern":
   [
-    "I S",
+    " S ",
     " B ",
     "K L"
   ],
 
   "key":
   {
-    "I": { "item": "imod:iron_token" },
-    "S": { "item": "imod:gold_token" },
+    "S": { "item": "imod:copper_token" },
     "B": { "item": "minecraft:redstone_torch" },
     "K": { "item": "imod:ruby_token" },
     "L": { "item": "imod:bluestone_token" }

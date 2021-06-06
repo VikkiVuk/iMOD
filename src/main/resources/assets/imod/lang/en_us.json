@@ -158,5 +158,8 @@
 
   "item.imod.chocolate_milk_bucket": "Chocolate Milk Bucket",
 
+  "item.imod.disc_promises": "Promises Disc",
+  "item.imod.disc_promises.desc": "The promises, from the youtube library.",
+
   "itemGroup.hysteltab": "iMOD"
 }

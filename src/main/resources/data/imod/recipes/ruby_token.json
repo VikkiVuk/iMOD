@@ -9,7 +9,7 @@
 
   "key":
   {
-    "I": { "item": "imod:gold_token" },
+    "I": { "item": "imod:copper_token" },
     "A": { "item": "minecraft:redstone" }
   },
 
