@@ -8,7 +8,7 @@ public class BlockCB extends Block {
 
     public BlockCB() {
         super(Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(2.1f));
-        setRegistryName("customized_bobble");
+        //setRegistryName("customized_bobble");
     }
 
 

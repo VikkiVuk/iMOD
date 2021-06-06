@@ -8,7 +8,7 @@ public class BlockBluestone extends Block {
 
 	public BlockBluestone() {
 		super(Properties.create(Material.IRON).hardnessAndResistance(5.3f, 30f).sound(SoundType.METAL));
-		 setRegistryName("bluestone_block");
+		//setRegistryName("bluestone_block");
 	}
 
 }

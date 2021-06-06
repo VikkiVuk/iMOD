@@ -80,7 +80,7 @@ public class Chairsy extends Block
 
 	  public Chairsy() {
 	        super(Properties.create(Material.WOOL).sound(SoundType.CLOTH).hardnessAndResistance(2.0f));
-	        setRegistryName("chairsy");
+		  // setRegistryName("chairsy");
 		  this.setDefaultState(this.getStateContainer().getBaseState().with(FACING, Direction.NORTH));
 	    }
 

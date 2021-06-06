@@ -114,7 +114,7 @@ public class TokenAtm extends Block {
                 .harvestTool(ToolType.PICKAXE)
 
         );
-        setRegistryName("token_atm");
+        // setRegistryName("token_atm");
 
         this.setDefaultState(this.getStateContainer().getBaseState().with(FACING, Direction.NORTH));
 

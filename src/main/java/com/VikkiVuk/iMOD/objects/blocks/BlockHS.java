@@ -75,7 +75,7 @@ public class BlockHS extends Block {
 
     public BlockHS() {
         super(Properties.create(Material.WOOL).hardnessAndResistance(5.1f, 30f).sound(SoundType.CLOTH));
-        setRegistryName("hystel_something");
+        //setRegistryName("hystel_something");
         this.setDefaultState(this.getStateContainer().getBaseState().with(FACING, Direction.NORTH));
         // TODO Auto-generated constructor stub
     }

@@ -8,7 +8,7 @@ public class BlockRuby extends Block {
 
 	public BlockRuby() {
 		super(Properties.create(Material.IRON).hardnessAndResistance(5.1f, 30f).sound(SoundType.METAL));
-		setRegistryName("ruby_block");
+		//setRegistryName("ruby_block");
 		// TODO Auto-generated constructor stub
 	}
 

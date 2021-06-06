@@ -1,21 +1,26 @@
 package com.VikkiVuk.iMOD;
 
 
-import com.VikkiVuk.iMOD.init.BlockInit;
-import com.VikkiVuk.iMOD.init.ItemInit;
+import com.VikkiVuk.iMOD.init.*;
+import com.VikkiVuk.iMOD.util.Reference;
 import com.VikkiVuk.iMOD.world.OreGeneration;
-import net.minecraft.block.Blocks;
+import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -26,7 +31,7 @@ public class iMOD
 {
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public static final String MOD_ID = "imod";
+    public static final String MOD_ID = Reference.MOD_ID;
     public static iMOD instance;
 
     public iMOD() {
@@ -35,6 +40,10 @@ public class iMOD
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
 
+        ItemInitNew.ITEMS.register(bus);
+        FluidInit.FLUIDS.register(bus);
+        BlockInit.BLOCKS.register(bus);
+
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGeneration::generateOres);
     }
@@ -42,21 +51,35 @@ public class iMOD
     private void clientSetup(final FMLClientSetupEvent event)
     {
         event.enqueueWork(() -> {
-            RenderTypeLookup.setRenderLayer(BlockInit.blue_slime.getBlock(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(BlockInit.brown_slime.getBlock(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(BlockInit.cyan_slime.getBlock(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(BlockInit.gray_slime.getBlock(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(BlockInit.green_slime.getBlock(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(BlockInit.light_blue_slime.getBlock(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(BlockInit.light_gray_slime.getBlock(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(BlockInit.lime_slime.getBlock(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(BlockInit.magenta_slime.getBlock(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(BlockInit.orange_slime.getBlock(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(BlockInit.pink_slime.getBlock(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(BlockInit.purple_slime.getBlock(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(BlockInit.yellow_slime.getBlock(), RenderType.getTranslucent());
-            RenderTypeLookup.setRenderLayer(BlockInit.white_slime.getBlock(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.blue_slime.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.brown_slime.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.cyan_slime.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.gray_slime.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.green_slime.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.light_blue_slime.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.light_gray_slime.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.lime_slime.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.magenta_slime.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.orange_slime.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.pink_slime.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.purple_slime.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.yellow_slime.get(), RenderType.getTranslucent());
+            RenderTypeLookup.setRenderLayer(BlockInit.white_slime.get(), RenderType.getTranslucent());
         });
+    }
+
+    @SubscribeEvent
+    public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
+        final IForgeRegistry<Item> registry = event.getRegistry();
+
+        BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get).filter(block -> !(block instanceof FlowingFluidBlock)).forEach(block -> {
+                    final Item.Properties properties = new Item.Properties().group(HystelTab.instance);
+                    final BlockItem blockItem = new BlockItem(block, properties);
+                    blockItem.setRegistryName(block.getRegistryName());
+                    registry.register(blockItem);
+        });
+
+        LOGGER.debug("Registered BlockItems!");
     }
 
     public static class HystelTab extends ItemGroup

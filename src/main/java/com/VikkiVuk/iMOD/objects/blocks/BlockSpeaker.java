@@ -26,7 +26,7 @@ public class BlockSpeaker extends Block {
 
     public BlockSpeaker() {
         super(Properties.create(Material.WOOL).hardnessAndResistance(5.1f, 30f).sound(SoundType.CLOTH));
-        setRegistryName("speaker");
+        //setRegistryName("speaker");
         this.setDefaultState(this.getStateContainer().getBaseState().with(FACING, Direction.NORTH));
         // TODO Auto-generated constructor stub
     }

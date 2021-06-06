@@ -49,7 +49,7 @@ public class WifiRouter extends Block {
                 .harvestTool(ToolType.PICKAXE)
 
         );
-        setRegistryName("wifi_router");
+        //setRegistryName("wifi_router");
     }
 
     @Override

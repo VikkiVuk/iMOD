@@ -44,7 +44,7 @@ public class BlockCGM extends Block {
 
     public BlockCGM() {
         super(Properties.create(Material.GLASS).sound(SoundType.GLASS).hardnessAndResistance(2.1f));
-        setRegistryName("custom_glassy_mobble");
+        //setRegistryName("custom_glassy_mobble");
     }
 
 

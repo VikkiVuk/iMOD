@@ -59,7 +59,7 @@ public class BlockTV extends Block {
 
     public BlockTV() {
         super(Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(2.1f));
-        setRegistryName("tv");
+        //setRegistryName("tv");
     }
 
     @Override

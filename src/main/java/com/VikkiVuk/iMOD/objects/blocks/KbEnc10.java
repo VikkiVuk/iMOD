@@ -16,7 +16,7 @@ public class KbEnc10 extends Block {
 
     public KbEnc10() {
         super(Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2.1f));
-        setRegistryName("knoEnc");
+        //setRegistryName("knoEnc");
     }
 
 

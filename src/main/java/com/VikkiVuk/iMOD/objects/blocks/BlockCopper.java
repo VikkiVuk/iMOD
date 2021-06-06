@@ -8,7 +8,7 @@ public class BlockCopper extends Block {
 
 	public BlockCopper() {
 		super(Properties.create(Material.IRON).hardnessAndResistance(5.1f, 30f).sound(SoundType.METAL));
-		setRegistryName("copper_block");
+		//setRegistryName("copper_block");
 		// TODO Auto-generated constructor stub
 	}
 

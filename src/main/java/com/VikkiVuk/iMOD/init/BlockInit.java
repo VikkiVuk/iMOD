@@ -2,155 +2,63 @@ package com.VikkiVuk.iMOD.init;
 
 import com.VikkiVuk.iMOD.iMOD;
 import com.VikkiVuk.iMOD.objects.blocks.*;
-import com.VikkiVuk.iMOD.objects.blocks.SlimeBlock;
-import net.minecraft.block.*;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraftforge.common.ToolType;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 
-@Mod.EventBusSubscriber(modid = iMOD.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
-@ObjectHolder(iMOD.MOD_ID)
-public class BlockInit
-{
-    public static final Block bluestone_block = null;
-    public static final Block ruby_block = null;
-    public static final Block copper_block = null;
-    //public static final Block rainbow_block = null;
-    public static final Chairsy chairsy = null;
-    public static final TokenAtm token_atm = null;
-    public static final BlockCGM custom_glassy_mobble = null;
-    public static final BlockBC better_cauldron = null;
-    public static final BlockSpeaker speaker = null;
-    public static final BlockResta custom_resta = null;
-    public static final CoffaTable coffee_table = null;
-    //public static final BlockHS hystel_something = null;
-    public static final BlockSH santa_hat = null;
-    public static final Block customized_bobble = null;
-    public static final IllusionBlock custom_block = null;
-    public static final WifiRouter wifi_router = null;
-    public static final BlockTV tv = null;
+public class BlockInit {
 
-    //Slime blocks
-    public static final SlimeBlock blue_slime = null;
-    public static final SlimeBlock brown_slime = null;
-    public static final SlimeBlock cyan_slime = null;
-    public static final SlimeBlock gray_slime = null;
-    public static final SlimeBlock green_slime = null;
-    public static final SlimeBlock light_blue_slime = null;
-    public static final SlimeBlock light_gray_slime = null;
-    public static final SlimeBlock lime_slime = null;
-    public static final SlimeBlock magenta_slime = null;
-    public static final SlimeBlock orange_slime = null;
-    public static final SlimeBlock pink_slime = null;
-    public static final SlimeBlock purple_slime = null;
-    public static final SlimeBlock white_slime = null;
-    public static final SlimeBlock yellow_slime = null;
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, iMOD.MOD_ID);
+
+    // Normal blocks
+    public static final RegistryObject<Block> bluestone_block = BLOCKS.register("bluestone_block", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
+    public static final RegistryObject<Block> ruby_block = BLOCKS.register("ruby_block", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
+    public static final RegistryObject<Block> copper_block = BLOCKS.register("copper_block", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
+
+    // Custom Models/Blocks
+    public static final RegistryObject<Block> chairsy = BLOCKS.register("chairsy", Chairsy::new);
+    public static final RegistryObject<Block> token_atm = BLOCKS.register("token_atm", TokenAtm::new);
+    public static final RegistryObject<Block> custom_glassy_mobble = BLOCKS.register("custom_glassy_mobble", BlockCGM::new);
+    public static final RegistryObject<Block> better_cauldron = BLOCKS.register("better_cauldron", BlockBC::new);
+    public static final RegistryObject<Block> speaker = BLOCKS.register("speaker", BlockSpeaker::new);
+    public static final RegistryObject<Block> custom_resta = BLOCKS.register("custom_resta", BlockResta::new);
+    public static final RegistryObject<Block> coffee_table = BLOCKS.register("coffee_table", CoffaTable::new);
+    public static final RegistryObject<Block> santa_hat = BLOCKS.register("santa_hat", BlockSH::new);
+    public static final RegistryObject<Block> customized_bobble = BLOCKS.register("customized_bobble", BlockCB::new);
+    public static final RegistryObject<Block> custom_block = BLOCKS.register("custom_block", IllusionBlock::new);
+    public static final RegistryObject<Block> wifi_router = BLOCKS.register("wifi_router", WifiRouter::new);
+    public static final RegistryObject<Block> tv = BLOCKS.register("tv", BlockTV::new);
+
+    // Slimes
+    public static final RegistryObject<Block> blue_slime = BLOCKS.register("blue_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+    public static final RegistryObject<Block> brown_slime = BLOCKS.register("brown_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+    public static final RegistryObject<Block> cyan_slime = BLOCKS.register("cyan_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+    public static final RegistryObject<Block> gray_slime = BLOCKS.register("gray_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+    public static final RegistryObject<Block> green_slime = BLOCKS.register("green_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+    public static final RegistryObject<Block> light_blue_slime = BLOCKS.register("light_blue_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+    public static final RegistryObject<Block> light_gray_slime = BLOCKS.register("light_gray_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+    public static final RegistryObject<Block> lime_slime = BLOCKS.register("lime_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+    public static final RegistryObject<Block> magenta_slime = BLOCKS.register("magenta_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+    public static final RegistryObject<Block> pink_slime = BLOCKS.register("pink_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+    public static final RegistryObject<Block> purple_slime = BLOCKS.register("purple_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+    public static final RegistryObject<Block> white_slime = BLOCKS.register("white_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+    public static final RegistryObject<Block> yellow_slime = BLOCKS.register("yellow_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
+    public static final RegistryObject<Block> orange_slime = BLOCKS.register("orange_slime", () -> new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()));
 
     //Planks
-    public static final Block bluestone_planks = null;
-    public static final Block ruby_planks = null;
-    public static final Block copper_planks = null;
+    public static final RegistryObject<Block> bluestone_planks = BLOCKS.register("bluestone_planks", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
+    public static final RegistryObject<Block> ruby_planks = BLOCKS.register("ruby_planks", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
+    public static final RegistryObject<Block> copper_planks = BLOCKS.register("copper_planks", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
 
     //Ores
-    public static final Block bluestone_ore = null;
-    public static final Block ruby_ore = null;
-    public static final Block copper_ore = null;
-    public static final Block rainbow_ore = null;
-
-
-    @SubscribeEvent
-    public static void registerBlocks(final RegistryEvent.Register<Block> event)
-    {
-        event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("bluestone_block"));
-        event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1.5F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("ruby_block"));
-        event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("copper_block"));
-        event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("bluestone_ore"));
-        event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("ruby_ore"));
-        event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("copper_ore"));
-        event.getRegistry().register(new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2)).setRegistryName("rainbow_ore"));
-        event.getRegistry().register(new TokenAtm());
-        event.getRegistry().register(new Chairsy());
-        event.getRegistry().register(new BlockResta());
-        event.getRegistry().register(new BlockCGM());
-       // event.getRegistry().register(new BlockHS()); // Deprecated since the team is not called Hystel Studios anymore. And the mod is not called HystelMC
-        event.getRegistry().register(new BlockBC());
-        event.getRegistry().register(new BlockSH());
-        event.getRegistry().register(new BlockCB());
-        event.getRegistry().register(new BlockSpeaker());
-        event.getRegistry().register(new IllusionBlock());
-        event.getRegistry().register(new CoffaTable());
-        event.getRegistry().register(new BlockTV());
-        event.getRegistry().register(new WifiRouter());
-        event.getRegistry().register(new Block(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.AXE).harvestLevel(2)).setRegistryName("bluestone_planks"));
-        event.getRegistry().register(new Block(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.AXE).harvestLevel(2)).setRegistryName("ruby_planks"));
-        event.getRegistry().register(new Block(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1.1F,10.8F).harvestTool(ToolType.AXE).harvestLevel(2)).setRegistryName("copper_planks"));
-
-        // Slime blocks use one class, the reason is because they only change colors nothing else.
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("blue_slime"));
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("brown_slime"));
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("cyan_slime"));
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("gray_slime"));
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("green_slime"));
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("light_blue_slime"));
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("light_gray_slime"));
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("lime_slime"));
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("magenta_slime"));
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("orange_slime"));
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("pink_slime"));
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("purple_slime"));
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("white_slime"));
-        event.getRegistry().register(new SlimeBlock(AbstractBlock.Properties.create(Material.CLAY, MaterialColor.GRASS).slipperiness(0.8F).sound(SoundType.SLIME).notSolid()).setRegistryName("yellow_slime"));
-    }
-
-    @SubscribeEvent
-    public static void registerBlockItems(final RegistryEvent.Register<Item> event)
-
-    {
-        Item.Properties properties = new Item.Properties().group(iMOD.HystelTab.instance);
-        event.getRegistry().register(new BlockItem(bluestone_block, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_block"));
-        event.getRegistry().register(new BlockItem(ruby_block, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_block"));
-        event.getRegistry().register(new BlockItem(copper_block, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_block"));
-        event.getRegistry().register(new BlockItem(bluestone_ore, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_ore"));
-        event.getRegistry().register(new BlockItem(ruby_ore, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_ore"));
-        event.getRegistry().register(new BlockItem(copper_ore, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_ore"));
-        event.getRegistry().register(new BlockItem(rainbow_ore, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("rainbow_ore"));
-        event.getRegistry().register(new BlockItem(token_atm, properties).setRegistryName("token_atm"));
-        event.getRegistry().register(new BlockItem(chairsy, properties).setRegistryName("chairsy"));
-        event.getRegistry().register(new BlockItem(custom_resta, properties).setRegistryName("custom_resta"));
-        event.getRegistry().register(new BlockItem(custom_glassy_mobble, properties).setRegistryName("custom_glassy_mobble"));
-       // event.getRegistry().register(new BlockItem(hystel_something, properties).setRegistryName("hystel_something"));
-        event.getRegistry().register(new BlockItem(better_cauldron, properties).setRegistryName("better_cauldron"));
-        event.getRegistry().register(new BlockItem(santa_hat, properties).setRegistryName("santa_hat"));
-        event.getRegistry().register(new BlockItem(customized_bobble, properties).setRegistryName("customized_bobble"));
-        event.getRegistry().register(new BlockItem(speaker, properties).setRegistryName("speaker"));
-        event.getRegistry().register(new BlockItem(custom_block, properties).setRegistryName("custom_block"));
-        event.getRegistry().register(new BlockItem(coffee_table, properties).setRegistryName("coffee_table"));
-        event.getRegistry().register(new BlockItem(tv, properties).setRegistryName("tv"));
-        event.getRegistry().register(new BlockItem(wifi_router, properties).setRegistryName("wifi_router"));
-        // Slime blocks, again.
-        event.getRegistry().register(new BlockItem(blue_slime, properties).setRegistryName("blue_slime"));
-        event.getRegistry().register(new BlockItem(brown_slime, properties).setRegistryName("brown_slime"));
-        event.getRegistry().register(new BlockItem(cyan_slime, properties).setRegistryName("cyan_slime"));
-        event.getRegistry().register(new BlockItem(gray_slime, properties).setRegistryName("gray_slime"));
-        event.getRegistry().register(new BlockItem(green_slime, properties).setRegistryName("green_slime"));
-        event.getRegistry().register(new BlockItem(light_blue_slime, properties).setRegistryName("light_blue_slime"));
-        event.getRegistry().register(new BlockItem(light_gray_slime, properties).setRegistryName("light_gray_slime"));
-        event.getRegistry().register(new BlockItem(lime_slime, properties).setRegistryName("lime_slime"));
-        event.getRegistry().register(new BlockItem(magenta_slime, properties).setRegistryName("magenta_slime"));
-        event.getRegistry().register(new BlockItem(orange_slime, properties).setRegistryName("orange_slime"));
-        event.getRegistry().register(new BlockItem(pink_slime, properties).setRegistryName("pink_slime"));
-        event.getRegistry().register(new BlockItem(purple_slime, properties).setRegistryName("purple_slime"));
-        event.getRegistry().register(new BlockItem(white_slime, properties).setRegistryName("white_slime"));
-        event.getRegistry().register(new BlockItem(yellow_slime, properties).setRegistryName("yellow_slime"));
-        //Continue without slimes
-        event.getRegistry().register(new BlockItem(bluestone_planks, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("bluestone_planks"));
-        event.getRegistry().register(new BlockItem(ruby_planks, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("ruby_planks"));
-        event.getRegistry().register(new BlockItem(copper_planks, new Item.Properties().group(iMOD.HystelTab.instance)).setRegistryName("copper_planks"));
-    }
+    public static final RegistryObject<Block> bluestone_ore = BLOCKS.register("bluestone_ore", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
+    public static final RegistryObject<Block> ruby_ore = BLOCKS.register("ruby_ore", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
+    public static final RegistryObject<Block> copper_ore = BLOCKS.register("copper_ore", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
+    public static final RegistryObject<Block> rainbow_ore = BLOCKS.register("rainbow_ore", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
 }

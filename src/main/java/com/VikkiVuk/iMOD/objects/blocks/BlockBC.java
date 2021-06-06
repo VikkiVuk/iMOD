@@ -83,7 +83,7 @@ public class BlockBC extends Block {
 
     public BlockBC() {
         super(Properties.create(Material.IRON).hardnessAndResistance(5.1f, 30f).sound(SoundType.METAL));
-        setRegistryName("better_cauldron");
+        //setRegistryName("better_cauldron");
         this.setDefaultState(this.getStateContainer().getBaseState().with(FACING, Direction.NORTH));
     }
 

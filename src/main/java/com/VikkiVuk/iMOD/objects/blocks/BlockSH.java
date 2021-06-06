@@ -42,7 +42,7 @@ public class BlockSH extends Block {
 
     public BlockSH() {
         super(Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(2.1f));
-        setRegistryName("santa_hat");
+        //setRegistryName("santa_hat");
     }
 
 

@@ -10,7 +10,7 @@ public class IllusionBlock extends Block {
 
     public IllusionBlock() {
         super(Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2.1f));
-        setRegistryName("custom_block");
+        // setRegistryName("custom_block");
     }
 
 

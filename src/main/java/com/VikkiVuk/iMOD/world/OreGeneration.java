@@ -15,10 +15,10 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 public class OreGeneration {
     public static void generateOres(final BiomeLoadingEvent event) {
         if (!(event.getCategory().equals(Biome.Category.PLAINS) || event.getCategory().equals(Biome.Category.THEEND))) {
-            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.bluestone_ore.getDefaultState(), 6, 0, 70, 13);
-            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.ruby_ore.getDefaultState(), 6, 0, 65, 12);
-            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.copper_ore.getDefaultState(), 6, 0, 80, 16);
-            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.rainbow_ore.getDefaultState(), 6, 0, 40, 14);
+            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.bluestone_ore.get().getDefaultState(), 6, 0, 70, 13);
+            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.ruby_ore.get().getDefaultState(), 6, 0, 65, 12);
+            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.copper_ore.get().getDefaultState(), 6, 0, 80, 16);
+            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.rainbow_ore.get().getDefaultState(), 6, 0, 40, 14);
         }
     }
 

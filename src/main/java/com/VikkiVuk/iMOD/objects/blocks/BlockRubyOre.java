@@ -9,7 +9,7 @@ public class BlockRubyOre extends Block {
 
     public BlockRubyOre() {
         super(Properties.create(Material.IRON).hardnessAndResistance(4.1f, 30f).sound(SoundType.STONE));
-        setRegistryName("ruby_ore");
+        //setRegistryName("ruby_ore");
         // TODO Auto-generated constructor stub
     }
 }

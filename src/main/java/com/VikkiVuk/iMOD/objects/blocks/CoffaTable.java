@@ -30,7 +30,7 @@ public class CoffaTable extends Block {
 
     public CoffaTable() {
         super(Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2.1f));
-        setRegistryName("coffee_table");
+        // setRegistryName("coffee_table");
     }
 
     @Override

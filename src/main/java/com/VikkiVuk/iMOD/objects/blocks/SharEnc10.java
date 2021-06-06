@@ -16,7 +16,7 @@ public class SharEnc10 extends Block {
 
     public SharEnc10() {
         super(Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2.1f));
-        setRegistryName("sharEnc");
+        //setRegistryName("sharEnc");
     }
 
 
