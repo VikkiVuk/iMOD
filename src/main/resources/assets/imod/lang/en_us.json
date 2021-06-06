@@ -91,6 +91,7 @@
   "item.imod.ruby_pickaxe": "Ruby Pickaxe",
   "item.imod.ruby_shovel": "Ruby Shovel",
   "item.imod.ruby_sword": "Ruby Sword",
+  "item.imod.ruby_ingot": "Ruby Ingot",
 
   "item.imod.copper_ingot": "Copper Ingot",
   "item.imod.copper_helmet": "Copper Helmet",
@@ -113,6 +114,7 @@
   "item.imod.rainbow_pickaxe": "Rainbow Pickaxe",
   "item.imod.rainbow_shovel": "Rainbow Shovel",
   "item.imod.rainbow_sword": "Rainbow Sword",
+  "block.imod.rainbow_block": "Rainbow Block",
 
   "item.imod.cracked_netherite_ingot": "Cracked Netherite Ingot",
   "item.imod.cracked_netherite_axe": "Cracked Netherite Axe",
@@ -153,6 +155,8 @@
   "item.imod.ruby_token": "Redstone Token",
   "item.imod.bluestone_token": "Diamond Token",
   "item.imod.rainbow_token": "Mystery Token",
+
+  "item.imod.chocolate_milk_bucket": "Chocolate Milk Bucket",
 
   "itemGroup.hysteltab": "iMOD"
 }

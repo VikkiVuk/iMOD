@@ -16,7 +16,6 @@ public class Config {
 
     static
     {
-
         SERVER = SERVER_BUILDER.build();
         CLIENT = CLIENT_BUILDER.build();
     }

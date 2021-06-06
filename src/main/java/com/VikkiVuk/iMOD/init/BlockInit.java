@@ -20,6 +20,7 @@ public class BlockInit {
     public static final RegistryObject<Block> bluestone_block = BLOCKS.register("bluestone_block", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
     public static final RegistryObject<Block> ruby_block = BLOCKS.register("ruby_block", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
     public static final RegistryObject<Block> copper_block = BLOCKS.register("copper_block", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
+    public static final RegistryObject<Block> rainbow_block = BLOCKS.register("rainbow_block", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
 
     // Custom Models/Blocks
     public static final RegistryObject<Block> chairsy = BLOCKS.register("chairsy", Chairsy::new);
