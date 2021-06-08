@@ -1,10 +1,6 @@
 {
   "variants":
   {
-    "": { "model": "imod:block/wifi_router" },
-    "facing=north": { "model": "imod:block/wifi_router" },
-    "facing=south": { "model": "imod:block/wifi_router", "y": 180 },
-    "facing=west": { "model": "imod:block/wifi_router", "y": 270 },
-    "facing=east": { "model": "imod:block/wifi_router", "y": 90}
+    "": { "model": "imod:block/wifi_router" }
   }
 }

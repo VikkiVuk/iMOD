@@ -2,6 +2,8 @@ package com.VikkiVuk.iMOD;
 
 
 import com.VikkiVuk.iMOD.init.*;
+import com.VikkiVuk.iMOD.init.types.ModContainerTypes;
+import com.VikkiVuk.iMOD.init.types.ModTileEntityTypes;
 import com.VikkiVuk.iMOD.util.Reference;
 import com.VikkiVuk.iMOD.world.OreGeneration;
 import net.minecraft.block.FlowingFluidBlock;
@@ -44,6 +46,9 @@ public class iMOD
         FluidInit.FLUIDS.register(bus);
         BlockInit.BLOCKS.register(bus);
 
+        ModTileEntityTypes.TILE_ENTITY_TYPES.register(bus);
+        ModContainerTypes.CONTAINER_TYPES.register(bus);
+
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGeneration::generateOres);
     }
@@ -78,8 +83,6 @@ public class iMOD
                     blockItem.setRegistryName(block.getRegistryName());
                     registry.register(blockItem);
         });
-
-        LOGGER.debug("Registered BlockItems!");
     }
 
     public static class HystelTab extends ItemGroup

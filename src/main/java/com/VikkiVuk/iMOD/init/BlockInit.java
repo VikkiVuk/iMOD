@@ -62,4 +62,8 @@ public class BlockInit {
     public static final RegistryObject<Block> ruby_ore = BLOCKS.register("ruby_ore", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
     public static final RegistryObject<Block> copper_ore = BLOCKS.register("copper_ore", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
     public static final RegistryObject<Block> rainbow_ore = BLOCKS.register("rainbow_ore", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
+
+    // Tile Entities
+    public static final RegistryObject<Block> quarry = BLOCKS.register("quarry", () -> new BlockQuarry(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> bluestone_chest = BLOCKS.register("bluestone_chest", () -> new BlockBluestoneChest(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).sound(SoundType.METAL)));
 }
