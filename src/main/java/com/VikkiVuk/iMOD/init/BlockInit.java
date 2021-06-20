@@ -65,5 +65,5 @@ public class BlockInit {
 
     // Tile Entities
     public static final RegistryObject<Block> quarry = BLOCKS.register("quarry", () -> new BlockQuarry(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).sound(SoundType.METAL)));
-    public static final RegistryObject<Block> bluestone_chest = BLOCKS.register("bluestone_chest", () -> new BlockBluestoneChest(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).sound(SoundType.METAL)));
+    public static final RegistryObject<Block> bluestone_chest = BLOCKS.register("storage_unit", () -> new BlockBluestoneChest(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).sound(SoundType.METAL)));
 }

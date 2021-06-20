@@ -1,12 +1,14 @@
 package com.VikkiVuk.iMOD;
 
 
+import com.VikkiVuk.iMOD.client.gui.BluestoneChestScreen;
 import com.VikkiVuk.iMOD.init.*;
 import com.VikkiVuk.iMOD.init.types.ModContainerTypes;
 import com.VikkiVuk.iMOD.init.types.ModTileEntityTypes;
 import com.VikkiVuk.iMOD.util.Reference;
 import com.VikkiVuk.iMOD.world.OreGeneration;
 import net.minecraft.block.FlowingFluidBlock;
+import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.BlockItem;
@@ -55,6 +57,7 @@ public class iMOD
 
     private void clientSetup(final FMLClientSetupEvent event)
     {
+        ScreenManager.registerFactory(ModContainerTypes.bluestone_chest_container.get(), BluestoneChestScreen::new);
         event.enqueueWork(() -> {
             RenderTypeLookup.setRenderLayer(BlockInit.blue_slime.get(), RenderType.getTranslucent());
             RenderTypeLookup.setRenderLayer(BlockInit.brown_slime.get(), RenderType.getTranslucent());

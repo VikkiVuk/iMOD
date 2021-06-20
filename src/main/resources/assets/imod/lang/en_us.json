@@ -163,5 +163,9 @@
 
   "block.imod.quarry": "Quarry",
 
+  "container.storage_unit": "Storage Unit",
+
+  "block.imod.storage_unit": "Storage Unit",
+
   "itemGroup.hysteltab": "iMOD"
 }

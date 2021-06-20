@@ -62,7 +62,7 @@ public class BluestoneChestTileEntity  extends LockableLootTileEntity {
 
     @Override
     protected ITextComponent getDefaultName() {
-        return new TranslationTextComponent("container.bluestone_chest");
+        return new TranslationTextComponent("container.storage_unit");
     }
 
     @Override

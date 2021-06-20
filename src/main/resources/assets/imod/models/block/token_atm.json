@@ -1,11 +1,12 @@
 {
+	"credit": "Made with Blockbench",
 	"parent": "block/cube",
 	"textures": {
-		"bedrock": "block/bedrock",
-		"concrete_black": "block/black_concrete",
-		"iron_block": "block/iron_block",
-		"particle": "block/diamond_block",
-		"diamond_block": "block/diamond_block"
+		"bedrock": "minecraft:block/bedrock",
+		"concrete_black": "minecraft:block/black_concrete",
+		"iron_block": "minecraft:block/iron_block",
+		"particle": "minecraft:block/diamond_block",
+		"diamond_block": "minecraft:block/diamond_block"
 	},
 	"elements": [
 		{
@@ -32,28 +33,10 @@
 		{
 			"name": "background_front_every",
 			"from": [17, 11, 5],
-			"to": [18, 22, 11],
+			"to": [18, 23, 11],
 			"faces": {
 				"east": {"uv": [0, 0, 6, 11], "texture": "#diamond_block"},
 				"down": {"uv": [0, 0, 6, 1], "rotation": 90, "texture": "#diamond_block"}
-			}
-		},
-		{
-			"name": "background_front_right",
-			"from": [17, 7, 3],
-			"to": [18, 22, 5],
-			"faces": {
-				"east": {"uv": [0, 0, 2, 15], "texture": "#diamond_block"},
-				"south": {"uv": [0, 0, 1, 15], "texture": "#diamond_block"}
-			}
-		},
-		{
-			"name": "background_front_left",
-			"from": [17, 7, 11],
-			"to": [18, 22, 13],
-			"faces": {
-				"north": {"uv": [0, 0, 1, 15], "texture": "#diamond_block"},
-				"east": {"uv": [0, 0, 2, 15], "texture": "#diamond_block"}
 			}
 		},
 		{
@@ -108,7 +91,7 @@
 		{
 			"name": "front_right_side",
 			"from": [17, 7, 1],
-			"to": [18, 23, 3],
+			"to": [18, 23, 5],
 			"faces": {
 				"east": {"uv": [0, 0, 2, 16], "texture": "#diamond_block"},
 				"south": {"uv": [0, 0, 1, 16], "texture": "#diamond_block"}
@@ -116,7 +99,7 @@
 		},
 		{
 			"name": "front_left_side",
-			"from": [17, 7, 13],
+			"from": [17, 7, 11],
 			"to": [18, 23, 15],
 			"faces": {
 				"north": {"uv": [0, 0, 1, 16], "texture": "#diamond_block"},
@@ -208,7 +191,7 @@
 		{
 			"name": "VoxelShapes",
 			"origin": [8, 8, 8],
-			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 		}
 	]
 }
