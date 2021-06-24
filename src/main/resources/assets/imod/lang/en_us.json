@@ -19,6 +19,8 @@
   "block.imod.wifi_router": "WI-FI Router",
   "block.imod.tv": "TV",
 
+  "block.imod.light_blue_glowstone": "Unknown Glowstone",
+
   "block.imod.bluestone_ore": "Bluestone Ore",
   "block.imod.ruby_ore": "Ruby Ore",
   "block.imod.copper_ore": "Copper Ore",

@@ -4,6 +4,7 @@ import com.VikkiVuk.iMOD.iMOD;
 import com.VikkiVuk.iMOD.objects.blocks.*;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -21,6 +22,7 @@ public class BlockInit {
     public static final RegistryObject<Block> ruby_block = BLOCKS.register("ruby_block", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
     public static final RegistryObject<Block> copper_block = BLOCKS.register("copper_block", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
     public static final RegistryObject<Block> rainbow_block = BLOCKS.register("rainbow_block", () -> new Block(AbstractBlock.Properties.create(Material.IRON).hardnessAndResistance(1.9F,10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(2).sound(SoundType.METAL).setRequiresTool()));
+    public static final RegistryObject<Block> light_blue_glowstone = BLOCKS.register("light_blue_glowstone", () -> new Block(AbstractBlock.Properties.create(Material.GLASS).hardnessAndResistance(1.9F, 10.8F).harvestTool(ToolType.PICKAXE).harvestLevel(3).sound(SoundType.GLASS).setRequiresTool().setLightLevel((state) -> 15)));
 
     // Custom Models/Blocks
     public static final RegistryObject<Block> chairsy = BLOCKS.register("chairsy", Chairsy::new);
