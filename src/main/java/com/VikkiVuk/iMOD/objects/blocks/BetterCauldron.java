@@ -1,0 +1,127 @@
+package com.VikkiVuk.iMOD.objects.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.HorizontalFacingBlock;
+import net.minecraft.block.Material;
+import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.state.StateManager;
+import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.util.BlockMirror;
+import net.minecraft.util.BlockRotation;
+import net.minecraft.util.function.BooleanBiFunction;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.stream.Stream;
+
+public class BetterCauldron extends Block {
+    public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
+
+    private static final VoxelShape SHAPE_S = Stream.of(
+            Block.createCuboidShape(6.5, 0, 0, 9.5, 3, 16),
+            Block.createCuboidShape(0, 0, 6.5, 16, 3, 9.5),
+            Block.createCuboidShape(6.5, 0, 0, 9.5, 3, 16),
+            Block.createCuboidShape(0, 0, 6.5, 16, 3, 9.5),
+            Block.createCuboidShape(2, 3, 2, 14, 4, 14),
+            Block.createCuboidShape(2, 4, 2, 14, 14, 3),
+            Block.createCuboidShape(2, 4, 13, 14, 14, 14),
+            Block.createCuboidShape(13, 4, 3, 14, 14, 13),
+            Block.createCuboidShape(2, 4, 3, 3, 14, 13),
+            Block.createCuboidShape(14, 12, 0, 15, 13, 9),
+            Block.createCuboidShape(1, 12, 0, 2, 13, 9),
+            Block.createCuboidShape(2, 12, 0, 14, 13, 1)
+    ).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
+
+    private static final VoxelShape SHAPE_N = Stream.of(
+            Block.createCuboidShape(6.5, 0, 0, 9.5, 3, 16),
+            Block.createCuboidShape(0, 0, 6.5, 16, 3, 9.5),
+            Block.createCuboidShape(6.5, 0, 0, 9.5, 3, 16),
+            Block.createCuboidShape(0, 0, 6.5, 16, 3, 9.5),
+            Block.createCuboidShape(2, 3, 2, 14, 4, 14),
+            Block.createCuboidShape(2, 4, 13, 14, 14, 14),
+            Block.createCuboidShape(2, 4, 2, 14, 14, 3),
+            Block.createCuboidShape(2, 4, 3, 3, 14, 13),
+            Block.createCuboidShape(13, 4, 3, 14, 14, 13),
+            Block.createCuboidShape(1, 12, 7, 2, 13, 16),
+            Block.createCuboidShape(14, 12, 7, 15, 13, 16),
+            Block.createCuboidShape(2, 12, 15, 14, 13, 16)
+    ).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
+
+    private static final VoxelShape SHAPE_E = Stream.of(
+            Block.createCuboidShape(0, 0, 6.5, 16, 3, 9.5),
+            Block.createCuboidShape(6.5, 0, 0, 9.5, 3, 16),
+            Block.createCuboidShape(0, 0, 6.5, 16, 3, 9.5),
+            Block.createCuboidShape(6.5, 0, 0, 9.5, 3, 16),
+            Block.createCuboidShape(2, 3, 2, 14, 4, 14),
+            Block.createCuboidShape(2, 4, 2, 3, 14, 14),
+            Block.createCuboidShape(13, 4, 2, 14, 14, 14),
+            Block.createCuboidShape(3, 4, 2, 13, 14, 3),
+            Block.createCuboidShape(3, 4, 13, 13, 14, 14),
+            Block.createCuboidShape(0, 12, 1, 9, 13, 2),
+            Block.createCuboidShape(0, 12, 14, 9, 13, 15),
+            Block.createCuboidShape(0, 12, 2, 1, 13, 14)
+    ).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
+
+    private static final VoxelShape SHAPE_W = Stream.of(
+            Block.createCuboidShape(0, 0, 6.5, 16, 3, 9.5),
+            Block.createCuboidShape(0, 0, 6.5, 16, 3, 9.5),
+            Block.createCuboidShape(6.5, 0, 0, 9.5, 3, 16),
+            Block.createCuboidShape(6.5, 0, 0, 9.5, 3, 16),
+            Block.createCuboidShape(2, 3, 2, 14, 4, 14),
+            Block.createCuboidShape(13, 4, 2, 14, 14, 14),
+            Block.createCuboidShape(2, 4, 2, 3, 14, 14),
+            Block.createCuboidShape(3, 4, 13, 13, 14, 14),
+            Block.createCuboidShape(3, 4, 2, 13, 14, 3),
+            Block.createCuboidShape(7, 12, 14, 16, 13, 15),
+            Block.createCuboidShape(7, 12, 1, 16, 13, 2),
+            Block.createCuboidShape(15, 12, 2, 16, 13, 14)
+    ).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
+
+    public BetterCauldron() {
+        super(Settings.of(Material.METAL).hardness(5.1f).sounds(BlockSoundGroup.METAL));
+        this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
+    }
+
+    public static VoxelShape getShapeN() {
+        return SHAPE_N;
+    }
+
+    public static VoxelShape getShapeE() {
+        return SHAPE_E;
+    }
+
+    public static VoxelShape getShapeW() {
+        return SHAPE_W;
+    }
+
+    public static VoxelShape getShapeS() {
+        return SHAPE_S;
+    }
+
+    @Nullable
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        return this.getDefaultState().with(FACING, ctx.getPlayerLookDirection().getOpposite());
+    }
+
+
+    @Override
+    public BlockState rotate(BlockState state, BlockRotation rotation) {
+        return state.with(FACING, rotation.rotate(state.get(FACING)));
+    }
+
+    @Override
+    public BlockState mirror(BlockState state, BlockMirror mirror) {
+        return state.rotate(mirror.getRotation(state.get(FACING)));
+    }
+
+    @Override
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(FACING);
+    }
+}

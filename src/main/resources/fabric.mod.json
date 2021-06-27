@@ -10,22 +10,18 @@
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/imod",
-    "sources": "https://www.curseforge.com/minecraft/mc-mods/imod",
     "issues": "https://www.curseforge.com/minecraft/mc-mods/imod/issues"
   },
 
   "license": "CC0-1.0",
   "icon": "assets/imod/icon.png",
 
-  "environment": "client",
+  "environment": "*",
   "entrypoints": {
     "main": [
       "com.VikkiVuk.iMOD.iMOD"
     ]
   },
-  "mixins": [
-    "imod.mixins.json"
-  ],
 
   "depends": {
     "fabricloader": ">=0.11.3",
@@ -34,7 +30,7 @@
     "java": ">=16"
   },
   "suggests": {
-    "another-mod": "iMOD forge"
+    "imod": "*"
   },
 
   "custom": {

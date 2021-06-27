@@ -1,0 +1,59 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
+    "textures": {
+        "particle": "minecraft:block/bricks",
+        "bedrock": "minecraft:block/bedrock",
+        "bookshelf": "minecraft:block/bookshelf",
+        "bone_block_top": "minecraft:block/bone_block_top",
+        "concrete_lime": "minecraft:block/lime_concrete",
+        "diamond_block": "minecraft:block/diamond_block",
+        "brick": "minecraft:block/bricks"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "Cube",
+            "from": [ 0, 0, 0 ], 
+            "to": [ 16, 16, 16 ], 
+            "faces": {
+                "north": { "texture": "#bookshelf", "uv": [ 0, 0, 16, 16 ] },
+                "east": { "texture": "#diamond_block", "uv": [ 0, 0, 16, 16 ] },
+                "south": { "texture": "#brick", "uv": [ 0, 0, 16, 16 ] },
+                "west": { "texture": "#bedrock", "uv": [ 0, 0, 16, 16 ] },
+                "up": { "texture": "#bone_block_top", "uv": [ 0, 0, 16, 16 ] },
+                "down": { "texture": "#concrete_lime", "uv": [ 0, 0, 16, 16 ] }
+            }
+        }
+    ]
+}
