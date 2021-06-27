@@ -1,5 +1,7 @@
 package com.VikkiVuk.iMOD.objects.blocks;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
@@ -102,7 +104,7 @@ public class TokenATM extends Block {
     ).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
 
     public TokenATM() {
-        super(Settings.of(Material.STONE).sounds(BlockSoundGroup.STONE).hardness(2.1f));
+        super(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).hardness(2.1f).breakByTool(FabricToolTags.PICKAXES).requiresTool());
         this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
     }
 

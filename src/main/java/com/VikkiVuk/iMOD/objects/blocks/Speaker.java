@@ -1,5 +1,7 @@
 package com.VikkiVuk.iMOD.objects.blocks;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
@@ -25,7 +27,7 @@ public class Speaker extends Block {
     private static final VoxelShape SHAPE_E = VoxelShapes.combineAndSimplify(Block.createCuboidShape(9, 0, 4, 10, 13, 11), Block.createCuboidShape(5, 0, 4, 9, 16, 11), BooleanBiFunction.OR);
 
     public Speaker() {
-        super(Settings.of(Material.WOOL).hardness(5.1f).sounds(BlockSoundGroup.WOOL));
+        super(FabricBlockSettings.of(Material.WOOL).hardness(5.1f).sounds(BlockSoundGroup.WOOL).breakByTool(FabricToolTags.PICKAXES).requiresTool());
         this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
     }
 

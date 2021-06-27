@@ -1,5 +1,7 @@
 package com.VikkiVuk.iMOD.objects.blocks;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
@@ -83,7 +85,7 @@ public class BetterCauldron extends Block {
     ).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
 
     public BetterCauldron() {
-        super(Settings.of(Material.METAL).hardness(5.1f).sounds(BlockSoundGroup.METAL));
+        super(FabricBlockSettings.of(Material.METAL).hardness(5.1f).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES).requiresTool());
         this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
     }
 

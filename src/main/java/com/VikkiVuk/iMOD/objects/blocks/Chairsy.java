@@ -1,6 +1,8 @@
 package com.VikkiVuk.iMOD.objects.blocks;
 
 import com.ibm.icu.impl.CalendarAstronomer;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
@@ -79,7 +81,7 @@ public class Chairsy extends Block {
 
 
     public Chairsy() {
-        super(Settings.of(Material.WOOL).sounds(BlockSoundGroup.WOOL).hardness(2.0f));
+        super(FabricBlockSettings.of(Material.WOOL).sounds(BlockSoundGroup.WOOL).hardness(2.0f).breakByTool(FabricToolTags.AXES).requiresTool());
         this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
     }
 

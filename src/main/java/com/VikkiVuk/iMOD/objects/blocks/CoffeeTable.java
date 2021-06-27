@@ -1,5 +1,7 @@
 package com.VikkiVuk.iMOD.objects.blocks;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.sound.BlockSoundGroup;
@@ -26,7 +28,7 @@ public class CoffeeTable  extends Block {
     ).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
 
     public CoffeeTable() {
-        super(Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).hardness(2.1f));
+        super(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).hardness(2.1f).breakByTool(FabricToolTags.AXES).requiresTool());
         // setRegistryName("coffee_table");
     }
 
