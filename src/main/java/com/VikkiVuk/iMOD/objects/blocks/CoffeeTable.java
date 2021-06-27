@@ -1,6 +1,7 @@
 package com.VikkiVuk.iMOD.objects.blocks;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.renderer.v1.RendererAccess;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemPlacementContext;
@@ -10,15 +11,15 @@ import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
 import net.minecraft.util.function.BooleanBiFunction;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.stream.Stream;
 
 public class CoffeeTable  extends Block {
-    public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
-
     private static final VoxelShape SHAPE_N = Stream.of(
             Block.createCuboidShape(1, 0, 2, 3, 5, 4),
             Block.createCuboidShape(13, 0, 2, 15, 5, 4),
@@ -36,24 +37,13 @@ public class CoffeeTable  extends Block {
         return SHAPE_N;
     }
 
-    @Nullable
     @Override
-    public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getPlayerLookDirection().getOpposite());
+    public boolean isShapeFullCube(BlockState state, BlockView world, BlockPos pos) {
+        return false;
     }
 
     @Override
-    public BlockState rotate(BlockState state, BlockRotation rotation) {
-        return state.with(FACING, rotation.rotate(state.get(FACING)));
-    }
-
-    @Override
-    public BlockState mirror(BlockState state, BlockMirror mirror) {
-        return state.rotate(mirror.getRotation(state.get(FACING)));
-    }
-
-    @Override
-    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
     }
 }

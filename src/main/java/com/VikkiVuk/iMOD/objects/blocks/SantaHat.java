@@ -2,10 +2,7 @@ package com.VikkiVuk.iMOD.objects.blocks;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalFacingBlock;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.StateManager;
@@ -13,15 +10,16 @@ import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
 import net.minecraft.util.function.BooleanBiFunction;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Set;
 import java.util.stream.Stream;
 
 public class SantaHat extends Block {
-    public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
 
     private static final VoxelShape SHAPE_N = Stream.of(
             Block.createCuboidShape(5, 4, 5, 6, 6, 11),
@@ -51,25 +49,14 @@ public class SantaHat extends Block {
         return SHAPE_N;
     }
 
-    @Nullable
     @Override
-    public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getPlayerLookDirection().getOpposite());
-    }
-
-
-    @Override
-    public BlockState rotate(BlockState state, BlockRotation rotation) {
-        return state.with(FACING, rotation.rotate(state.get(FACING)));
+    public boolean isShapeFullCube(BlockState state, BlockView world, BlockPos pos) {
+        return false;
     }
 
     @Override
-    public BlockState mirror(BlockState state, BlockMirror mirror) {
-        return state.rotate(mirror.getRotation(state.get(FACING)));
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
     }
 
-    @Override
-    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
-    }
 }

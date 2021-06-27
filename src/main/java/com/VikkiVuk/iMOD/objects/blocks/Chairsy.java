@@ -3,10 +3,7 @@ package com.VikkiVuk.iMOD.objects.blocks;
 import com.ibm.icu.impl.CalendarAstronomer;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalFacingBlock;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.StateManager;
@@ -14,18 +11,17 @@ import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
 import net.minecraft.util.function.BooleanBiFunction;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Set;
 import java.util.stream.Stream;
 
 public class Chairsy extends Block {
-
-    public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
-
     private static final VoxelShape SHAPE_S = Stream.of(
             Block.createCuboidShape(14, 10, 0, 16, 12, 16),
             Block.createCuboidShape(14, 0, 0, 16, 2, 16),
@@ -82,7 +78,6 @@ public class Chairsy extends Block {
 
     public Chairsy() {
         super(FabricBlockSettings.of(Material.WOOL).sounds(BlockSoundGroup.WOOL).hardness(2.0f).breakByTool(FabricToolTags.AXES, 2).requiresTool());
-        this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
     }
 
     public static VoxelShape getShapeN() {
@@ -101,25 +96,13 @@ public class Chairsy extends Block {
         return SHAPE_S;
     }
 
-    @Nullable
     @Override
-    public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getPlayerLookDirection().getOpposite());
-    }
-
-
-    @Override
-    public BlockState rotate(BlockState state, BlockRotation rotation) {
-        return state.with(FACING, rotation.rotate(state.get(FACING)));
+    public boolean isShapeFullCube(BlockState state, BlockView world, BlockPos pos) {
+        return false;
     }
 
     @Override
-    public BlockState mirror(BlockState state, BlockMirror mirror) {
-        return state.rotate(mirror.getRotation(state.get(FACING)));
-    }
-
-    @Override
-    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
     }
 }

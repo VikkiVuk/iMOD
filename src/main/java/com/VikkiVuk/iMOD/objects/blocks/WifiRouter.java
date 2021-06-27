@@ -3,13 +3,16 @@ package com.VikkiVuk.iMOD.objects.blocks;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.function.BooleanBiFunction;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.world.BlockView;
 
 import java.util.stream.Stream;
 
@@ -39,5 +42,15 @@ public class WifiRouter extends Block {
 
     public static VoxelShape getShapeN() {
         return SHAPE_N;
+    }
+
+    @Override
+    public boolean isShapeFullCube(BlockState state, BlockView world, BlockPos pos) {
+        return false;
+    }
+
+    @Override
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
     }
 }
