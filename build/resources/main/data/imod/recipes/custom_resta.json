@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "SIS",
+    "SAS",
+    "PPP"
+  ],
+
+  "key":
+  {
+    "I": { "item": "minecraft:diamond_block" },
+    "S": { "item": "minecraft:gray_concrete" },
+    "P": { "item": "minecraft:light_blue_concrete_powder" },
+    "A": { "item": "minecraft:lantern" }
+  },
+
+  "result": { "item": "imod:custom_resta" }
+}

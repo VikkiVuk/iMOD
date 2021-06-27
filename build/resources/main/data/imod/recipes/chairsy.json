@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "ISI",
+    "ISI",
+    "ISI"
+  ],
+
+  "key":
+  {
+    "I": { "item": "minecraft:oak_planks" },
+    "S": { "item": "minecraft:cyan_wool" }
+  },
+
+  "result": { "item": "imod:chairsy" }
+}

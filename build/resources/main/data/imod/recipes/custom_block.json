@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "ISA",
+    "BLK",
+    "GGG"
+  ],
+
+  "key":
+  {
+    "S": { "item": "minecraft:bedrock" },
+    "I": { "item": "minecraft:bricks" },
+    "A": { "item": "minecraft:bookshelf" },
+    "B": { "item": "minecraft:bone_block" },
+    "L": { "item": "minecraft:lime_concrete" },
+    "K": { "item": "minecraft:diamond_block" },
+    "G": { "item": "minecraft:stone" }
+  },
+
+  "result": { "item": "imod:custom_block" }
+}

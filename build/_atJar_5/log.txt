@@ -1,0 +1,5 @@
+Args: "--inJar", "C:\Users\Vikto\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.16.5-36.1.25\forge-1.16.5-36.1.25-injected.jar", "--outJar", "C:\Users\Vikto\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.16.5-36.1.25_mapped_snapshot_20210309-1.16.5\forge-1.16.5-36.1.25_mapped_snapshot_20210309-1.16.5.jar", "--logFile", "accesstransform.log", "--atFile", "D:\Minecraft Mods\iMOD\iMOD\build\_atJar_5\parent_at.cfg"
+Classpath: C:\Users\Vikto\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\accesstransformers\1.0.5\accesstransformers-1.0.5-fatjar.jar
+WorkDir: D:\Minecraft Mods\iMOD\iMOD\build\_atJar_5
+Main: net.minecraftforge.accesstransformer.TransformerProcessor
+====================================

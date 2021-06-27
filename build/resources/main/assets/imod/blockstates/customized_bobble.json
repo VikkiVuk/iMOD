@@ -1,0 +1,6 @@
+{
+  "variants":
+  {
+    "": { "model": "imod:block/customized_bobble" }
+  }
+}

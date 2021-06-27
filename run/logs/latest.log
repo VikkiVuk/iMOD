@@ -1,0 +1,96 @@
+[24Jun2021 16:22:09.013] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 36.1.25, --version, MOD_DEV, --assetIndex, 1.16, --assetsDir, C:\Users\Vikto\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[24Jun2021 16:22:09.013] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.9+86+master.3cf110c starting: java version 1.8.0_281 by Oracle Corporation
+[24Jun2021 16:22:09.700] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[24Jun2021 16:22:09.769] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/C:/Users/Vikto/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.2/1cf212283d26f706fd3074318870bebd14d2a9ed/mixin-0.8.2.jar Service=ModLauncher Env=CLIENT
+[24Jun2021 16:22:14.160] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Vikto\.gradle\caches\forge_gradle\assets, --assetIndex, 1.16, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[24Jun2021 16:22:26.824] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[24Jun2021 16:22:27.674] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Failed to verify authentication
+com.mojang.authlib.exceptions.AuthenticationUnavailableException: null
+	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:97) ~[authlib-2.1.28.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.<init>(YggdrasilSocialInteractionsService.java:40) ~[authlib-2.1.28.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.createSocialInteractionsService(YggdrasilAuthenticationService.java:152) ~[authlib-2.1.28.jar:?]
+	at net.minecraft.client.Minecraft.func_244735_a(Minecraft.java:556) ~[forge-1.16.5-36.1.25_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:388) ~[forge-1.16.5-36.1.25_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:149) ~[forge-1.16.5-36.1.25_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_281]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_281]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_281]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_281]
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:52) ~[forge-1.16.5-36.1.25_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.9.jar:?]
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:105) [forge-1.16.5-36.1.25_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
+[24Jun2021 16:22:27.684] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[24Jun2021 16:22:27.870] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[24Jun2021 16:22:29.184] [modloading-worker-3/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.1.25, for MC 1.16.5 with MCP 20210115.111550
+[24Jun2021 16:22:29.185] [modloading-worker-3/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.1.25 Initialized
+[24Jun2021 16:22:29.918] [modloading-worker-1/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Failed to create mod instance. ModID: jei, class mezz.jei.JustEnoughItems
+java.lang.NoSuchMethodError: net.minecraft.util.text.TextFormatting.func_96300_b(Ljava/lang/String;)Lnet/minecraft/util/text/TextFormatting;
+	at mezz.jei.config.ModIdFormattingConfig.parseFriendlyModNameFormat(ModIdFormattingConfig.java:111) ~[jei:7.7.0.106]
+	at mezz.jei.config.ModIdFormattingConfig.<init>(ModIdFormattingConfig.java:35) ~[jei:7.7.0.106]
+	at mezz.jei.config.JEIClientConfig.<clinit>(JEIClientConfig.java:24) ~[jei:7.7.0.106]
+	at mezz.jei.JustEnoughItems.clientStart(JustEnoughItems.java:32) ~[jei:7.7.0.106]
+	at mezz.jei.JustEnoughItems.lambda$null$0(JustEnoughItems.java:27) ~[jei:7.7.0.106]
+	at net.minecraftforge.fml.DistExecutor.unsafeRunWhenOn(DistExecutor.java:125) ~[forge:?]
+	at net.minecraftforge.fml.DistExecutor.runWhenOn(DistExecutor.java:109) ~[forge:?]
+	at mezz.jei.JustEnoughItems.<init>(JustEnoughItems.java:27) ~[jei:7.7.0.106]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_281]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_281]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_281]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_281]
+	at java.lang.Class.newInstance(Class.java:442) ~[?:1.8.0_281]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:81) ~[forge:36.1]
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:120) ~[forge:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640) [?:1.8.0_281]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1632) [?:1.8.0_281]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289) [?:1.8.0_281]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1067) [?:1.8.0_281]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1703) [?:1.8.0_281]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:172) [?:1.8.0_281]
+[24Jun2021 16:22:36.389] [Render thread/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event CONSTRUCT, 1 errors found
+[24Jun2021 16:22:36.503] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.sound.SoundLoadEvent to a broken mod state
+[24Jun2021 16:22:36.875] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.ColorHandlerEvent$Block to a broken mod state
+[24Jun2021 16:22:36.880] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.ColorHandlerEvent$Item to a broken mod state
+[24Jun2021 16:22:37.982] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.ParticleFactoryRegisterEvent to a broken mod state
+[24Jun2021 16:22:38.137] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[24Jun2021 16:22:38.394] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default
+[24Jun2021 16:22:39.134] [Worker-Main-5/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.ModelRegistryEvent to a broken mod state
+[24Jun2021 16:22:40.777] [Worker-Main-6/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Pre to a broken mod state
+[24Jun2021 16:22:48.014] [Worker-Main-4/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Pre to a broken mod state
+[24Jun2021 16:22:50.530] [Worker-Main-5/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Pre to a broken mod state
+[24Jun2021 16:22:50.576] [Worker-Main-7/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Pre to a broken mod state
+[24Jun2021 16:22:51.831] [Worker-Main-5/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Pre to a broken mod state
+[24Jun2021 16:22:51.839] [Worker-Main-5/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Pre to a broken mod state
+[24Jun2021 16:22:51.869] [Worker-Main-5/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Pre to a broken mod state
+[24Jun2021 16:22:51.895] [Worker-Main-5/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Pre to a broken mod state
+[24Jun2021 16:22:51.906] [Worker-Main-5/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Pre to a broken mod state
+[24Jun2021 16:22:51.923] [Worker-Main-5/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Pre to a broken mod state
+[24Jun2021 16:22:52.371] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[24Jun2021 16:22:52.374] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[24Jun2021 16:22:52.603] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[24Jun2021 16:22:52.830] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[24Jun2021 16:22:52.831] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[24Jun2021 16:22:52.850] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[24Jun2021 16:22:52.850] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[24Jun2021 16:22:52.886] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[24Jun2021 16:22:52.887] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[24Jun2021 16:22:52.893] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[24Jun2021 16:22:52.893] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[24Jun2021 16:22:52.895] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[24Jun2021 16:22:52.895] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[24Jun2021 16:22:52.898] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[24Jun2021 16:22:52.898] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[24Jun2021 16:22:52.900] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[24Jun2021 16:22:53.335] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.ModelBakeEvent to a broken mod state
+[24Jun2021 16:22:53.756] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[24Jun2021 16:22:53.770] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[24Jun2021 16:22:53.772] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[24Jun2021 16:22:53.775] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[24Jun2021 16:22:53.775] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[24Jun2021 16:22:53.787] [Render thread/ERROR] [net.minecraftforge.fml.ModLoader/]: Cowardly refusing to send event net.minecraftforge.client.event.TextureStitchEvent$Post to a broken mod state
+[24Jun2021 16:22:53.830] [Render thread/FATAL] [net.minecraftforge.common.ForgeMod/]: Preparing crash report with UUID 10dead5f-a1f9-4102-a41e-3c08f379e42c
+[24Jun2021 16:22:53.832] [Render thread/INFO] [STDOUT/]: [net.minecraft.crash.CrashReport:makeCategoryDepth:227]: Negative index in crash report handler (21/23)
+[24Jun2021 16:22:53.852] [Render thread/FATAL] [net.minecraftforge.fml.client.ClientModLoader/]: Crash report saved to .\crash-reports\crash-2021-06-24_16.22.53-fml.txt
