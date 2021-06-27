@@ -9,13 +9,13 @@ import net.minecraft.sound.BlockSoundGroup;
 
 public class BlockInit {
     // Normal blocks
-    public static final Block bluestone_block = new Block(FabricBlockSettings.of(Material.METAL).hardness(1.9F).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES).requiresTool());
-    public static final Block ruby_block = new Block(FabricBlockSettings.of(Material.METAL).hardness(1.9F).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES).requiresTool());
-    public static final Block copper_block = new Block(FabricBlockSettings.of(Material.METAL).hardness(1.9F).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES).requiresTool());
-    public static final Block rainbow_block = new Block(FabricBlockSettings.of(Material.METAL).hardness(1.9F).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES).requiresTool());
+    public static final Block bluestone_block = new Block(FabricBlockSettings.of(Material.METAL).hardness(1.9F).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool());
+    public static final Block ruby_block = new Block(FabricBlockSettings.of(Material.METAL).hardness(1.9F).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool());
+    public static final Block copper_block = new Block(FabricBlockSettings.of(Material.METAL).hardness(1.9F).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool());
+    public static final Block rainbow_block = new Block(FabricBlockSettings.of(Material.METAL).hardness(1.9F).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool());
     public static final Block light_blue_glowstone = new Block(FabricBlockSettings.of(Material.GLASS).hardness(1.9F).sounds(BlockSoundGroup.GLASS).breakByHand(true));
-    public static final Block customized_bobble = new Block(FabricBlockSettings.of(Material.STONE).hardness(1.9F).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
-    public static final Block custom_block = new Block(FabricBlockSettings.of(Material.STONE).hardness(1.9F).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES).requiresTool());
+    public static final Block customized_bobble = new Block(FabricBlockSettings.of(Material.STONE).hardness(1.9F).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool());
+    public static final Block custom_block = new Block(FabricBlockSettings.of(Material.STONE).hardness(1.9F).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool());
 
     // Custom Models/Blocks
     public static final Block chairsy = new Chairsy();

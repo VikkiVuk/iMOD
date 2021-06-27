@@ -85,7 +85,7 @@ public class BetterCauldron extends Block {
     ).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
 
     public BetterCauldron() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(5.1f).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES).requiresTool());
+        super(FabricBlockSettings.of(Material.METAL).hardness(5.1f).sounds(BlockSoundGroup.METAL).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool());
         this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
     }
 

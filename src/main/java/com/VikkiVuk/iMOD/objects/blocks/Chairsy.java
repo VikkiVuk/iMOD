@@ -81,7 +81,7 @@ public class Chairsy extends Block {
 
 
     public Chairsy() {
-        super(FabricBlockSettings.of(Material.WOOL).sounds(BlockSoundGroup.WOOL).hardness(2.0f).breakByTool(FabricToolTags.AXES).requiresTool());
+        super(FabricBlockSettings.of(Material.WOOL).sounds(BlockSoundGroup.WOOL).hardness(2.0f).breakByTool(FabricToolTags.AXES, 2).requiresTool());
         this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
     }
 

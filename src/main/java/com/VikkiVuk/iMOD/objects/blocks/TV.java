@@ -60,7 +60,7 @@ public class TV extends Block {
     ).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
 
     public TV() {
-        super(FabricBlockSettings.of(Material.METAL).sounds(BlockSoundGroup.METAL).hardness(2.1f).breakByTool(FabricToolTags.PICKAXES).requiresTool());
+        super(FabricBlockSettings.of(Material.METAL).sounds(BlockSoundGroup.METAL).hardness(2.1f).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool());
     }
 
     public static VoxelShape getShapeN() {

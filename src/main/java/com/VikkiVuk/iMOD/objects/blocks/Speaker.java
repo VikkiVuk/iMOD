@@ -27,7 +27,7 @@ public class Speaker extends Block {
     private static final VoxelShape SHAPE_E = VoxelShapes.combineAndSimplify(Block.createCuboidShape(9, 0, 4, 10, 13, 11), Block.createCuboidShape(5, 0, 4, 9, 16, 11), BooleanBiFunction.OR);
 
     public Speaker() {
-        super(FabricBlockSettings.of(Material.WOOL).hardness(5.1f).sounds(BlockSoundGroup.WOOL).breakByTool(FabricToolTags.PICKAXES).requiresTool());
+        super(FabricBlockSettings.of(Material.WOOL).hardness(5.1f).sounds(BlockSoundGroup.WOOL).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool());
         this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
     }
 

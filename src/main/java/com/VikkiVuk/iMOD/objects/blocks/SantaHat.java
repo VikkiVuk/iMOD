@@ -44,7 +44,7 @@ public class SantaHat extends Block {
     ).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR);}).get();
 
     public SantaHat() {
-        super(FabricBlockSettings.of(Material.WOOL).sounds(BlockSoundGroup.WOOL).hardness(2.1f).breakByTool(FabricToolTags.SHEARS).requiresTool());
+        super(FabricBlockSettings.of(Material.WOOL).sounds(BlockSoundGroup.WOOL).hardness(2.1f).breakByTool(FabricToolTags.SHEARS, 2).requiresTool());
     }
 
     public static VoxelShape getShapeN() {
