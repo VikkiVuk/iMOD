@@ -10,13 +10,14 @@
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/imod",
-    "sources": "https://www.curseforge.com/minecraft/mc-mods/imod"
+    "sources": "https://www.curseforge.com/minecraft/mc-mods/imod",
+    "issues": "https://www.curseforge.com/minecraft/mc-mods/imod/issues"
   },
 
   "license": "CC0-1.0",
   "icon": "assets/imod/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
       "com.VikkiVuk.iMOD.iMOD"
@@ -34,5 +35,13 @@
   },
   "suggests": {
     "another-mod": "iMOD forge"
+  },
+
+  "custom": {
+    "imod": {
+      "links": {
+        "imod.discord": "https://discord.gg/dVAuYn9"
+      }
+    }
   }
 }
