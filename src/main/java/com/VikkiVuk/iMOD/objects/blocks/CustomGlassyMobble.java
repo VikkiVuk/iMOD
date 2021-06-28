@@ -7,10 +7,12 @@ import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
 import net.minecraft.util.function.BooleanBiFunction;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
@@ -18,7 +20,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.stream.Stream;
 
-public class CustomGlassyMobble extends Block {
+public class CustomGlassyMobble extends HorizontalFacingBlock {
+    public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
     private static final VoxelShape SHAPE_N = Stream.of(
             Block.createCuboidShape(0, 0, 0, 16, 1, 16),
@@ -43,20 +46,32 @@ public class CustomGlassyMobble extends Block {
 
     public CustomGlassyMobble() {
         super(FabricBlockSettings.of(Material.GLASS).sounds(BlockSoundGroup.GLASS).hardness(2.1f).breakByTool(FabricToolTags.PICKAXES, 2).requiresTool());
+        this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
     }
 
-    public static VoxelShape getShapeN() {
-        return SHAPE_N;
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        switch(state.get(FACING)) {
+            case NORTH:
+                return SHAPE_N;
+            case SOUTH:
+                return SHAPE_N;
+            case WEST:
+                return SHAPE_N;
+            case EAST:
+                return SHAPE_N;
+            default:
+                return SHAPE_N;
+        }
+    }
+
+    @Nullable
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        return this.getDefaultState().with(FACING, ctx.getPlayerFacing());
     }
 
     @Override
-    public boolean isShapeFullCube(BlockState state, BlockView world, BlockPos pos) {
-        return false;
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(FACING);
     }
-
-    @Override
-    public BlockRenderType getRenderType(BlockState state) {
-        return BlockRenderType.MODEL;
-    }
-
 }

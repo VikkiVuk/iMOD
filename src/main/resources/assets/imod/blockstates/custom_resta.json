@@ -1,6 +1,9 @@
 {
   "variants":
   {
-    "": { "model": "imod:block/custom_resta" }
+    "facing=north": { "model": "imod:block/custom_resta" },
+    "facing=south": { "model": "imod:block/custom_resta" },
+    "facing=west": { "model": "imod:block/custom_resta" },
+    "facing=east": { "model": "imod:block/custom_resta" }
   }
 }
