@@ -17,6 +17,7 @@ public class iMOD implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ItemInit.registerItems();
+
 		BlockInit.registerBlocks();
 		BlockInit.registerBlockItems();
 	}
