@@ -1,5 +1,6 @@
 package com.VikkiVuk.iMOD.objects.blocks;
 
+import com.google.common.collect.ImmutableMap;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.renderer.v1.RendererAccess;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
@@ -17,9 +18,12 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.function.Function;
 import java.util.stream.Stream;
 
 public class CoffeeTable  extends Block {
+    public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
+
     private static final VoxelShape SHAPE_N = Stream.of(
             Block.createCuboidShape(1, 0, 2, 3, 5, 4),
             Block.createCuboidShape(13, 0, 2, 15, 5, 4),
@@ -33,17 +37,59 @@ public class CoffeeTable  extends Block {
         // setRegistryName("coffee_table");
     }
 
-    public static VoxelShape getShapeN() {
-        return SHAPE_N;
+    @Override
+    protected ImmutableMap<BlockState, VoxelShape> getShapesForStates(Function<BlockState, VoxelShape> function) {
+        switch(state.get(FACING))
+        {
+            case NORTH:
+                return SHAPE_N;
+            case SOUTH:
+                return SHAPE_N;
+            case EAST:
+                return SHAPE_N;
+            case WEST:
+                return SHAPE_N;
+            default:
+                return SHAPE_N;
+
+        }
     }
 
     @Override
-    public boolean isShapeFullCube(BlockState state, BlockView world, BlockPos pos) {
-        return false;
+    public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
+        switch(state.get(FACING))
+        {
+            case NORTH:
+                return SHAPE_N;
+            case SOUTH:
+                return SHAPE_N;
+            case EAST:
+                return SHAPE_N;
+            case WEST:
+                return SHAPE_N;
+            default:
+                return SHAPE_N;
+
+        }
     }
 
     @Override
-    public BlockRenderType getRenderType(BlockState state) {
-        return BlockRenderType.MODEL;
+    public BlockState getStateForPlacement(BlockItemUseContext context) {
+        return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+    }
+
+    @Override
+    public BlockState rotate(BlockState state, Rotation rot) {
+        return state.with(FACING, rot.rotate(state.get(FACING)));
+    }
+
+    @Override
+    public BlockState mirror(BlockState state, Mirror mirrorIn) {
+        return state.rotate(mirrorIn.toRotation(state.get(FACING)));
+    }
+
+    @Override
+    protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
+        builder.add(FACING);
     }
 }
