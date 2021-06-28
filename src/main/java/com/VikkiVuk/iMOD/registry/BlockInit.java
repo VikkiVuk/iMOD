@@ -50,6 +50,17 @@ public class BlockInit {
     public static final Block yellow_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
     public static final Block orange_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
 
+    //Planks
+    public static final Block bluestone_planks = new Block(FabricBlockSettings.of(Material.METAL).strength(1.9F,10.8F).breakByTool(FabricToolTags.PICKAXES,2).sounds(BlockSoundGroup.METAL).requiresTool());
+    public static final Block ruby_planks = new Block(FabricBlockSettings.of(Material.METAL).strength(1.9F,10.8F).breakByTool(FabricToolTags.PICKAXES,2).sounds(BlockSoundGroup.METAL).requiresTool());
+    public static final Block copper_planks = new Block(FabricBlockSettings.of(Material.METAL).strength(1.9F,10.8F).breakByTool(FabricToolTags.PICKAXES,2).sounds(BlockSoundGroup.METAL).requiresTool());
+
+    //Ores
+    public static final Block bluestone_ore = new Block(FabricBlockSettings.of(Material.METAL).strength(1.9F,10.8F).breakByTool(FabricToolTags.PICKAXES,2).sounds(BlockSoundGroup.METAL).requiresTool());
+    public static final Block ruby_ore = new Block(FabricBlockSettings.of(Material.METAL).strength(1.9F,10.8F).breakByTool(FabricToolTags.PICKAXES,2).sounds(BlockSoundGroup.METAL).requiresTool());
+    public static final Block copper_ore = new Block(FabricBlockSettings.of(Material.METAL).strength(1.9F,10.8F).breakByTool(FabricToolTags.PICKAXES,2).sounds(BlockSoundGroup.METAL).requiresTool());
+    public static final Block rainbow_ore = new Block(FabricBlockSettings.of(Material.METAL).strength(1.9F,10.8F).breakByTool(FabricToolTags.PICKAXES,2).sounds(BlockSoundGroup.METAL).requiresTool());
+
     public static void registerBlocks() {
         // Normal Blocks
         Registry.register(Registry.BLOCK, new Identifier(iMOD.MOD_ID, "bluestone_block"), bluestone_block);
@@ -87,15 +98,29 @@ public class BlockInit {
         Registry.register(Registry.BLOCK, new Identifier(iMOD.MOD_ID, "white_slime"), white_slime);
         Registry.register(Registry.BLOCK, new Identifier(iMOD.MOD_ID, "yellow_slime"), yellow_slime);
         Registry.register(Registry.BLOCK, new Identifier(iMOD.MOD_ID, "orange_slime"), orange_slime);
+
+        // Planks
+        Registry.register(Registry.BLOCK, new Identifier(iMOD.MOD_ID, "bluestone_planks"), bluestone_planks);
+        Registry.register(Registry.BLOCK, new Identifier(iMOD.MOD_ID, "ruby_planks"), ruby_planks);
+        Registry.register(Registry.BLOCK, new Identifier(iMOD.MOD_ID, "copper_planks"), copper_planks);
+
+        // Ores
+        Registry.register(Registry.BLOCK, new Identifier(iMOD.MOD_ID, "bluestone_ore"), bluestone_ore);
+        Registry.register(Registry.BLOCK, new Identifier(iMOD.MOD_ID, "ruby_ore"), ruby_ore);
+        Registry.register(Registry.BLOCK, new Identifier(iMOD.MOD_ID, "copper_ore"), copper_ore);
+        Registry.register(Registry.BLOCK, new Identifier(iMOD.MOD_ID, "rainbow_ore"), rainbow_ore);
     }
 
     public static void registerBlockItems() {
+        // Normal blocks
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "bluestone_block"), new BlockItem(bluestone_block, new Item.Settings().group(iMOD.iTAB)));
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "ruby_block"), new BlockItem(ruby_block, new Item.Settings().group(iMOD.iTAB)));
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "copper_block"), new BlockItem(copper_block, new Item.Settings().group(iMOD.iTAB)));
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "rainbow_block"), new BlockItem(rainbow_block, new Item.Settings().group(iMOD.iTAB)));
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "light_blue_glowstone"), new BlockItem(light_blue_glowstone, new Item.Settings().group(iMOD.iTAB)));
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "customized_bobble"), new BlockItem(customized_bobble, new Item.Settings().group(iMOD.iTAB)));
+
+        // Custom blocks(models)
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "custom_block"), new BlockItem(custom_block, new Item.Settings().group(iMOD.iTAB)));
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "chairsy"), new BlockItem(chairsy, new Item.Settings().group(iMOD.iTAB)));
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "token_atm"), new BlockItem(token_atm, new Item.Settings().group(iMOD.iTAB)));
@@ -107,6 +132,8 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "wifi_router"), new BlockItem(wifi_router, new Item.Settings().group(iMOD.iTAB)));
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "tv"), new BlockItem(tv, new Item.Settings().group(iMOD.iTAB)));
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "santa_hat"), new BlockItem(santa_hat, new Item.Settings().group(iMOD.iTAB)));
+
+        // Slimes
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "blue_slime"), new BlockItem(blue_slime, new Item.Settings().group(iMOD.iTAB)));
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "brown_slime"), new BlockItem(brown_slime, new Item.Settings().group(iMOD.iTAB)));
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "cyan_slime"), new BlockItem(cyan_slime, new Item.Settings().group(iMOD.iTAB)));
@@ -121,5 +148,16 @@ public class BlockInit {
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "white_slime"), new BlockItem(white_slime, new Item.Settings().group(iMOD.iTAB)));
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "yellow_slime"), new BlockItem(yellow_slime, new Item.Settings().group(iMOD.iTAB)));
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "orange_slime"), new BlockItem(orange_slime, new Item.Settings().group(iMOD.iTAB)));
+
+        // Planks
+        Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "bluestone_planks"), new BlockItem(bluestone_planks, new Item.Settings().group(iMOD.iTAB)));
+        Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "ruby_planks"), new BlockItem(ruby_planks, new Item.Settings().group(iMOD.iTAB)));
+        Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "copper_planks"), new BlockItem(copper_planks, new Item.Settings().group(iMOD.iTAB)));
+
+        // Ores
+        Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "bluestone_ore"), new BlockItem(bluestone_ore, new Item.Settings().group(iMOD.iTAB)));
+        Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "ruby_ore"), new BlockItem(ruby_ore, new Item.Settings().group(iMOD.iTAB)));
+        Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "copper_ore"), new BlockItem(copper_ore, new Item.Settings().group(iMOD.iTAB)));
+        Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "rainbow_ore"), new BlockItem(rainbow_ore, new Item.Settings().group(iMOD.iTAB)));
     }
 }

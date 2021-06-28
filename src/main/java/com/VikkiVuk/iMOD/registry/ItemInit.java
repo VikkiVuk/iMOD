@@ -12,6 +12,8 @@ public class ItemInit {
     public static final Item ruby = new Item(new Item.Settings().group(iMOD.iTAB));
     public static final Item copper_ingot = new Item(new Item.Settings().group(iMOD.iTAB));
     public static final Item rainbow_gem = new Item(new Item.Settings().group(iMOD.iTAB));
+    public static final Item compressed_iron = new Item(new Item.Settings().group(iMOD.iTAB));
+    public static final Item ruby_ingot = new Item(new Item.Settings().group(iMOD.iTAB));
 
     //Miscellaneous
     public static final Item dinky_winky = new Item(new Item.Settings().group(iMOD.iTAB));
@@ -55,6 +57,8 @@ public class ItemInit {
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "ruby"), ruby);
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "copper_ingot"), copper_ingot);
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "rainbow_gem"), rainbow_gem);
+        Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "compressed_iron"), compressed_iron);
+        Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "ruby_ingot"), ruby_ingot);
 
         // Misc
         Registry.register(Registry.ITEM, new Identifier(iMOD.MOD_ID, "dinky_winky"), dinky_winky);
