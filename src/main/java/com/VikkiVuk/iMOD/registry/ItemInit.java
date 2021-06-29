@@ -1,6 +1,7 @@
 package com.VikkiVuk.iMOD.registry;
 
 import com.VikkiVuk.iMOD.iMOD;
+import com.VikkiVuk.iMOD.objects.items.TooltipItem;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -16,10 +17,10 @@ public class ItemInit {
     public static final Item ruby_ingot = new Item(new Item.Settings().group(iMOD.iTAB));
 
     //Miscellaneous
-    public static final Item dinky_winky = new Item(new Item.Settings().group(iMOD.iTAB));
-    public static final Item microphone = new Item(new Item.Settings().group(iMOD.iTAB));
-    public static final Item dollar = new Item(new Item.Settings().group(iMOD.iTAB));
-    public static final Item diamond_ingot = new Item(new Item.Settings().group(iMOD.iTAB));
+    public static final Item dinky_winky = new TooltipItem(new Item.Settings().group(iMOD.iTAB), "dinky_winky", true);
+    public static final Item microphone = new TooltipItem(new Item.Settings().group(iMOD.iTAB), "microphone", false);
+    public static final Item dollar = new TooltipItem(new Item.Settings().group(iMOD.iTAB), "dollar", false);
+    public static final Item diamond_ingot = new TooltipItem(new Item.Settings().group(iMOD.iTAB), "diamond_ingot", false);
     public static final Item flour_bag = new Item(new Item.Settings().group(iMOD.iTAB));
     public static final Item wheat_flour = new Item(new Item.Settings().group(iMOD.iTAB));
 
