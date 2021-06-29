@@ -1,0 +1,40 @@
+com/VikkiVuk/iMOD/objects/blocks/Chairsy.java
+ com.VikkiVuk.iMOD.objects.blocks.Chairsy
+ com.VikkiVuk.iMOD.objects.blocks.Chairsy$1
+com/VikkiVuk/iMOD/objects/blocks/BetterCauldron.java
+ com.VikkiVuk.iMOD.objects.blocks.BetterCauldron
+ com.VikkiVuk.iMOD.objects.blocks.BetterCauldron$1
+com/VikkiVuk/iMOD/registry/ItemInit.java
+ com.VikkiVuk.iMOD.registry.ItemInit
+com/VikkiVuk/iMOD/objects/blocks/Speaker.java
+ com.VikkiVuk.iMOD.objects.blocks.Speaker
+ com.VikkiVuk.iMOD.objects.blocks.Speaker$1
+com/VikkiVuk/iMOD/objects/blocks/WifiRouter.java
+ com.VikkiVuk.iMOD.objects.blocks.WifiRouter
+ com.VikkiVuk.iMOD.objects.blocks.WifiRouter$1
+com/VikkiVuk/iMOD/objects/blocks/CustomResta.java
+ com.VikkiVuk.iMOD.objects.blocks.CustomResta
+ com.VikkiVuk.iMOD.objects.blocks.CustomResta$1
+com/VikkiVuk/iMOD/objects/blocks/TokenATM.java
+ com.VikkiVuk.iMOD.objects.blocks.TokenATM
+ com.VikkiVuk.iMOD.objects.blocks.TokenATM$1
+com/VikkiVuk/iMOD/registry/BlockInit.java
+ com.VikkiVuk.iMOD.registry.BlockInit
+com/VikkiVuk/iMOD/objects/blocks/other/CustomSlimeBlock.java
+ com.VikkiVuk.iMOD.objects.blocks.other.CustomSlimeBlock
+com/VikkiVuk/iMOD/objects/blocks/CustomGlassyMobble.java
+ com.VikkiVuk.iMOD.objects.blocks.CustomGlassyMobble
+ com.VikkiVuk.iMOD.objects.blocks.CustomGlassyMobble$1
+com/VikkiVuk/iMOD/util/helpers/KeyboardHelper.java
+ com.VikkiVuk.iMOD.util.helpers.KeyboardHelper
+com/VikkiVuk/iMOD/objects/blocks/SantaHat.java
+ com.VikkiVuk.iMOD.objects.blocks.SantaHat
+ com.VikkiVuk.iMOD.objects.blocks.SantaHat$1
+com/VikkiVuk/iMOD/iMOD.java
+ com.VikkiVuk.iMOD.iMOD
+com/VikkiVuk/iMOD/objects/blocks/CoffeeTable.java
+ com.VikkiVuk.iMOD.objects.blocks.CoffeeTable
+ com.VikkiVuk.iMOD.objects.blocks.CoffeeTable$1
+com/VikkiVuk/iMOD/objects/blocks/TV.java
+ com.VikkiVuk.iMOD.objects.blocks.TV
+ com.VikkiVuk.iMOD.objects.blocks.TV$1

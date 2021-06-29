@@ -1,0 +1,21 @@
+{
+  "minecraft:recipes/misc/orange_dye_from_orange_tulip": {
+    "criteria": {
+      "has_orange_tulip": "2021-06-28 13:56:54 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/magenta_dye_from_allium": {
+    "criteria": {
+      "has_allium": "2021-06-28 13:56:54 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2021-06-28 13:56:54 +0200"
+    },
+    "done": true
+  },
+  "DataVersion": 2724
+}

@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "facing=north": { "model": "imod:block/santa_hat" },
+    "facing=south": { "model": "imod:block/santa_hat" },
+    "facing=west": { "model": "imod:block/santa_hat" },
+    "facing=east": { "model": "imod:block/santa_hat" }
+  }
+}
