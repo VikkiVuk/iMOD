@@ -1,23 +1,15 @@
 ---- Minecraft Crash Report ----
-// Who set us up the TNT?
+// You're mean.
 
-Time: 6/27/21, 11:09 PM
-Description: Unexpected error
+Time: 6/30/21, 8:18 PM
+Description: Initializing game
 
-java.lang.IllegalArgumentException: Cannot set property DirectionProperty{name=facing, clazz=class net.minecraft.util.math.Direction, values=[north, south, west, east]} to up on Block{imod:coffee_table}, it is not an allowed value
-	at net.minecraft.state.State.with(State.java:125)
-	at com.VikkiVuk.iMOD.objects.blocks.CoffeeTable.getPlacementState(CoffeeTable.java:42)
-	at net.minecraft.item.BlockItem.getPlacementState(BlockItem.java:118)
-	at net.minecraft.item.BlockItem.place(BlockItem.java:70)
-	at net.minecraft.item.BlockItem.useOnBlock(BlockItem.java:49)
-	at net.minecraft.item.ItemStack.useOnBlock(ItemStack.java:244)
-	at net.minecraft.client.network.ClientPlayerInteractionManager.interactBlock(ClientPlayerInteractionManager.java:338)
-	at net.minecraft.client.MinecraftClient.doItemUse(MinecraftClient.java:1648)
-	at net.minecraft.client.MinecraftClient.handleInputEvents(MinecraftClient.java:1902)
-	at net.minecraft.client.MinecraftClient.tick(MinecraftClient.java:1730)
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1083)
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:730)
-	at net.minecraft.client.main.Main.main(Main.java:217)
+java.lang.RuntimeException: Could not execute entrypoint stage 'main' due to errors, provided by 'roughlyenoughitems'!
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.invoke0(EntrypointUtils.java:50)
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.invoke(EntrypointUtils.java:33)
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointClient.start(EntrypointClient.java:33)
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:459)
+	at net.minecraft.client.main.Main.main(Main.java:179)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -26,6 +18,15 @@ java.lang.IllegalArgumentException: Cannot set property DirectionProperty{name=f
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153)
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28)
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+Caused by: java.lang.RuntimeException: Architectury API is not installed! https://www.curseforge.com/minecraft/mc-mods/architectury-fabric/files/all
+	at me.shedaniel.rei.RoughlyEnoughItemsState.error(RoughlyEnoughItemsState.java:62)
+	at me.shedaniel.rei.fabric.RoughlyEnoughItemsInitializerImpl.checkMods(RoughlyEnoughItemsInitializerImpl.java:61)
+	at me.shedaniel.rei.RoughlyEnoughItemsInitializer.checkMods(RoughlyEnoughItemsInitializer.java)
+	at me.shedaniel.rei.RoughlyEnoughItemsInitializer.onInitialize(RoughlyEnoughItemsInitializer.java:36)
+	at java.base/java.lang.invoke.MethodHandleProxies$1.invoke(MethodHandleProxies.java:194)
+	at jdk.proxy2/com.sun.proxy.jdk.proxy2.$Proxy28.onInitialize(Unknown Source)
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.invoke0(EntrypointUtils.java:47)
+	... 12 more
 
 
 A detailed walkthrough of the error, its code path and all known details is as follows:
@@ -34,30 +35,15 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Render thread
 Stacktrace:
-	at net.minecraft.state.State.with(State.java:125)
-	at com.VikkiVuk.iMOD.objects.blocks.CoffeeTable.getPlacementState(CoffeeTable.java:42)
-	at net.minecraft.item.BlockItem.getPlacementState(BlockItem.java:118)
-	at net.minecraft.item.BlockItem.place(BlockItem.java:70)
-	at net.minecraft.item.BlockItem.useOnBlock(BlockItem.java:49)
-	at net.minecraft.item.ItemStack.useOnBlock(ItemStack.java:244)
-	at net.minecraft.client.network.ClientPlayerInteractionManager.interactBlock(ClientPlayerInteractionManager.java:338)
-	at net.minecraft.client.MinecraftClient.doItemUse(MinecraftClient.java:1648)
-	at net.minecraft.client.MinecraftClient.handleInputEvents(MinecraftClient.java:1902)
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.invoke0(EntrypointUtils.java:50)
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointUtils.invoke(EntrypointUtils.java:33)
+	at net.fabricmc.loader.entrypoint.minecraft.hooks.EntrypointClient.start(EntrypointClient.java:33)
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:459)
 
--- Affected level --
+-- Initialization --
 Details:
-	All players: 1 total; [ClientPlayerEntity['Player11'/148, l='ClientLevel', x=-106.88, y=63.00, z=-23.17]]
-	Chunk stats: 841, 559
-	Level dimension: minecraft:overworld
-	Level spawn location: World: (-256,66,64), Section: (at 0,2,0 in -16,4,4; chunk contains blocks -256,0,64 to -241,255,79), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
-	Level time: 7662 game time, 7662 day time
-	Server brand: fabric
-	Server type: Integrated singleplayer server
 Stacktrace:
-	at net.minecraft.client.world.ClientWorld.addDetailsToCrashReport(ClientWorld.java:370)
-	at net.minecraft.client.MinecraftClient.addDetailsToCrashReport(MinecraftClient.java:2399)
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:754)
-	at net.minecraft.client.main.Main.main(Main.java:217)
+	at net.minecraft.client.main.Main.main(Main.java:179)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,13 +53,6 @@ Stacktrace:
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28)
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
 
--- Last reload --
-Details:
-	Reload number: 1
-	Reload reason: initial
-	Finished: Yes
-	Packs: Default, Fabric Mods
-
 -- System Details --
 Details:
 	Minecraft Version: 1.17
@@ -81,7 +60,7 @@ Details:
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 16.0.1, AdoptOpenJDK
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), AdoptOpenJDK
-	Memory: 321386496 bytes (306 MiB) / 1598029824 bytes (1524 MiB) up to 1598029824 bytes (1524 MiB)
+	Memory: 1052988928 bytes (1004 MiB) / 1362100224 bytes (1299 MiB) up to 1598029824 bytes (1524 MiB)
 	CPUs: 4
 	Processor Vendor: AuthenticAMD
 	Processor Name: AMD Ryzen 3 3200G with Radeon Vega Graphics    
@@ -95,17 +74,17 @@ Details:
 	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
 	Graphics card #0 VRAM (MB): 2048.00
 	Graphics card #0 deviceId: 0x15d8
-	Graphics card #0 versionInfo: DriverVersion=27.20.21002.112
+	Graphics card #0 versionInfo: DriverVersion=30.0.13000.17006
 	Memory slot #0 capacity (MB): 4096.00
 	Memory slot #0 clockSpeed (GHz): 2.67
 	Memory slot #0 type: DDR4
 	Memory slot #1 capacity (MB): 4096.00
 	Memory slot #1 clockSpeed (GHz): 2.67
 	Memory slot #1 type: DDR4
-	Virtual memory max (MB): 15308.05
-	Virtual memory used (MB): 12171.22
-	Swap memory total (MB): 9216.00
-	Swap memory used (MB): 2259.68
+	Virtual memory max (MB): 14426.95
+	Virtual memory used (MB): 12209.80
+	Swap memory total (MB): 8334.90
+	Swap memory used (MB): 1894.14
 	JVM Flags: 1 total; -XX:+ShowCodeDetailsInExceptionMessages
 	Fabric Mods: 
 		fabric: Fabric API 0.36.0+1.17
@@ -153,22 +132,18 @@ Details:
 		fabric-textures-v0: Fabric Textures (v0) 1.0.6+a02b44633d
 		fabric-tool-attribute-api-v1: Fabric Tool Attribute API (v1) 1.2.12+b7ab61213d
 		fabricloader: Fabric Loader 0.11.6
-		imod: iMOD 1.5.0
+		imod: iMOD 1.5.2
 		java: OpenJDK 64-Bit Server VM 16
 		minecraft: Minecraft 1.17
 		modmenu: Mod Menu 2.0.2
+		roughlyenoughitems: Roughly Enough Items 6.0.262-alpha
 	Launched Version: Fabric
 	Backend library: LWJGL version 3.2.2 build 10
-	Backend API: AMD 15D8:C9 GL version 3.2.14830 Core Profile Forward-Compatible Context 21.4.1 27.20.21002.112, ATI Technologies Inc.
-	Window size: 1920x1017
+	Backend API: NO CONTEXT
+	Window size: <not initialized>
 	GL Caps: Using framebuffer using OpenGL 3.2
-	GL debug messages: 
+	GL debug messages: <disabled>
 	Using VBOs: Yes
 	Is Modded: Definitely; Client brand changed to 'fabric'
-	Type: Integrated Server (map_client.txt)
-	Graphics mode: fancy
-	Resource Packs: Fabric Mods
-	Current Language: English (US)
-	CPU: 4x AMD Ryzen 3 3200G with Radeon Vega Graphics 
-	Player Count: 1 / 8; [ServerPlayerEntity['Player11'/148, l='ServerLevel[New World]', x=-106.88, y=63.00, z=-23.17]]
-	Data Packs: vanilla, Fabric Mods
+	Type: Client (map_client.txt)
+	CPU: <unknown>

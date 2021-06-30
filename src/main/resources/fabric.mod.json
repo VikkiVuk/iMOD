@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "com.VikkiVuk.iMOD.iMOD"
+    ],
+    "client": [
+      "com.VikkiVuk.iMOD.iMODClient"
     ]
   },
 

@@ -35,20 +35,20 @@ public class BlockInit {
     public static final Block tv = new TV();
 
     // Slimes
-    public static final Block blue_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
-    public static final Block brown_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
-    public static final Block cyan_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
-    public static final Block gray_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
-    public static final Block green_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
-    public static final Block light_blue_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
-    public static final Block light_gray_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
-    public static final Block lime_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
-    public static final Block magenta_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
-    public static final Block pink_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
-    public static final Block purple_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
-    public static final Block white_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
-    public static final Block yellow_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
-    public static final Block orange_slime = new CustomSlimeBlock(AbstractBlock.Settings.of(Material.ORGANIC_PRODUCT, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
+    public static final Block blue_slime = new CustomSlimeBlock();
+    public static final Block brown_slime = new CustomSlimeBlock();
+    public static final Block cyan_slime = new CustomSlimeBlock();
+    public static final Block gray_slime = new CustomSlimeBlock();
+    public static final Block green_slime = new CustomSlimeBlock();
+    public static final Block light_blue_slime = new CustomSlimeBlock();
+    public static final Block light_gray_slime = new CustomSlimeBlock();
+    public static final Block lime_slime = new CustomSlimeBlock();
+    public static final Block magenta_slime = new CustomSlimeBlock();
+    public static final Block pink_slime = new CustomSlimeBlock();
+    public static final Block purple_slime = new CustomSlimeBlock();
+    public static final Block white_slime = new CustomSlimeBlock();
+    public static final Block yellow_slime = new CustomSlimeBlock();
+    public static final Block orange_slime = new CustomSlimeBlock();
 
     //Planks
     public static final Block bluestone_planks = new Block(FabricBlockSettings.of(Material.METAL).strength(1.9F,10.8F).breakByTool(FabricToolTags.PICKAXES,2).sounds(BlockSoundGroup.METAL).requiresTool());

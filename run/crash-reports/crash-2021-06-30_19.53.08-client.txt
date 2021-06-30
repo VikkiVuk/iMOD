@@ -1,21 +1,24 @@
 ---- Minecraft Crash Report ----
-// Who set us up the TNT?
+// Hi. I'm Minecraft, and I'm a crashaholic.
 
-Time: 6/28/21, 12:25 PM
-Description: Unexpected error
+Time: 6/30/21, 7:53 PM
+Description: Tesselating liquid in world
 
-java.lang.IllegalArgumentException: Cannot set property DirectionProperty{name=facing, clazz=class net.minecraft.util.math.Direction, values=[north, south, west, east]} to up on Block{imod:coffee_table}, it is not an allowed value
-	at net.minecraft.state.State.with(State.java:125)
-	at com.VikkiVuk.iMOD.objects.blocks.CoffeeTable.getPlacementState(CoffeeTable.java:83)
-	at net.minecraft.item.BlockItem.getPlacementState(BlockItem.java:118)
-	at net.minecraft.item.BlockItem.place(BlockItem.java:70)
-	at net.minecraft.item.BlockItem.useOnBlock(BlockItem.java:49)
-	at net.minecraft.item.ItemStack.useOnBlock(ItemStack.java:244)
-	at net.minecraft.client.network.ClientPlayerInteractionManager.interactBlock(ClientPlayerInteractionManager.java:338)
-	at net.minecraft.client.MinecraftClient.doItemUse(MinecraftClient.java:1648)
-	at net.minecraft.client.MinecraftClient.handleInputEvents(MinecraftClient.java:1902)
-	at net.minecraft.client.MinecraftClient.tick(MinecraftClient.java:1730)
-	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1083)
+java.lang.IllegalArgumentException: The min values need to be smaller or equals to the max values
+	at net.minecraft.util.shape.VoxelShapes.cuboid(VoxelShapes.java:55)
+	at net.minecraft.client.render.block.FluidRenderer.isSideCovered(FluidRenderer.java:51)
+	at net.minecraft.client.render.block.FluidRenderer.isSideCovered(FluidRenderer.java:61)
+	at net.minecraft.client.render.block.FluidRenderer.render(FluidRenderer.java:261)
+	at net.minecraft.client.render.block.BlockRenderManager.renderFluid(BlockRenderManager.java:76)
+	at net.minecraft.client.render.chunk.ChunkBuilder$BuiltChunk$RebuildTask.render(ChunkBuilder.java:509)
+	at net.minecraft.client.render.chunk.ChunkBuilder$BuiltChunk$RebuildTask.run(ChunkBuilder.java:447)
+	at net.minecraft.client.render.chunk.ChunkBuilder$BuiltChunk.rebuild(ChunkBuilder.java:412)
+	at net.minecraft.client.render.chunk.ChunkBuilder.rebuild(ChunkBuilder.java:189)
+	at net.minecraft.client.render.WorldRenderer.setupTerrain(WorldRenderer.java:918)
+	at net.minecraft.client.render.WorldRenderer.render(WorldRenderer.java:1143)
+	at net.minecraft.client.render.GameRenderer.renderWorld(GameRenderer.java:1001)
+	at net.minecraft.client.render.GameRenderer.render(GameRenderer.java:806)
+	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1114)
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:730)
 	at net.minecraft.client.main.Main.main(Main.java:217)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -34,29 +37,37 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Render thread
 Stacktrace:
-	at net.minecraft.state.State.with(State.java:125)
-	at com.VikkiVuk.iMOD.objects.blocks.CoffeeTable.getPlacementState(CoffeeTable.java:83)
-	at net.minecraft.item.BlockItem.getPlacementState(BlockItem.java:118)
-	at net.minecraft.item.BlockItem.place(BlockItem.java:70)
-	at net.minecraft.item.BlockItem.useOnBlock(BlockItem.java:49)
-	at net.minecraft.item.ItemStack.useOnBlock(ItemStack.java:244)
-	at net.minecraft.client.network.ClientPlayerInteractionManager.interactBlock(ClientPlayerInteractionManager.java:338)
-	at net.minecraft.client.MinecraftClient.doItemUse(MinecraftClient.java:1648)
-	at net.minecraft.client.MinecraftClient.handleInputEvents(MinecraftClient.java:1902)
+	at net.minecraft.util.shape.VoxelShapes.cuboid(VoxelShapes.java:55)
+	at net.minecraft.client.render.block.FluidRenderer.isSideCovered(FluidRenderer.java:51)
+	at net.minecraft.client.render.block.FluidRenderer.isSideCovered(FluidRenderer.java:61)
+	at net.minecraft.client.render.block.FluidRenderer.render(FluidRenderer.java:261)
+
+-- Block being tesselated --
+Details:
+	Block location: World: (-414,70,88), Section: (at 2,6,8 in -26,4,5; chunk contains blocks -416,0,80 to -401,255,95), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+Stacktrace:
+	at net.minecraft.client.render.block.BlockRenderManager.renderFluid(BlockRenderManager.java:76)
+	at net.minecraft.client.render.chunk.ChunkBuilder$BuiltChunk$RebuildTask.render(ChunkBuilder.java:509)
+	at net.minecraft.client.render.chunk.ChunkBuilder$BuiltChunk$RebuildTask.run(ChunkBuilder.java:447)
+	at net.minecraft.client.render.chunk.ChunkBuilder$BuiltChunk.rebuild(ChunkBuilder.java:412)
+	at net.minecraft.client.render.chunk.ChunkBuilder.rebuild(ChunkBuilder.java:189)
+	at net.minecraft.client.render.WorldRenderer.setupTerrain(WorldRenderer.java:918)
+	at net.minecraft.client.render.WorldRenderer.render(WorldRenderer.java:1143)
+	at net.minecraft.client.render.GameRenderer.renderWorld(GameRenderer.java:1001)
 
 -- Affected level --
 Details:
-	All players: 1 total; [ClientPlayerEntity['Player443'/212, l='ClientLevel', x=-101.33, y=70.44, z=-22.08]]
-	Chunk stats: 121, 40
+	All players: 1 total; [ClientPlayerEntity['Player945'/222, l='ClientLevel', x=-414.43, y=70.00, z=89.67]]
+	Chunk stats: 121, 38
 	Level dimension: minecraft:overworld
 	Level spawn location: World: (-256,66,64), Section: (at 0,2,0 in -16,4,4; chunk contains blocks -256,0,64 to -241,255,79), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
-	Level time: 12428 game time, 12428 day time
+	Level time: 67074 game time, 50438 day time
 	Server brand: fabric
 	Server type: Integrated singleplayer server
 Stacktrace:
 	at net.minecraft.client.world.ClientWorld.addDetailsToCrashReport(ClientWorld.java:370)
 	at net.minecraft.client.MinecraftClient.addDetailsToCrashReport(MinecraftClient.java:2399)
-	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:754)
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:749)
 	at net.minecraft.client.main.Main.main(Main.java:217)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
@@ -81,7 +92,7 @@ Details:
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 16.0.1, AdoptOpenJDK
 	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), AdoptOpenJDK
-	Memory: 425179936 bytes (405 MiB) / 1598029824 bytes (1524 MiB) up to 1598029824 bytes (1524 MiB)
+	Memory: 286823320 bytes (273 MiB) / 1598029824 bytes (1524 MiB) up to 1598029824 bytes (1524 MiB)
 	CPUs: 4
 	Processor Vendor: AuthenticAMD
 	Processor Name: AMD Ryzen 3 3200G with Radeon Vega Graphics    
@@ -95,17 +106,17 @@ Details:
 	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
 	Graphics card #0 VRAM (MB): 2048.00
 	Graphics card #0 deviceId: 0x15d8
-	Graphics card #0 versionInfo: DriverVersion=27.20.21002.112
+	Graphics card #0 versionInfo: DriverVersion=30.0.13000.17006
 	Memory slot #0 capacity (MB): 4096.00
 	Memory slot #0 clockSpeed (GHz): 2.67
 	Memory slot #0 type: DDR4
 	Memory slot #1 capacity (MB): 4096.00
 	Memory slot #1 clockSpeed (GHz): 2.67
 	Memory slot #1 type: DDR4
-	Virtual memory max (MB): 15308.05
-	Virtual memory used (MB): 10818.16
-	Swap memory total (MB): 9216.00
-	Swap memory used (MB): 1456.76
+	Virtual memory max (MB): 14487.18
+	Virtual memory used (MB): 12257.93
+	Swap memory total (MB): 8395.13
+	Swap memory used (MB): 2075.10
 	JVM Flags: 1 total; -XX:+ShowCodeDetailsInExceptionMessages
 	Fabric Mods: 
 		fabric: Fabric API 0.36.0+1.17
@@ -153,14 +164,14 @@ Details:
 		fabric-textures-v0: Fabric Textures (v0) 1.0.6+a02b44633d
 		fabric-tool-attribute-api-v1: Fabric Tool Attribute API (v1) 1.2.12+b7ab61213d
 		fabricloader: Fabric Loader 0.11.6
-		imod: iMOD 1.5.0
+		imod: iMOD 1.5.2
 		java: OpenJDK 64-Bit Server VM 16
 		minecraft: Minecraft 1.17
 		modmenu: Mod Menu 2.0.2
 	Launched Version: Fabric
 	Backend library: LWJGL version 3.2.2 build 10
-	Backend API: AMD 15D8:C9 GL version 3.2.14830 Core Profile Forward-Compatible Context 21.4.1 27.20.21002.112, ATI Technologies Inc.
-	Window size: 1920x1017
+	Backend API: AMD Radeon(TM) Vega 8 Graphics GL version 3.2.14739 Core Profile Forward-Compatible Context 21.30.00.17 30.0.13000.17006, ATI Technologies Inc.
+	Window size: 854x480
 	GL Caps: Using framebuffer using OpenGL 3.2
 	GL debug messages: 
 	Using VBOs: Yes
@@ -170,5 +181,5 @@ Details:
 	Resource Packs: Fabric Mods
 	Current Language: English (US)
 	CPU: 4x AMD Ryzen 3 3200G with Radeon Vega Graphics 
-	Player Count: 1 / 8; [ServerPlayerEntity['Player443'/212, l='ServerLevel[New World]', x=-101.33, y=70.44, z=-22.08]]
+	Player Count: 1 / 8; [ServerPlayerEntity['Player945'/222, l='ServerLevel[New World]', x=-414.43, y=70.00, z=89.67]]
 	Data Packs: vanilla, Fabric Mods

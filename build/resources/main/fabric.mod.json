@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "imod",
-  "version": "1.5.1",
+  "version": "1.5.2",
 
   "name": "iMOD",
   "description": "Hey guys, i just wanna say that my first mod named HystelMC has almost 1k downloads, so if we could get it to 1k downloads that would be amazing!
@@ -23,6 +23,9 @@ Keep your heads up, Stay safe!",
   "entrypoints": {
     "main": [
       "com.VikkiVuk.iMOD.iMOD"
+    ],
+    "client": [
+      "com.VikkiVuk.iMOD.iMODClient"
     ]
   },
 

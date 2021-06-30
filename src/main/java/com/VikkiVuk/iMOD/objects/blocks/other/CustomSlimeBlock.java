@@ -1,12 +1,13 @@
 package com.VikkiVuk.iMOD.objects.blocks.other;
 
-import net.minecraft.block.BlockRenderType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.TransparentBlock;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
@@ -14,8 +15,19 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 public class CustomSlimeBlock extends TransparentBlock {
-    public CustomSlimeBlock(Settings settings) {
-        super(settings);
+    private static final Material MY_MATERIAL = new Material(
+            MapColor.GREEN, // materialColor,
+            false, // isLiquid,
+            false, // isSolid,
+            true, // blocksMovement,
+            false, // blocksLight,  <----- Important part, the other parts change as you wish
+            true, // !requiresTool,
+            false, // burnable,
+            PistonBehavior.NORMAL // pistonBehavior
+    );
+
+    public CustomSlimeBlock() {
+        super(Settings.of(MY_MATERIAL, MapColor.PALE_GREEN).slipperiness(0.8F).sounds(BlockSoundGroup.SLIME).nonOpaque());
     }
 
     public void onLandedUpon(World world, BlockState state, BlockPos pos, Entity entity, float fallDistance) {
