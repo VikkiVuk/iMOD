@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "I I",
+    "III",
+    "III"
+  ],
+
+  "key":
+  {
+    "I": { "item": "imod:ruby" }
+  },
+
+  "result": { "item": "imod:ruby_chestplate" }
+}

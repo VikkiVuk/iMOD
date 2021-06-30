@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "ISI",
+    "ISI",
+    "CCC"
+  ],
+
+  "key":
+  {
+    "I": { "item": "minecraft:iron_ingot" },
+    "S": { "item": "minecraft:stone" },
+    "C": { "item": "minecraft:oak_planks" }
+  },
+
+  "result": { "item": "imod:better_cauldron" }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "IOI",
+    "ABA",
+    "MMM"
+  ],
+
+  "key":
+  {
+    "I": { "item": "minecraft:coal_block" },
+    "O": { "item": "minecraft:blue_concrete_powder" },
+    "A": { "item": "minecraft:blue_stained_glass" },
+    "B": { "item": "minecraft:red_sand" },
+    "M": { "item": "minecraft:stone" }
+  },
+
+  "result": { "item": "imod:custom_glassy_mobble" }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "I I",
+    "I I"
+  ],
+
+  "key":
+  {
+    "I": { "item": "imod:copper_ingot" }
+  },
+
+  "result": { "item": "imod:copper_boots" }
+}

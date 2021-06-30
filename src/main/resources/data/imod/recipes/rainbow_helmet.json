@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "III",
+    "I I"
+  ],
+
+  "key":
+  {
+    "I": { "item": "imod:rainbow_gem" }
+  },
+
+  "result": { "item": "imod:rainbow_helmet" }
+}

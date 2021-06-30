@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " SB",
+    " I ",
+    " C "
+  ],
+
+  "key":
+  {
+    "S": { "item": "minecraft:black_wool" },
+    "I": { "item": "minecraft:redstone_torch" },
+    "B": { "item": "minecraft:gray_wool" },
+    "C": { "item": "minecraft:iron_ingot" }
+  },
+
+  "result": { "item": "imod:microphone" }
+}

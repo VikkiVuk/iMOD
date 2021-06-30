@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    { "item": "imod:bluestone_ingot" },
+    { "item": "imod:rainbow_gem" }
+  ],
+
+  "result": { "item": "imod:unknown_item" }
+}

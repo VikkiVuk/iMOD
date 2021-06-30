@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " S ",
+    " B ",
+    "K L"
+  ],
+
+  "key":
+  {
+    "S": { "item": "imod:copper_token" },
+    "B": { "item": "minecraft:redstone_torch" },
+    "K": { "item": "imod:ruby_token" },
+    "L": { "item": "imod:bluestone_token" }
+  },
+
+  "result": { "item": "imod:rainbow_token" }
+}

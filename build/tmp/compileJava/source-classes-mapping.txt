@@ -31,12 +31,18 @@ com/VikkiVuk/iMOD/util/helpers/KeyboardHelper.java
 com/VikkiVuk/iMOD/objects/blocks/SantaHat.java
  com.VikkiVuk.iMOD.objects.blocks.SantaHat
  com.VikkiVuk.iMOD.objects.blocks.SantaHat$1
-com/VikkiVuk/iMOD/objects/items/TooltipItem.java
- com.VikkiVuk.iMOD.objects.items.TooltipItem
+com/VikkiVuk/iMOD/objects/items/Microphone.java
+ com.VikkiVuk.iMOD.objects.items.Microphone
+com/VikkiVuk/iMOD/objects/items/Dollar.java
+ com.VikkiVuk.iMOD.objects.items.Dollar
 com/VikkiVuk/iMOD/objects/blocks/TokenATM.java
  com.VikkiVuk.iMOD.objects.blocks.TokenATM
  com.VikkiVuk.iMOD.objects.blocks.TokenATM$1
+com/VikkiVuk/iMOD/objects/items/DiamondIngot.java
+ com.VikkiVuk.iMOD.objects.items.DiamondIngot
 com/VikkiVuk/iMOD/iMOD.java
  com.VikkiVuk.iMOD.iMOD
 com/VikkiVuk/iMOD/registry/ItemInit.java
  com.VikkiVuk.iMOD.registry.ItemInit
+com/VikkiVuk/iMOD/objects/items/DinkyWinky.java
+ com.VikkiVuk.iMOD.objects.items.DinkyWinky

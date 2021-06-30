@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "OOO",
+    "A A"
+  ],
+
+  "key":
+  {
+    "O": { "item": "minecraft:oak_log" },
+    "A": { "item": "minecraft:stick" }
+  },
+
+  "result": { "item": "imod:coffee_table" }
+
+
+}
