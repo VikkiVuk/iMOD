@@ -31,5 +31,10 @@
       <option name="name" value="UserLocalRemappedMods" />
       <option name="url" value="file:/$PROJECT_DIR$/../../../Minecraft%20Mods/iMOD/iMOD/.gradle/loom-cache/remapped_mods/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://minecraft.guntram.de/maven/" />
+    </remote-repository>
   </component>
 </project>

@@ -1,0 +1,158 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 7/13/21, 12:50 PM
+Description: Initializing game
+
+org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:208)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:178)
+	at org.spongepowered.asm.mixin.transformer.FabricMixinTransformerProxy.transformClassBytes(FabricMixinTransformerProxy.java:23)
+	at net.fabricmc.loader.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:162)
+	at net.fabricmc.loader.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:154)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:504)
+	at net.minecraft.client.main.Main.main(Main.java:179)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:234)
+	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153)
+	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InjectionError: Critical injection failure: Callback method onPostReload(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Ljava/util/concurrent/CompletableFuture;Ljava/util/List;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V in mixins.crowdintranslate.json:ReloadableResourceManagerImplMixin failed injection check, (0/1) succeeded. Scanned 1 target(s). Using refmap crowdin-translate-refmap.json
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.postInject(InjectionInfo.java:408)
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.applyInjections(MixinTargetContext.java:1291)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyInjections(MixinApplicatorStandard.java:1042)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:395)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:320)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:345)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:569)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:351)
+	... 16 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:208)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:178)
+	at org.spongepowered.asm.mixin.transformer.FabricMixinTransformerProxy.transformClassBytes(FabricMixinTransformerProxy.java:23)
+	at net.fabricmc.loader.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:162)
+	at net.fabricmc.loader.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:154)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:519)
+	at net.minecraft.client.MinecraftClient.<init>(MinecraftClient.java:504)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:179)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:234)
+	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153)
+	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.17.1
+	Minecraft Version ID: 1.17.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 16.0.1, AdoptOpenJDK
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), AdoptOpenJDK
+	Memory: 583097344 bytes (556 MiB) / 995098624 bytes (949 MiB) up to 1598029824 bytes (1524 MiB)
+	CPUs: 4
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 3 3200G with Radeon Vega Graphics    
+	Identifier: AuthenticAMD Family 23 Model 24 Stepping 1
+	Microarchitecture: unknown
+	Frequency (GHz): 3.60
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 4
+	Graphics card #0 name: AMD Radeon(TM) Vega 8 Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 2048.00
+	Graphics card #0 deviceId: 0x15d8
+	Graphics card #0 versionInfo: DriverVersion=27.20.11035.3002
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 2.67
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 2.67
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 18892.05
+	Virtual memory used (MB): 10716.48
+	Swap memory total (MB): 12800.00
+	Swap memory used (MB): 1164.42
+	JVM Flags: 1 total; -XX:+ShowCodeDetailsInExceptionMessages
+	Fabric Mods: 
+		crowdin-translate: CrowdinTranslate 1.2
+		fabric: Fabric API 0.37.0+1.17
+		fabric-api-base: Fabric API Base 0.3.0+a02b446318
+		fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.2.0+2b5c62d018
+		fabric-biome-api-v1: Fabric Biome API (v1) 3.1.11+c345aea818
+		fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.5+a02b446318
+		fabric-command-api-v1: Fabric Command API (v1) 1.1.2+6cefd57718
+		fabric-commands-v0: Fabric Commands (v0) 0.2.2+92519afa18
+		fabric-containers-v0: Fabric Containers (v0) 0.1.12+a02b446318
+		fabric-content-registries-v0: Fabric Content Registries (v0) 0.2.2+a02b446318
+		fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.1.5+be9da31018
+		fabric-dimensions-v1: Fabric Dimensions API (v1) 2.0.11+6cefd57718
+		fabric-entity-events-v1: Fabric Entity Events (v1) 1.1.0+a02b446318
+		fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.4.9+a722d8c018
+		fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.1+92519afa18
+		fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.7+6cefd57718
+		fabric-item-api-v1: Fabric Item API (v1) 1.2.4+a02b446318
+		fabric-item-groups-v0: Fabric Item Groups (v0) 0.2.10+b7ab612118
+		fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.4+a02b446318
+		fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.2+36b77c3e18
+		fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 1.4.4+a02b446318
+		fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.0.4+a02b446318
+		fabric-mining-levels-v0: Fabric Mining Levels (v0) 0.1.3+92519afa18
+		fabric-models-v0: Fabric Models (v0) 0.3.0+a02b446318
+		fabric-networking-api-v1: Fabric Networking API (v1) 1.0.12+6cefd57718
+		fabric-networking-blockentity-v0: Fabric Networking Block Entity (v0) 0.2.11+a02b446318
+		fabric-networking-v0: Fabric Networking (v0) 0.3.2+92519afa18
+		fabric-object-builder-api-v1: Fabric Object Builder API (v1) 1.10.9+b7ab612118
+		fabric-object-builders-v0: Fabric Object Builders (v0) 0.7.3+a02b446318
+		fabric-particles-v1: Fabric Particles (v1) 0.2.4+a02b446318
+		fabric-registry-sync-v0: Fabric Registry Sync (v0) 0.7.10+e2961fee18
+		fabric-renderer-api-v1: Fabric Renderer API (v1) 0.4.4+5f02c96918
+		fabric-renderer-indigo: Fabric Renderer - Indigo 0.4.8+a02b446318
+		fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 3.2.0+a02b446318
+		fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.1.5+a02b446318
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 0.1.13+a02b446318
+		fabric-rendering-v0: Fabric Rendering (v0) 1.1.2+92519afa18
+		fabric-rendering-v1: Fabric Rendering (v1) 1.6.0+a02b446318
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.4.7+b7ab612118
+		fabric-screen-api-v1: Fabric Screen API (v1) 1.0.4+155f865c18
+		fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.1.8+a02b446318
+		fabric-structure-api-v1: Fabric Structure API (v1) 1.1.12+6cefd57718
+		fabric-tag-extensions-v0: Fabric Tag Extensions (v0) 1.1.4+a02b446318
+		fabric-textures-v0: Fabric Textures (v0) 1.0.6+a02b446318
+		fabric-tool-attribute-api-v1: Fabric Tool Attribute API (v1) 1.2.12+b7ab612118
+		fabric-transfer-api-v1: Fabric Transfer API (v1) 1.0.0+3fe3c3f518
+		fabricloader: Fabric Loader 0.11.6
+		imod: iMOD 1.6.0
+		java: OpenJDK 64-Bit Server VM 16
+		minecraft: Minecraft 1.17.1
+	Launched Version: Fabric
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: AMD Radeon(TM) Vega 8 Graphics GL version 3.2.13596 Core Profile Forward-Compatible Context 20.10.35.03 27.20.11035.3002, ATI Technologies Inc.
+	Window size: <not initialized>
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Type: Client (map_client.txt)
+	CPU: 4x AMD Ryzen 3 3200G with Radeon Vega Graphics 

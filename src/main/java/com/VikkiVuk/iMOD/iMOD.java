@@ -1,9 +1,6 @@
 package com.VikkiVuk.iMOD;
 
-import com.VikkiVuk.iMOD.registry.BlockInit;
-import com.VikkiVuk.iMOD.registry.FluidInit;
-import com.VikkiVuk.iMOD.registry.ItemInit;
-import com.VikkiVuk.iMOD.registry.OreInit;
+import com.VikkiVuk.iMOD.registry.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
@@ -18,6 +15,9 @@ public class iMOD implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ItemInit.registerItems();
+
+		ATInit.registerTools();
+		ATInit.registerArmors();
 
 		BlockInit.registerBlocks();
 		BlockInit.registerBlockItems();

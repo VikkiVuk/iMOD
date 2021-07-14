@@ -11,5 +11,11 @@
     },
     "done": true
   },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_tundra": "2021-07-03 14:38:12 +0200"
+    },
+    "done": false
+  },
   "DataVersion": 2724
 }

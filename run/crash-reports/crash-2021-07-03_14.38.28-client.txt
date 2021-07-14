@@ -1,0 +1,223 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 7/3/21, 2:38 PM
+Description: Rendering entity in world
+
+net.minecraft.util.InvalidIdentifierException: Non [a-z0-9_.-] character in namespace of location: textures/models/armor/imod:rainbow_layer_1.png
+	at net.minecraft.util.Identifier.<init>(Identifier.java:38)
+	at net.minecraft.util.Identifier.<init>(Identifier.java:46)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1224)
+	at net.minecraft.client.render.entity.feature.ArmorFeatureRenderer.getArmorTexture(ArmorFeatureRenderer.java:119)
+	at net.minecraft.client.render.entity.feature.ArmorFeatureRenderer.renderArmorParts(ArmorFeatureRenderer.java:105)
+	at net.minecraft.client.render.entity.feature.ArmorFeatureRenderer.renderArmor(ArmorFeatureRenderer.java:70)
+	at net.minecraft.client.render.entity.feature.ArmorFeatureRenderer.render(ArmorFeatureRenderer.java:38)
+	at net.minecraft.client.render.entity.feature.ArmorFeatureRenderer.render(ArmorFeatureRenderer.java:22)
+	at net.minecraft.client.render.entity.LivingEntityRenderer.render(LivingEntityRenderer.java:139)
+	at net.minecraft.client.render.entity.PlayerEntityRenderer.render(PlayerEntityRenderer.java:64)
+	at net.minecraft.client.render.entity.PlayerEntityRenderer.render(PlayerEntityRenderer.java:42)
+	at net.minecraft.client.render.entity.EntityRenderDispatcher.render(EntityRenderDispatcher.java:135)
+	at net.minecraft.client.gui.screen.ingame.InventoryScreen.method_29977(InventoryScreen.java:154)
+	at com.mojang.blaze3d.systems.RenderSystem.runAsFancy(RenderSystem.java:1119)
+	at net.minecraft.client.gui.screen.ingame.InventoryScreen.drawEntity(InventoryScreen.java:154)
+	at net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen.drawBackground(CreativeInventoryScreen.java:778)
+	at net.minecraft.client.gui.screen.ingame.HandledScreen.render(HandledScreen.java:101)
+	at net.minecraft.client.gui.screen.ingame.AbstractInventoryScreen.render(AbstractInventoryScreen.java:43)
+	at net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen.render(CreativeInventoryScreen.java:689)
+	at net.minecraft.client.render.GameRenderer.render(GameRenderer.java:875)
+	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1114)
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:730)
+	at net.minecraft.client.main.Main.main(Main.java:217)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:234)
+	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153)
+	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.util.Identifier.<init>(Identifier.java:38)
+	at net.minecraft.util.Identifier.<init>(Identifier.java:46)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1224)
+	at net.minecraft.client.render.entity.feature.ArmorFeatureRenderer.getArmorTexture(ArmorFeatureRenderer.java:119)
+	at net.minecraft.client.render.entity.feature.ArmorFeatureRenderer.renderArmorParts(ArmorFeatureRenderer.java:105)
+	at net.minecraft.client.render.entity.feature.ArmorFeatureRenderer.renderArmor(ArmorFeatureRenderer.java:70)
+	at net.minecraft.client.render.entity.feature.ArmorFeatureRenderer.render(ArmorFeatureRenderer.java:38)
+	at net.minecraft.client.render.entity.feature.ArmorFeatureRenderer.render(ArmorFeatureRenderer.java:22)
+	at net.minecraft.client.render.entity.LivingEntityRenderer.render(LivingEntityRenderer.java:139)
+	at net.minecraft.client.render.entity.PlayerEntityRenderer.render(PlayerEntityRenderer.java:64)
+	at net.minecraft.client.render.entity.PlayerEntityRenderer.render(PlayerEntityRenderer.java:42)
+
+-- Entity being rendered --
+Details:
+	Entity Type: minecraft:player (net.minecraft.client.network.ClientPlayerEntity)
+	Entity ID: 195
+	Entity Name: Player843
+	Entity's Exact location: -404.12, 68.00, 97.59
+	Entity's Block location: World: (-405,68,97), Section: (at 11,4,1 in -26,4,6; chunk contains blocks -416,0,96 to -401,255,111), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: 0.00, -0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+
+-- Renderer details --
+Details:
+	Assigned renderer: net.minecraft.client.render.entity.PlayerEntityRenderer@4dabb3b1
+	Location: 0.00,0.00,0.00 - World: (0,0,0), Section: (at 0,0,0 in 0,0,0; chunk contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Rotation: 0.0
+	Delta: 1.0
+Stacktrace:
+	at net.minecraft.client.render.entity.EntityRenderDispatcher.render(EntityRenderDispatcher.java:135)
+	at net.minecraft.client.gui.screen.ingame.InventoryScreen.method_29977(InventoryScreen.java:154)
+	at com.mojang.blaze3d.systems.RenderSystem.runAsFancy(RenderSystem.java:1119)
+	at net.minecraft.client.gui.screen.ingame.InventoryScreen.drawEntity(InventoryScreen.java:154)
+	at net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen.drawBackground(CreativeInventoryScreen.java:778)
+	at net.minecraft.client.gui.screen.ingame.HandledScreen.render(HandledScreen.java:101)
+	at net.minecraft.client.gui.screen.ingame.AbstractInventoryScreen.render(AbstractInventoryScreen.java:43)
+	at net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen.render(CreativeInventoryScreen.java:689)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.screen.ingame.CreativeInventoryScreen
+	Mouse location: Scaled: (322, 210). Absolute: (1289.000000, 841.000000)
+	Screen size: Scaled: (480, 253). Absolute: (1920, 1009). Scale factor of 4.000000
+
+-- Affected level --
+Details:
+	All players: 1 total; [ClientPlayerEntity['Player843'/195, l='ClientLevel', x=-404.12, y=68.00, z=97.59]]
+	Chunk stats: 121, 38
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-256,66,64), Section: (at 0,2,0 in -16,4,4; chunk contains blocks -256,0,64 to -241,255,79), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 95946 game time, 19019 day time
+	Server brand: fabric
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.world.ClientWorld.addDetailsToCrashReport(ClientWorld.java:370)
+	at net.minecraft.client.MinecraftClient.addDetailsToCrashReport(MinecraftClient.java:2399)
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:749)
+	at net.minecraft.client.main.Main.main(Main.java:217)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:234)
+	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153)
+	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28)
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86)
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: Default, Fabric Mods
+
+-- System Details --
+Details:
+	Minecraft Version: 1.17
+	Minecraft Version ID: 1.17
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 16.0.1, AdoptOpenJDK
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), AdoptOpenJDK
+	Memory: 802652144 bytes (765 MiB) / 1598029824 bytes (1524 MiB) up to 1598029824 bytes (1524 MiB)
+	CPUs: 4
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 3 3200G with Radeon Vega Graphics    
+	Identifier: AuthenticAMD Family 23 Model 24 Stepping 1
+	Microarchitecture: unknown
+	Frequency (GHz): 3.60
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 4
+	Graphics card #0 name: AMD Radeon(TM) Vega 8 Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 2048.00
+	Graphics card #0 deviceId: 0x15d8
+	Graphics card #0 versionInfo: DriverVersion=30.0.13000.17006
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 2.67
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 2.67
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 15914.01
+	Virtual memory used (MB): 13491.07
+	Swap memory total (MB): 9821.96
+	Swap memory used (MB): 2094.26
+	JVM Flags: 1 total; -XX:+ShowCodeDetailsInExceptionMessages
+	Fabric Mods: 
+		architectury: Architectury 2.0.16
+		cloth-basic-math: Cloth Basic Math 0.5.1
+		cloth-config2: Cloth Config v4 5.0.34
+		fabric: Fabric API 0.36.0+1.17
+		fabric-api-base: Fabric API Base 0.3.0+a02b44633d
+		fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.2.0+2b5c62d03d
+		fabric-biome-api-v1: Fabric Biome API (v1) 3.1.11+c345aea83d
+		fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.5+a02b44633d
+		fabric-command-api-v1: Fabric Command API (v1) 1.1.1+a02b44633d
+		fabric-commands-v0: Fabric Commands (v0) 0.2.2+92519afa3d
+		fabric-containers-v0: Fabric Containers (v0) 0.1.12+a02b44633d
+		fabric-content-registries-v0: Fabric Content Registries (v0) 0.2.2+a02b44633d
+		fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.1.5+be9da3103d
+		fabric-dimensions-v1: Fabric Dimensions API (v1) 2.0.10+a02b44633d
+		fabric-entity-events-v1: Fabric Entity Events (v1) 1.1.0+a02b44633d
+		fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.4.9+a722d8c03d
+		fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.1+92519afa3d
+		fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.6+a02b44633d
+		fabric-item-api-v1: Fabric Item API (v1) 1.2.4+a02b44633d
+		fabric-item-groups-v0: Fabric Item Groups (v0) 0.2.10+b7ab61213d
+		fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.4+a02b44633d
+		fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.2+36b77c3e3d
+		fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 1.4.4+a02b44633d
+		fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.0.4+a02b44633d
+		fabric-mining-levels-v0: Fabric Mining Levels (v0) 0.1.3+92519afa3d
+		fabric-models-v0: Fabric Models (v0) 0.3.0+a02b44633d
+		fabric-networking-api-v1: Fabric Networking API (v1) 1.0.11+b7ab61213d
+		fabric-networking-blockentity-v0: Fabric Networking Block Entity (v0) 0.2.11+a02b44633d
+		fabric-networking-v0: Fabric Networking (v0) 0.3.2+92519afa3d
+		fabric-object-builder-api-v1: Fabric Object Builder API (v1) 1.10.9+b7ab61213d
+		fabric-object-builders-v0: Fabric Object Builders (v0) 0.7.3+a02b44633d
+		fabric-particles-v1: Fabric Particles (v1) 0.2.4+a02b44633d
+		fabric-registry-sync-v0: Fabric Registry Sync (v0) 0.7.10+e2961fee3d
+		fabric-renderer-api-v1: Fabric Renderer API (v1) 0.4.3+676f40fa3d
+		fabric-renderer-indigo: Fabric Renderer - Indigo 0.4.8+a02b44633d
+		fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 3.2.0+a02b44633d
+		fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.1.5+a02b44633d
+		fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 0.1.13+a02b44633d
+		fabric-rendering-v0: Fabric Rendering (v0) 1.1.2+92519afa3d
+		fabric-rendering-v1: Fabric Rendering (v1) 1.6.0+a02b44633d
+		fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.4.7+b7ab61213d
+		fabric-screen-api-v1: Fabric Screen API (v1) 1.0.4+155f865c3d
+		fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.1.8+a02b44633d
+		fabric-structure-api-v1: Fabric Structure API (v1) 1.1.11+e36969833d
+		fabric-tag-extensions-v0: Fabric Tag Extensions (v0) 1.1.4+a02b44633d
+		fabric-textures-v0: Fabric Textures (v0) 1.0.6+a02b44633d
+		fabric-tool-attribute-api-v1: Fabric Tool Attribute API (v1) 1.2.12+b7ab61213d
+		fabricloader: Fabric Loader 0.11.6
+		imod: iMOD 1.5.2
+		java: OpenJDK 64-Bit Server VM 16
+		minecraft: Minecraft 1.17
+		modmenu: Mod Menu 2.0.2
+		roughlyenoughitems: Roughly Enough Items 6.0.262-alpha
+	Launched Version: Fabric
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: AMD Radeon(TM) Vega 8 Graphics GL version 3.2.14739 Core Profile Forward-Compatible Context 21.30.00.17 30.0.13000.17006, ATI Technologies Inc.
+	Window size: 1920x1009
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: Fabric Mods
+	Current Language: English (US)
+	CPU: 4x AMD Ryzen 3 3200G with Radeon Vega Graphics 
+	Player Count: 1 / 8; [ServerPlayerEntity['Player843'/195, l='ServerLevel[New World]', x=-404.12, y=68.00, z=97.59]]
+	Data Packs: vanilla, Fabric Mods

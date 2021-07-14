@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
-  "ingredient": { "tag": "imod:bluestone_ore" },
+  "ingredient": { "item": "imod:bluestone_ore" },
   "result": "imod:bluestone_ingot",
-  "experience": 5.1,
+  "experience": 1,
   "cookingtime": 162
 }
