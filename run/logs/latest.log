@@ -1,5 +1,5 @@
-[20:41:47] [main/INFO] (FabricLoader) Loading for game Minecraft 1.17.1
-[20:41:48] [main/INFO] (Fabric|Loader) [FabricLoader] Loading 49 mods:
+[12:34:47] [main/INFO] (FabricLoader) Loading for game Minecraft 1.17.1
+[12:34:48] [main/INFO] (Fabric|Loader) [FabricLoader] Loading 49 mods:
 	- fabric@0.37.0+1.17
 	- fabric-api-base@0.3.0+a02b446318
 	- fabric-api-lookup-api-v1@1.2.0+2b5c62d018
@@ -49,26 +49,26 @@
 	- imod@1.6.0
 	- java@16
 	- minecraft@1.17.1
-[20:41:48] [main/INFO] (mixin) SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/C:/Users/Vikto/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.9.4+mixin.0.8.2/ef410951e94c7f4939cc74c86f8df371827818a4/sponge-mixin-0.9.4+mixin.0.8.2.jar Service=Knot/Fabric Env=CLIENT
-[20:41:49] [main/INFO] (Fabric|MixinBootstrap) Loaded Fabric development mappings for mixin remapper!
-[20:41:49] [main/INFO] (mixin) Compatibility level set to JAVA_16
-[20:41:49] [main/WARN] (mixin) @Mixin target net/minecraft/server/world/ServerWorld$ServerEntityHandler is public in fabric-lifecycle-events-v1.mixins.json:ServerWorldEntityLoaderMixin and should be specified in value
-[20:41:49] [main/WARN] (mixin) @Mixin target net/minecraft/client/world/ClientWorld$ClientEntityHandler is public in fabric-lifecycle-events-v1.mixins.json:client.ClientWorldEntityLoaderMixin and should be specified in value
-[20:41:49] [main/WARN] (mixin) @Mixin target net/minecraft/client/render/block/BlockModelRenderer$AmbientOcclusionCalculator is public in fabric-renderer-indigo.mixins.json:MixinAmbientOcclusionCalculator and should be specified in value
-[20:41:49] [main/WARN] (mixin) @Mixin target net/minecraft/client/render/chunk/ChunkBuilder$BuiltChunk$RebuildTask is public in fabric-renderer-indigo.mixins.json:MixinChunkRebuildTask and should be specified in value
-[20:41:49] [main/WARN] (mixin) @Mixin target net/minecraft/server/network/ServerPlayNetworkHandler$1 is public in fabric-events-interaction-v0.mixins.json:MixinServerPlayNetworkHandler and should be specified in value
-[20:41:49] [main/WARN] (mixin) @Mixin target net/minecraft/village/TradeOffers$TypeAwareBuyForOneEmeraldFactory is public in fabric-object-builder-v1.mixins.json:TypeAwareTradeMixin and should be specified in value
-[20:41:49] [main/WARN] (mixin) @Mixin target net/minecraft/client/font/FontManager$1 is public in fabric-resource-loader-v0.mixins.json:client.FontManagerResourceReloadListenerMixin and should be specified in value
-[20:41:49] [main/WARN] (mixin) @Mixin target net/minecraft/server/command/GameRuleCommand$1 is public in fabric-game-rule-api-v1.mixins.json:GameRuleCommandVisitorMixin and should be specified in value
-[20:41:49] [main/WARN] (mixin) @Mixin target net/minecraft/client/gui/screen/world/EditGameRulesScreen$RuleListWidget$1 is public in fabric-game-rule-api-v1.mixins.json:client.RuleListWidgetVisitorMixin and should be specified in value
-[20:41:49] [main/WARN] (mixin) @Mixin target net/minecraft/server/world/ThreadedAnvilChunkStorage$EntityTracker is public in fabric-networking-api-v1.mixins.json:accessor.EntityTrackerAccessor and should be specified in value
-[20:41:50] [main/WARN] (mixin) @Mixin target net/minecraft/client/particle/ParticleManager$SimpleSpriteProvider is public in fabric-particles-v1.mixins.json:ParticleManagerAccessor$SimpleSpriteProviderAccessor and should be specified in value
-[20:41:50] [main/WARN] (mixin) @Mixin target net/minecraft/data/server/AbstractTagProvider$ObjectBuilder is public in fabric-tag-extensions-v0.mixins.json:MixinObjectBuilder and should be specified in value
-[20:41:50] [main/WARN] (mixin) @Mixin target net/minecraft/tag/RequiredTagList$TagWrapper is public in fabric-tag-extensions-v0.mixins.json:MixinTagImpl and should be specified in value
-[20:41:50] [main/WARN] (FileUtil) Configuration conflict: there is more than one oshi.properties file on the classpath
-[20:41:51] [main/WARN] (FileUtil) Configuration conflict: there is more than one oshi.architecture.properties file on the classpath
-[20:41:59] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[20:42:00] [Render thread/ERROR] (Minecraft) Failed to verify authentication
+[12:34:48] [main/INFO] (mixin) SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/C:/Users/Vikto/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.9.4+mixin.0.8.2/ef410951e94c7f4939cc74c86f8df371827818a4/sponge-mixin-0.9.4+mixin.0.8.2.jar Service=Knot/Fabric Env=CLIENT
+[12:34:48] [main/INFO] (Fabric|MixinBootstrap) Loaded Fabric development mappings for mixin remapper!
+[12:34:49] [main/INFO] (mixin) Compatibility level set to JAVA_16
+[12:34:49] [main/WARN] (mixin) @Mixin target net/minecraft/server/world/ServerWorld$ServerEntityHandler is public in fabric-lifecycle-events-v1.mixins.json:ServerWorldEntityLoaderMixin and should be specified in value
+[12:34:49] [main/WARN] (mixin) @Mixin target net/minecraft/client/world/ClientWorld$ClientEntityHandler is public in fabric-lifecycle-events-v1.mixins.json:client.ClientWorldEntityLoaderMixin and should be specified in value
+[12:34:49] [main/WARN] (mixin) @Mixin target net/minecraft/client/render/block/BlockModelRenderer$AmbientOcclusionCalculator is public in fabric-renderer-indigo.mixins.json:MixinAmbientOcclusionCalculator and should be specified in value
+[12:34:49] [main/WARN] (mixin) @Mixin target net/minecraft/client/render/chunk/ChunkBuilder$BuiltChunk$RebuildTask is public in fabric-renderer-indigo.mixins.json:MixinChunkRebuildTask and should be specified in value
+[12:34:49] [main/WARN] (mixin) @Mixin target net/minecraft/server/network/ServerPlayNetworkHandler$1 is public in fabric-events-interaction-v0.mixins.json:MixinServerPlayNetworkHandler and should be specified in value
+[12:34:49] [main/WARN] (mixin) @Mixin target net/minecraft/village/TradeOffers$TypeAwareBuyForOneEmeraldFactory is public in fabric-object-builder-v1.mixins.json:TypeAwareTradeMixin and should be specified in value
+[12:34:49] [main/WARN] (mixin) @Mixin target net/minecraft/client/font/FontManager$1 is public in fabric-resource-loader-v0.mixins.json:client.FontManagerResourceReloadListenerMixin and should be specified in value
+[12:34:49] [main/WARN] (mixin) @Mixin target net/minecraft/server/command/GameRuleCommand$1 is public in fabric-game-rule-api-v1.mixins.json:GameRuleCommandVisitorMixin and should be specified in value
+[12:34:49] [main/WARN] (mixin) @Mixin target net/minecraft/client/gui/screen/world/EditGameRulesScreen$RuleListWidget$1 is public in fabric-game-rule-api-v1.mixins.json:client.RuleListWidgetVisitorMixin and should be specified in value
+[12:34:49] [main/WARN] (mixin) @Mixin target net/minecraft/server/world/ThreadedAnvilChunkStorage$EntityTracker is public in fabric-networking-api-v1.mixins.json:accessor.EntityTrackerAccessor and should be specified in value
+[12:34:49] [main/WARN] (mixin) @Mixin target net/minecraft/client/particle/ParticleManager$SimpleSpriteProvider is public in fabric-particles-v1.mixins.json:ParticleManagerAccessor$SimpleSpriteProviderAccessor and should be specified in value
+[12:34:49] [main/WARN] (mixin) @Mixin target net/minecraft/data/server/AbstractTagProvider$ObjectBuilder is public in fabric-tag-extensions-v0.mixins.json:MixinObjectBuilder and should be specified in value
+[12:34:49] [main/WARN] (mixin) @Mixin target net/minecraft/tag/RequiredTagList$TagWrapper is public in fabric-tag-extensions-v0.mixins.json:MixinTagImpl and should be specified in value
+[12:34:50] [main/WARN] (FileUtil) Configuration conflict: there is more than one oshi.properties file on the classpath
+[12:34:50] [main/WARN] (FileUtil) Configuration conflict: there is more than one oshi.architecture.properties file on the classpath
+[12:34:58] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[12:35:00] [Render thread/ERROR] (Minecraft) Failed to verify authentication
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:56) ~[authlib-2.3.31.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:112) ~[authlib-2.3.31.jar:?]
@@ -90,35 +90,35 @@ Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 4
 	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:47) ~[authlib-2.3.31.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:104) ~[authlib-2.3.31.jar:?]
 	... 13 more
-[20:42:00] [Render thread/INFO] (Minecraft) Setting user: Player210
-[20:42:00] [Render thread/WARN] (mixin) @Inject(@At("INVOKE")) Shift.BY=3 on fabric-lifecycle-events-v1.mixins.json:client.WorldChunkMixin::handler$zzn000$onLoadBlockEntity exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
-[20:42:01] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[20:42:02] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.2.2 build 10
-[20:42:05] [Render thread/INFO] (Minecraft) Narrator library for x64 successfully loaded
-[20:42:05] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Renderer API (v1), Fabric Key Bindings (v0), Fabric Loader, Fabric Structure API (v1), Fabric Containers (v0), Fabric Dimensions API (v1), Fabric Object Builder API (v1), Fabric Game Rule API (v1), Fabric API Base, Fabric Rendering Data Attachment (v1), Fabric Textures (v0), Fabric Rendering Fluids (v1), Fabric BlockRenderLayer Registration (v1), Fabric Lifecycle Events (v1), Fabric Renderer Registries (v1), Fabric Loot Tables (v1), Fabric API, Fabric Particles (v1), Fabric Networking (v0), Fabric API Lookup API (v1), Fabric Networking Block Entity (v0), Fabric Screen Handler API (v1), Fabric Command API (v1), iMOD, Fabric Screen API (v1), Fabric Tool Attribute API (v1), Fabric Renderer - Indigo, Fabric Events Interaction (v0), Fabric Item API (v1), Fabric Crash Report Info (v1), Fabric Entity Events (v1), Fabric Rendering (v0), Fabric Rendering (v1), Fabric Key Binding API (v1), Fabric Resource Loader (v0), Fabric Content Registries (v0), Fabric Tag Extensions (v0), Fabric Biome API (v1), Fabric Commands (v0), Fabric Registry Sync (v0), Fabric Mining Levels (v0), Fabric Networking API (v1), Fabric Events Lifecycle (v0), Fabric Item Groups (v0), Fabric Models (v0), Fabric Object Builders (v0))
-[20:42:08] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
-[20:42:21] [Worker-Main-6/WARN] (Minecraft) Texture imod:item/rainbow_stick with size 399x400 limits mip level from 4 to 0
-[20:42:21] [Worker-Main-6/WARN] (Minecraft) minecraft:textures/atlas/blocks.png: dropping miplevel from 4 to 0, because of minimum power of two: 1
-[20:42:28] [Render thread/INFO] (Minecraft) OpenAL initialized.
-[20:42:28] [Render thread/INFO] (Minecraft) Sound engine started
-[20:42:28] [Render thread/INFO] (Minecraft) Created: 2048x1024x0 minecraft:textures/atlas/blocks.png-atlas
-[20:42:28] [Render thread/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[20:42:28] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[20:42:28] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[20:42:28] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[20:42:28] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[20:42:28] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[20:42:33] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[20:42:33] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[20:42:33] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[20:42:43] [Render thread/INFO] (BiomeModificationImpl) Applied 272 biome modifications to 68 of 81 new biomes in 44.18 ms
-[20:42:44] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[20:42:44] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[20:42:44] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[20:42:44] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[20:42:44] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[20:42:44] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (iMOD, Fabric Tool Attribute API (v1))
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:bedrock
+[12:35:00] [Render thread/INFO] (Minecraft) Setting user: Player977
+[12:35:00] [Render thread/WARN] (mixin) @Inject(@At("INVOKE")) Shift.BY=3 on fabric-lifecycle-events-v1.mixins.json:client.WorldChunkMixin::handler$zzn000$onLoadBlockEntity exceeds the maximum allowed value: 0. Increase the value of maxShiftBy to suppress this warning.
+[12:35:01] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[12:35:01] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.2.2 build 10
+[12:35:04] [Render thread/INFO] (Minecraft) Narrator library for x64 successfully loaded
+[12:35:05] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (Fabric Renderer API (v1), Fabric Key Bindings (v0), Fabric Loader, Fabric Structure API (v1), Fabric Containers (v0), Fabric Dimensions API (v1), Fabric Object Builder API (v1), Fabric Game Rule API (v1), Fabric API Base, Fabric Rendering Data Attachment (v1), Fabric Textures (v0), Fabric Rendering Fluids (v1), Fabric BlockRenderLayer Registration (v1), Fabric Lifecycle Events (v1), Fabric Renderer Registries (v1), Fabric Loot Tables (v1), Fabric API, Fabric Particles (v1), Fabric Networking (v0), Fabric API Lookup API (v1), Fabric Networking Block Entity (v0), Fabric Screen Handler API (v1), Fabric Command API (v1), iMOD, Fabric Screen API (v1), Fabric Tool Attribute API (v1), Fabric Renderer - Indigo, Fabric Events Interaction (v0), Fabric Item API (v1), Fabric Crash Report Info (v1), Fabric Entity Events (v1), Fabric Rendering (v0), Fabric Rendering (v1), Fabric Key Binding API (v1), Fabric Resource Loader (v0), Fabric Content Registries (v0), Fabric Tag Extensions (v0), Fabric Biome API (v1), Fabric Commands (v0), Fabric Registry Sync (v0), Fabric Mining Levels (v0), Fabric Networking API (v1), Fabric Events Lifecycle (v0), Fabric Models (v0), Fabric Item Groups (v0), Fabric Object Builders (v0))
+[12:35:09] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
+[12:35:21] [Worker-Main-6/WARN] (Minecraft) Texture imod:item/rainbow_stick with size 399x400 limits mip level from 4 to 0
+[12:35:21] [Worker-Main-6/WARN] (Minecraft) minecraft:textures/atlas/blocks.png: dropping miplevel from 4 to 0, because of minimum power of two: 1
+[12:35:29] [Render thread/INFO] (Minecraft) OpenAL initialized.
+[12:35:29] [Render thread/INFO] (Minecraft) Sound engine started
+[12:35:29] [Render thread/INFO] (Minecraft) Created: 2048x1024x0 minecraft:textures/atlas/blocks.png-atlas
+[12:35:29] [Render thread/INFO] (Minecraft) Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[12:35:29] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[12:35:29] [Render thread/INFO] (Minecraft) Created: 1024x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[12:35:29] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[12:35:29] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[12:35:29] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[12:35:32] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[12:35:32] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[12:35:32] [Render thread/INFO] (Minecraft) Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[12:35:38] [Render thread/INFO] (BiomeModificationImpl) Applied 272 biome modifications to 68 of 81 new biomes in 47.13 ms
+[12:35:39] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12:35:39] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12:35:39] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[12:35:39] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[12:35:39] [Render thread/WARN] (Minecraft) Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[12:35:39] [Render thread/INFO] (Minecraft) Reloading ResourceManager: Default, Fabric Mods (iMOD, Fabric Tool Attribute API (v1))
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:bedrock
 com.google.gson.JsonSyntaxException: Invalid pattern: each row must be the same width
 	at net.minecraft.recipe.ShapedRecipe.getPattern(ShapedRecipe.java:218) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.recipe.ShapedRecipe$Serializer.read(ShapedRecipe.java:266) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -151,7 +151,7 @@ com.google.gson.JsonSyntaxException: Invalid pattern: each row must be the same 
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -164,7 +164,7 @@ com.google.gson.JsonSyntaxException: Invalid pattern: each row must be the same 
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:firey_boots
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:firey_boots
 com.google.gson.JsonSyntaxException: Unknown item 'imod:firey_netherite_boots'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -200,7 +200,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:firey_netherite_boots'
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -213,7 +213,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:firey_netherite_boots'
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:cracked_helmet
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:cracked_helmet
 com.google.gson.JsonSyntaxException: Unknown item 'imod:cracked_netherite_helmet'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -249,7 +249,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:cracked_netherite_helmet
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -262,7 +262,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:cracked_netherite_helmet
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:hystel_something
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:hystel_something
 com.google.gson.JsonSyntaxException: Unknown item 'imod:hystel_something'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -298,7 +298,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:hystel_something'
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -311,7 +311,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:hystel_something'
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:speakers
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:speakers
 com.google.gson.JsonSyntaxException: Unknown item 'imod:speakers'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -347,7 +347,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:speakers'
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -360,7 +360,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:speakers'
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:iron_token
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:iron_token
 com.google.gson.JsonSyntaxException: Unknown item 'imod:iron_token'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -396,7 +396,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:iron_token'
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -409,7 +409,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:iron_token'
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:unknown_item
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:unknown_item
 com.google.gson.JsonSyntaxException: Unknown item 'imod:unknown_item'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -445,7 +445,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:unknown_item'
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -458,7 +458,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:unknown_item'
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:firey_chestplate
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:firey_chestplate
 com.google.gson.JsonSyntaxException: Unknown item 'imod:firey_netherite_chestplate'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -494,7 +494,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:firey_netherite_chestpla
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -507,7 +507,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:firey_netherite_chestpla
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:cracked_boots
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:cracked_boots
 com.google.gson.JsonSyntaxException: Unknown item 'imod:cracked_netherite_boots'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -543,7 +543,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:cracked_netherite_boots'
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -556,7 +556,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:cracked_netherite_boots'
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:firey_helmet
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:firey_helmet
 com.google.gson.JsonSyntaxException: Unknown item 'imod:firey_netherite_helmet'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -592,7 +592,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:firey_netherite_helmet'
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -605,7 +605,52 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:firey_netherite_helmet'
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:cracked_leggings
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:test_recipe
+com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'imod:sintering_furnace_recipe'
+	at net.minecraft.recipe.RecipeManager.method_17875(RecipeManager.java:122) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
+	at net.minecraft.recipe.RecipeManager.deserialize(RecipeManager.java:122) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.recipe.RecipeManager.apply(RecipeManager.java:54) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.recipe.RecipeManager.apply(RecipeManager.java:35) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.resource.SinglePreparationResourceReloader.method_18790(SinglePreparationResourceReloader.java:13) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714) ~[?:?]
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:478) ~[?:?]
+	at net.minecraft.resource.SimpleResourceReload.method_18365(SimpleResourceReload.java:71) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:151) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.util.thread.ReentrantThreadExecutor.executeTask(ReentrantThreadExecutor.java:23) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:125) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:134) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.createIntegratedResourceManager(MinecraftClient.java:2152) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.startIntegratedServer(MinecraftClient.java:1999) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.startIntegratedServer(MinecraftClient.java:1939) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.screen.world.WorldListWidget$Entry.start(WorldListWidget.java:437) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.screen.world.WorldListWidget$Entry.play(WorldListWidget.java:343) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.screen.world.WorldListWidget$Entry.mouseClicked(WorldListWidget.java:274) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.widget.EntryListWidget.mouseClicked(EntryListWidget.java:359) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.ParentElement.mouseClicked(ParentElement.java:27) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.Mouse.method_1611(Mouse.java:94) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.gui.screen.Screen.wrapScreenError(Screen.java:490) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.Mouse.onMouseButton(Mouse.java:94) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.Mouse.method_22686(Mouse.java:165) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.util.thread.ThreadExecutor.execute(ThreadExecutor.java:101) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.Mouse.method_22684(Mouse.java:165) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
+	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
+	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:217) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:567) ~[?:?]
+	at net.fabricmc.loader.game.MinecraftGameProvider.launch(MinecraftGameProvider.java:234) [fabric-loader-0.11.6.jar:?]
+	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
+	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:cracked_leggings
 com.google.gson.JsonSyntaxException: Unknown item 'imod:cracked_netherite_leggings'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -641,7 +686,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:cracked_netherite_leggin
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -654,7 +699,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:cracked_netherite_leggin
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:wifi_router
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:wifi_router
 com.google.gson.JsonSyntaxException: Unknown item 'minecraft:bluestone_block'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -692,7 +737,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'minecraft:bluestone_block'
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -705,7 +750,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'minecraft:bluestone_block'
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:cracked_chestplate
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:cracked_chestplate
 com.google.gson.JsonSyntaxException: Unknown item 'imod:cracked_netherite_chestplate'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -741,7 +786,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:cracked_netherite_chestp
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -754,7 +799,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:cracked_netherite_chestp
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:firey_leggings
+[12:35:42] [Render thread/ERROR] (Minecraft) Parsing error loading recipe imod:firey_leggings
 com.google.gson.JsonSyntaxException: Unknown item 'imod:firey_netherite_leggings'
 	at net.minecraft.recipe.ShapedRecipe.method_17878(ShapedRecipe.java:253) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -790,7 +835,7 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:firey_netherite_leggings
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -803,8 +848,8 @@ com.google.gson.JsonSyntaxException: Unknown item 'imod:firey_netherite_leggings
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/INFO] (Minecraft) Loaded 7 recipes
-[20:42:47] [Render thread/ERROR] (Minecraft) Couldn't parse loot table imod:blocks/speakers
+[12:35:42] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[12:35:42] [Render thread/ERROR] (Minecraft) Couldn't parse loot table imod:blocks/speakers
 com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'imod:speakers'
 	at net.minecraft.util.JsonHelper.method_17995(JsonHelper.java:127) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -870,7 +915,7 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -883,7 +928,7 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Couldn't parse loot table imod:blocks/quarry
+[12:35:42] [Render thread/ERROR] (Minecraft) Couldn't parse loot table imod:blocks/quarry
 com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'imod:quarry'
 	at net.minecraft.util.JsonHelper.method_17995(JsonHelper.java:127) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -949,7 +994,7 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -962,7 +1007,7 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/ERROR] (Minecraft) Couldn't parse loot table imod:blocks/storage_unit
+[12:35:42] [Render thread/ERROR] (Minecraft) Couldn't parse loot table imod:blocks/storage_unit
 com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'imod:storage_unit'
 	at net.minecraft.util.JsonHelper.method_17995(JsonHelper.java:127) ~[minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -1028,7 +1073,7 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) [lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
 	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) [lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:165) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:172) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.util.Window.swapBuffers(Window.java:310) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.render(MinecraftClient.java:1137) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
 	at net.minecraft.client.MinecraftClient.run(MinecraftClient.java:728) [minecraft-1.17.1-mapped-net.fabricmc.yarn-1.17.1+build.10-v2.jar:?]
@@ -1041,45 +1086,64 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at net.fabricmc.loader.launch.knot.Knot.launch(Knot.java:153) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.loader.launch.knot.KnotClient.main(KnotClient.java:28) [fabric-loader-0.11.6.jar:?]
 	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
-[20:42:47] [Render thread/INFO] (Minecraft) Loaded 1137 advancements
-[20:42:49] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[20:42:49] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.17.1
-[20:42:49] [Server thread/INFO] (Minecraft) Generating keypair
-[20:42:49] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[20:42:50] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[20:42:54] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[20:42:54] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[20:42:54] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[20:42:54] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[20:42:54] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[20:42:54] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[20:42:54] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[20:42:54] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[20:42:54] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[20:42:55] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[20:42:55] [Render thread/INFO] (Minecraft) Preparing spawn area: 22%
-[20:42:55] [Render thread/INFO] (Minecraft) Preparing spawn area: 50%
-[20:42:56] [Render thread/INFO] (Minecraft) Preparing spawn area: 52%
-[20:42:56] [Render thread/INFO] (Minecraft) Preparing spawn area: 52%
-[20:42:57] [Render thread/INFO] (Minecraft) Preparing spawn area: 52%
-[20:42:57] [Render thread/INFO] (Minecraft) Preparing spawn area: 52%
-[20:42:58] [Render thread/INFO] (Minecraft) Preparing spawn area: 58%
-[20:42:58] [Render thread/INFO] (Minecraft) Preparing spawn area: 58%
-[20:42:59] [Render thread/INFO] (Minecraft) Preparing spawn area: 62%
-[20:43:00] [Render thread/INFO] (Minecraft) Preparing spawn area: 70%
-[20:43:00] [Render thread/INFO] (Minecraft) Preparing spawn area: 75%
-[20:43:00] [Render thread/INFO] (Minecraft) Preparing spawn area: 95%
-[20:43:01] [Render thread/INFO] (Minecraft) Time elapsed: 11457 ms
-[20:43:02] [Server thread/INFO] (Minecraft) Changing view distance to 2, from 10
-[20:43:03] [Netty Local Client IO #0/INFO] (BiomeModificationImpl) Applied 272 biome modifications to 68 of 81 new biomes in 14.91 ms
-[20:43:03] [Server thread/INFO] (Minecraft) Player210[local:E:5c20b6e7] logged in with entity id 213 at (-393.2035703105865, 68.0, 98.20820885382392)
-[20:43:03] [Server thread/INFO] (Minecraft) Player210 joined the game
-[20:43:03] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[20:43:03] [Render thread/INFO] (Minecraft) Loaded 3 advancements
-[20:43:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[20:43:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[20:43:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[20:43:08] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[20:43:08] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[20:43:08] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[20:43:08] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[12:35:43] [Render thread/INFO] (Minecraft) Loaded 1137 advancements
+[12:35:44] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[12:35:44] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.17.1
+[12:35:44] [Server thread/INFO] (Minecraft) Generating keypair
+[12:35:45] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[12:35:45] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[12:35:46] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[12:35:46] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[12:35:46] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[12:35:47] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[12:35:48] [Render thread/INFO] (Minecraft) Preparing spawn area: 3%
+[12:35:48] [Render thread/INFO] (Minecraft) Preparing spawn area: 4%
+[12:35:49] [Render thread/INFO] (Minecraft) Preparing spawn area: 4%
+[12:35:49] [Render thread/INFO] (Minecraft) Preparing spawn area: 6%
+[12:35:49] [Render thread/INFO] (Minecraft) Preparing spawn area: 8%
+[12:35:50] [Render thread/INFO] (Minecraft) Preparing spawn area: 13%
+[12:35:50] [Render thread/INFO] (Minecraft) Preparing spawn area: 13%
+[12:35:51] [Render thread/INFO] (Minecraft) Preparing spawn area: 21%
+[12:35:55] [Render thread/INFO] (Minecraft) Preparing spawn area: 21%
+[12:35:55] [Render thread/INFO] (Minecraft) Preparing spawn area: 21%
+[12:35:55] [Render thread/INFO] (Minecraft) Preparing spawn area: 21%
+[12:35:55] [Render thread/INFO] (Minecraft) Preparing spawn area: 21%
+[12:35:55] [Render thread/INFO] (Minecraft) Preparing spawn area: 21%
+[12:35:56] [Render thread/INFO] (Minecraft) Preparing spawn area: 21%
+[12:35:56] [Render thread/INFO] (Minecraft) Preparing spawn area: 21%
+[12:35:56] [Render thread/INFO] (Minecraft) Preparing spawn area: 21%
+[12:35:56] [Render thread/INFO] (Minecraft) Preparing spawn area: 21%
+[12:35:56] [Render thread/INFO] (Minecraft) Time elapsed: 11236 ms
+[12:35:56] [Server thread/INFO] (Minecraft) Changing view distance to 2, from 10
+[12:35:57] [Server thread/INFO] (Minecraft) Player977[local:E:f0b3af25] logged in with entity id 212 at (-395.71061980772737, 67.0, 99.59190023939897)
+[12:35:57] [Server thread/INFO] (Minecraft) Player977 joined the game
+[12:35:58] [Netty Local Client IO #0/INFO] (BiomeModificationImpl) Applied 272 biome modifications to 68 of 81 new biomes in 46.78 ms
+[12:35:58] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[12:35:58] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[12:35:58] [Render thread/INFO] (Minecraft) Loaded 6 advancements
+[12:35:59] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[12:35:59] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[12:36:00] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[12:36:00] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[12:36:00] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[12:36:00] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[12:36:18] [Render thread/INFO] (Minecraft) Loaded 20 advancements
+[12:36:22] [Render thread/INFO] (Minecraft) Loaded 21 advancements
+[12:37:02] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[12:37:02] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[12:37:02] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[12:37:02] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[12:37:03] [Render thread/INFO] (Minecraft) Stopping!
+[12:37:03] [Server thread/INFO] (Minecraft) Player977 lost connection: Disconnected
+[12:37:03] [Server thread/INFO] (Minecraft) Player977 left the game
+[12:37:03] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[12:37:03] [Server thread/INFO] (Minecraft) Stopping server
+[12:37:03] [Server thread/INFO] (Minecraft) Saving players
+[12:37:03] [Server thread/INFO] (Minecraft) Saving worlds
+[12:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[12:37:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[12:37:04] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[12:37:04] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
+[12:37:04] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[12:37:04] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[12:37:04] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved

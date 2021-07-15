@@ -1,0 +1,13 @@
+{
+  "variants":
+  {
+    "facing=north,lit=false": { "model": "imod:block/sintering_furnace" },
+    "facing=east,lit=false": { "model": "imod:block/sintering_furnace", "y": 90 },
+    "facing=south,lit=false": { "model": "imod:block/sintering_furnace", "y": 180 },
+    "facing=west,lit=false": { "model": "imod:block/sintering_furnace", "y": 270 },
+    "facing=north,lit=true": { "model": "imod:block/lit_sintering_furnace" },
+    "facing=east,lit=true": { "model": "imod:block/lit_sintering_furnace", "y": 90 },
+    "facing=south,lit=true": { "model": "imod:block/lit_sintering_furnace", "y": 180 },
+    "facing=west,lit=true": { "model": "imod:block/lit_sintering_furnace", "y":270  }
+  }
+}

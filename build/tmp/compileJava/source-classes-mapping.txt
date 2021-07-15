@@ -8,10 +8,12 @@ com/VikkiVuk/iMOD/objects/blocks/Chairsy.java
 com/VikkiVuk/iMOD/objects/blocks/BetterCauldron.java
  com.VikkiVuk.iMOD.objects.blocks.BetterCauldron
  com.VikkiVuk.iMOD.objects.blocks.BetterCauldron$1
-com/VikkiVuk/iMOD/iMODClient.java
- com.VikkiVuk.iMOD.iMODClient
+com/VikkiVuk/iMOD/util/materials/CustomArmorMaterials.java
+ com.VikkiVuk.iMOD.util.materials.CustomArmorMaterials
 com/VikkiVuk/iMOD/registry/ItemInit.java
  com.VikkiVuk.iMOD.registry.ItemInit
+com/VikkiVuk/iMOD/objects/blocks/sintering_furnace/SinteringFurnaceBlockEntity.java
+ com.VikkiVuk.iMOD.objects.blocks.sintering_furnace.SinteringFurnaceBlockEntity
 com/VikkiVuk/iMOD/objects/blocks/WifiRouter.java
  com.VikkiVuk.iMOD.objects.blocks.WifiRouter
  com.VikkiVuk.iMOD.objects.blocks.WifiRouter$1
@@ -38,6 +40,8 @@ com/VikkiVuk/iMOD/objects/blocks/SantaHat.java
  com.VikkiVuk.iMOD.objects.blocks.SantaHat$1
 com/VikkiVuk/iMOD/objects/items/DinkyWinky.java
  com.VikkiVuk.iMOD.objects.items.DinkyWinky
+com/VikkiVuk/iMOD/objects/blocks/sintering_furnace/SinteringFurnaceScreen.java
+ com.VikkiVuk.iMOD.objects.blocks.sintering_furnace.SinteringFurnaceScreen
 com/VikkiVuk/iMOD/objects/blocks/CoffeeTable.java
  com.VikkiVuk.iMOD.objects.blocks.CoffeeTable
  com.VikkiVuk.iMOD.objects.blocks.CoffeeTable$1
@@ -68,11 +72,20 @@ com/VikkiVuk/iMOD/objects/items/other/CustomPickaxeItem.java
 com/VikkiVuk/iMOD/objects/blocks/TokenATM.java
  com.VikkiVuk.iMOD.objects.blocks.TokenATM
  com.VikkiVuk.iMOD.objects.blocks.TokenATM$1
-com/VikkiVuk/iMOD/iMOD.java
- com.VikkiVuk.iMOD.iMOD
+com/VikkiVuk/iMOD/objects/blocks/sintering_furnace/SinteringFurnaceScreenHandler.java
+ com.VikkiVuk.iMOD.objects.blocks.sintering_furnace.SinteringFurnaceScreenHandler
+com/VikkiVuk/iMOD/objects/blocks/sintering_furnace/SinteringFurnace.java
+ com.VikkiVuk.iMOD.objects.blocks.sintering_furnace.SinteringFurnace
 com/VikkiVuk/iMOD/registry/FluidInit.java
  com.VikkiVuk.iMOD.registry.FluidInit
  com.VikkiVuk.iMOD.registry.FluidInit$1
  com.VikkiVuk.iMOD.registry.FluidInit$2
-com/VikkiVuk/iMOD/util/materials/CustomArmorMaterials.java
- com.VikkiVuk.iMOD.util.materials.CustomArmorMaterials
+com/VikkiVuk/iMOD/iMODClient.java
+ com.VikkiVuk.iMOD.iMODClient
+com/VikkiVuk/iMOD/iMOD.java
+ com.VikkiVuk.iMOD.iMOD
+com/VikkiVuk/iMOD/objects/blocks/sintering_furnace/SinteringFurnaceRecipe.java
+ com.VikkiVuk.iMOD.objects.blocks.sintering_furnace.SinteringFurnaceRecipe
+com/VikkiVuk/iMOD/util/SinteringFurnaceInit.java
+ com.VikkiVuk.iMOD.util.SinteringFurnaceInit
+ com.VikkiVuk.iMOD.util.SinteringFurnaceInit$1

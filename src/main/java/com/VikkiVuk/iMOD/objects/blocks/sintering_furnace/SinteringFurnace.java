@@ -27,6 +27,6 @@ public class SinteringFurnace extends AbstractFurnaceBlock {
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new SinteringFurnaceBlockEntity();
+        return new SinteringFurnaceBlockEntity(pos, state);
     }
 }

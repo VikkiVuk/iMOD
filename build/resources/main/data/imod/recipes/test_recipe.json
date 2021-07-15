@@ -1,0 +1,9 @@
+{
+  "type": "imod:sintering_furnace_recipe",
+  "ingredient": {
+    "item": "minecraft:stone"
+  },
+  "result": "minecraft:diamond",
+  "experience": 0.2
+}
+

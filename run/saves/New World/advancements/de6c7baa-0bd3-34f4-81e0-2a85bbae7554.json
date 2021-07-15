@@ -1,0 +1,21 @@
+{
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2021-07-15 12:09:52 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2021-07-15 12:09:52 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_tundra": "2021-07-15 12:09:52 +0200"
+    },
+    "done": false
+  },
+  "DataVersion": 2730
+}
