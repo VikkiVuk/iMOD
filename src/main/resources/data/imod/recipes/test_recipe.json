@@ -1,5 +1,5 @@
 {
-  "type": "imod:sintering_furnace_recipe",
+  "type": "imod:sintering_furnace",
   "ingredient": {
     "item": "minecraft:stone"
   },

@@ -1,7 +1,6 @@
 package com.VikkiVuk.iMOD;
 
 import com.VikkiVuk.iMOD.registry.*;
-import com.VikkiVuk.iMOD.util.SinteringFurnaceInit;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
@@ -26,7 +25,5 @@ public class iMOD implements ModInitializer {
 		OreInit.regsterOres();
 
 		FluidInit.registerFluids();
-
-		SinteringFurnaceInit.register();
 	}
 }

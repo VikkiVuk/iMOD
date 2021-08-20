@@ -3,11 +3,9 @@ package com.VikkiVuk.iMOD;
 import com.VikkiVuk.iMOD.objects.blocks.sintering_furnace.SinteringFurnaceScreen;
 import com.VikkiVuk.iMOD.registry.BlockInit;
 import com.VikkiVuk.iMOD.registry.FluidInit;
-import com.VikkiVuk.iMOD.util.SinteringFurnaceInit;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
-import net.minecraft.block.BlockRenderType;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
 
