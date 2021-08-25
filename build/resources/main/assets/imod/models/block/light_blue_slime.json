@@ -1,6 +1,0 @@
-{
-   "parent": "block/cube_all",
-   "textures": {
-       "all": "imod:block/light_blue_slime"
-   }
-}

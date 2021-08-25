@@ -1,9 +1,0 @@
-{
-  "variants":
-  {
-    "facing=west": { "model": "imod:block/better_cauldron" },
-    "facing=east": { "model": "imod:block/better_cauldron", "y": 180 },
-    "facing=north": { "model": "imod:block/better_cauldron", "y": 270 },
-    "facing=south": { "model": "imod:block/better_cauldron", "y": 90}
-  }
-}

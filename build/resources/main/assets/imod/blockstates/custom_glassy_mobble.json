@@ -1,9 +1,0 @@
-{
-  "variants":
-  {
-    "facing=north": { "model": "imod:block/custom_glassy_mobble" },
-    "facing=south": { "model": "imod:block/custom_glassy_mobble" },
-    "facing=west": { "model": "imod:block/custom_glassy_mobble" },
-    "facing=east": { "model": "imod:block/custom_glassy_mobble" }
-  }
-}

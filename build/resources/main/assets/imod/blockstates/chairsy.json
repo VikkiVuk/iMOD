@@ -1,9 +1,0 @@
-{
-  "variants":
-  {
-    "facing=north": { "model": "imod:block/chairsy" },
-    "facing=south": { "model": "imod:block/chairsy", "y": 180 },
-    "facing=west": { "model": "imod:block/chairsy", "y": 270 },
-    "facing=east": { "model": "imod:block/chairsy", "y": 90}
-  }
-}

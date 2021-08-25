@@ -1,8 +1,0 @@
-{
-  "parent": "block/inner_stairs",
-  "textures": {
-    "bottom": "imod:block/bluestone_block",
-    "top": "imod:block/bluestone_block",
-    "side": "imod:block/bluestone_block"
-  }
-}
