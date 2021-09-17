@@ -1,3 +1,18 @@
+Build: 1.17.1-37.0.44 - Mon Aug 23 17:52:30 GMT 2021
+	cyborgmas:
+		Minor resource pack related fixes (#7884)
+
+=========
+Build: 1.17.1-37.0.43 - Sun Aug 22 01:30:31 GMT 2021
+	lexmanos:
+		Fix misaligned patch causing monsters to not spawn in nether fortresses correctly.
+
+=========
+Build: 1.17.1-37.0.42 - Fri Aug 20 19:38:58 GMT 2021
+	diesieben07:
+		Add RegisterCapabilitiesEvent (#8021)
+
+=========
 Build: 1.17.1-37.0.41 - Thu Aug 19 21:31:20 GMT 2021
 	Commoble:
 		Move static ITEM_TIER_ORDERING_JSON resourcelocation declaration from anonymous class into outer class to work around eclipse compiler error. (#8018)
